@@ -770,19 +770,228 @@
             </section>
 
             <section class="tab-pane fade mb-5" id="cases">
-              <h3 class="text-white mb-1">Projects</h3>
+              <h3 class="text-white mb-1">Works</h3>
               <div class="border-top border-warning mb-4" style="width: 120px"></div>
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="p-4 bg-black rounded-4 border border-secondary h-100">
-                    <h5 class="text-white">Project Alpha</h5>
-                    <p class="text-muted mb-0">Security hardening for fintech platform.</p>
+
+              <!-- Filter pills -->
+              <ul class="nav nav-pills mb-4 gap-2">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#cases-all" role="tab" aria-controls="cases-all" aria-selected="true">All</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#cases-video" role="tab" aria-controls="cases-video" aria-selected="false">Video</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#cases-link" role="tab" aria-controls="cases-link" aria-selected="false">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#cases-image" role="tab" aria-controls="cases-image" aria-selected="false">Image</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#cases-gallery" role="tab" aria-controls="cases-gallery" aria-selected="false">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#cases-content" role="tab" aria-controls="cases-content" aria-selected="false">Content</a>
+                </li>
+              </ul>
+
+              <!-- Filtered content panes -->
+              <div class="tab-content">
+                <!-- All -->
+                <div class="tab-pane fade show active" id="cases-all">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/brand1/600/400" class="card-img-top" alt="Corporate Stationery Branding">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Corporate Stationery Branding</h5>
+                          <div class="text-muted">Gallery</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/brand2/600/400" class="card-img-top" alt="Corporate Stationery Branding">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Corporate Stationery Branding</h5>
+                          <div class="text-muted">Gallery</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/techlogo1/600/400" class="card-img-top" alt="Technology Logo Idea">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Technology Logo Idea</h5>
+                          <div class="text-muted">Image</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/techlogo2/600/400" class="card-img-top" alt="Technology Logo Idea">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Technology Logo Idea</h5>
+                          <div class="text-muted">Image</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/report1/600/400" class="card-img-top" alt="Business Annual Report">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Business Annual Report</h5>
+                          <div class="text-muted">Link</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/report2/600/400" class="card-img-top" alt="Business Annual Report">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Business Annual Report</h5>
+                          <div class="text-muted">Link</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/card1/600/400" class="card-img-top" alt="Business Card Idea">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Business Card Idea</h5>
+                          <div class="text-muted">Video</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/card2/600/400" class="card-img-top" alt="Business Card Idea">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Business Card Idea</h5>
+                          <div class="text-muted">Video</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="p-4 bg-black rounded-4 border border-secondary h-100">
-                    <h5 class="text-white">Project Beta</h5>
-                    <p class="text-muted mb-0">IoT vulnerability assessment across devices.</p>
+
+                <!-- Video -->
+                <div class="tab-pane fade" id="cases-video">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/card1/600/400" class="card-img-top" alt="Business Card Idea">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Business Card Idea</h5>
+                          <div class="text-muted">Video</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/card2/600/400" class="card-img-top" alt="Business Card Idea">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Business Card Idea</h5>
+                          <div class="text-muted">Video</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Link -->
+                <div class="tab-pane fade" id="cases-link">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/report1/600/400" class="card-img-top" alt="Business Annual Report">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Business Annual Report</h5>
+                          <div class="text-muted">Link</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/report2/600/400" class="card-img-top" alt="Business Annual Report">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Business Annual Report</h5>
+                          <div class="text-muted">Link</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Image -->
+                <div class="tab-pane fade" id="cases-image">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/techlogo1/600/400" class="card-img-top" alt="Technology Logo Idea">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Technology Logo Idea</h5>
+                          <div class="text-muted">Image</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/techlogo2/600/400" class="card-img-top" alt="Technology Logo Idea">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Technology Logo Idea</h5>
+                          <div class="text-muted">Image</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="tab-pane fade" id="cases-gallery">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/brand1/600/400" class="card-img-top" alt="Corporate Stationery Branding">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Corporate Stationery Branding</h5>
+                          <div class="text-muted">Gallery</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/brand2/600/400" class="card-img-top" alt="Corporate Stationery Branding">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Corporate Stationery Branding</h5>
+                          <div class="text-muted">Gallery</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Content -->
+                <div class="tab-pane fade" id="cases-content">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/content1/600/400" class="card-img-top" alt="Case Study">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Case Study</h5>
+                          <div class="text-muted">Content</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/content2/600/400" class="card-img-top" alt="Case Study">
+                        <div class="card-body">
+                          <h5 class="card-title text-white">Case Study</h5>
+                          <div class="text-muted">Content</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
