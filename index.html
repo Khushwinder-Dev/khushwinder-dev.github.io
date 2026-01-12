@@ -1118,22 +1118,57 @@
             </section>
 
             <section class="tab-pane fade mb-5" id="contact">
-              <h3 class="text-white mb-1">Contact</h3>
+              <h3 class="text-white mb-1">Get in Touch</h3>
+              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe src="https://www.google.com/maps?q=London+Eye&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+              <div class="row g-3 mb-5">
+                <div class="col-md-6">
+                  <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary">
+                    <span class="badge bg-warning text-dark">Address:</span>
+                    <span class="text-white">California, USA</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary">
+                    <span class="badge bg-warning text-dark">Email:</span>
+                    <span class="text-white">adlard@example.com</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary">
+                    <span class="badge bg-warning text-dark">Phone:</span>
+                    <span class="text-white">+123 654 78900</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary">
+                    <span class="badge bg-warning text-dark">Freelance:</span>
+                    <span class="text-white">Available</span>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="text-white mb-1">Contact Form</h3>
               <div class="border-top border-warning mb-4" style="width: 120px"></div>
               <form class="bg-black p-4 rounded-4 border border-secondary">
-                <div class="mb-3">
-                  <label class="form-label text-white">Name</label>
-                  <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Your Name">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Full Name">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="Email Address">
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control bg-dark text-white border-secondary" rows="6" placeholder="Your Message"></textarea>
+                  </div>
                 </div>
-                <div class="mb-3">
-                  <label class="form-label text-white">Email</label>
-                  <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="you@example.com">
+                <div class="mt-4">
+                  <button type="submit" class="btn btn-warning text-dark fw-bold">Send Message</button>
                 </div>
-                <div class="mb-3">
-                  <label class="form-label text-white">Message</label>
-                  <textarea class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Write your message..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-warning text-dark fw-bold">Send</button>
               </form>
             </section>
           </div>
