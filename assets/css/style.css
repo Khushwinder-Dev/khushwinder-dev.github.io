@@ -53,3 +53,14 @@ p {
   font-family: 'Times New Roman Local', serif;
 }
 
+@media (min-width: 768px) {
+  body { overflow: hidden; }
+  .main-frame { height: calc(100vh - 64px); overflow: hidden; }
+  .content-pane { height: 100%; overflow: auto; }
+}
+
+@media (max-width: 767.98px) {
+  .main-frame { height: auto; overflow: visible; }
+  .content-pane { height: auto; overflow: visible; }
+}
+

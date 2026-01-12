@@ -20,13 +20,11 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="bg-dark text-white">
-    <!-- Mobile Spacer to prevent content overlap with fixed header -->
-    <div class="d-md-none" style="height: 140px"></div>
 
     <div
-      class="main container d-flex align-items-center justify-content-center min-vh-100"
+      class="main-frame container d-flex align-items-stretch pt-5 pt-md-0"
     >
-      <section class="section row w-100 justify-content-center">
+      <section class="section row w-100 h-100 justify-content-center align-items-stretch">
         <!-- Menu Column -->
         <div
           class="menu col-auto col-md-1 d-flex align-items-start order-md-first z-3"
@@ -175,7 +173,7 @@
           </div>
         </div>
 
-        <div class="content col-12 col-lg-7">
+        <div class="content content-pane col-12 col-lg-7">
           <div class="tab-content">
             <section class="tab-pane fade show active mb-5" id="about">
               <section class="innerSection">
@@ -1175,8 +1173,8 @@
         </div>
       </section>
     </div>
-    <footer class="custom-footer bg-black border-top border-secondary mt-4">
-      <div class="container py-4">
+    <footer class="custom-footer bg-black border-top border-secondary fixed-bottom">
+      <div class="container py-3">
         <p class="mb-0 text-center text-muted">
           © 2023 RyanCV by Bslthemes Team. All rights reserved.
         </p>
