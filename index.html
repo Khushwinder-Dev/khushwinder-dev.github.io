@@ -1000,10 +1000,121 @@
             <section class="tab-pane fade mb-5" id="blog">
               <h3 class="text-white mb-1">Blog</h3>
               <div class="border-top border-warning mb-4" style="width: 120px"></div>
-              <ul class="list-group">
-                <li class="list-group-item bg-black text-white border-secondary">Best Practices in Application Security</li>
-                <li class="list-group-item bg-black text-white border-secondary">Understanding ICS Threat Models</li>
+
+              <ul class="nav nav-pills mb-4 gap-2">
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#blog-all" role="tab" aria-controls="blog-all" aria-selected="true">All</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#blog-uncategorized" role="tab" aria-controls="blog-uncategorized" aria-selected="false">Uncategorized</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#blog-music" role="tab" aria-controls="blog-music" aria-selected="false">Music</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#blog-design" role="tab" aria-controls="blog-design" aria-selected="false">Design</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#blog-code" role="tab" aria-controls="blog-code" aria-selected="false">Code</a></li>
               </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="blog-all">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/blog1/600/400" class="card-img-top" alt="Post image">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark mb-2">November 28, 2025</span>
+                          <h5 class="card-title text-white">Hello world!</h5>
+                          <p class="card-text text-muted mb-0">Welcome to WordPress. Edit or delete it, then start writing!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/blog2/600/400" class="card-img-top" alt="Post image">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
+                          <h5 class="card-title text-white">By spite about do of allow</h5>
+                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/blog3/600/400" class="card-img-top" alt="Post image">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
+                          <h5 class="card-title text-white">A Song And Dance Act</h5>
+                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/blog4/600/400" class="card-img-top" alt="Post image">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
+                          <h5 class="card-title text-white">Music Player Design</h5>
+                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="blog-uncategorized">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/blog1/600/400" class="card-img-top" alt="Post image">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark mb-2">November 28, 2025</span>
+                          <h5 class="card-title text-white">Hello world!</h5>
+                          <p class="card-text text-muted mb-0">Welcome to WordPress. Edit or delete it, then start writing!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="blog-music">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/blog4/600/400" class="card-img-top" alt="Post image">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
+                          <h5 class="card-title text-white">Music Player Design</h5>
+                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="blog-design">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/blog2/600/400" class="card-img-top" alt="Post image">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
+                          <h5 class="card-title text-white">By spite about do of allow</h5>
+                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="blog-code">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card bg-black border border-secondary h-100">
+                        <img src="https://picsum.photos/seed/blog3/600/400" class="card-img-top" alt="Post image">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
+                          <h5 class="card-title text-white">A Song And Dance Act</h5>
+                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <section class="tab-pane fade mb-5" id="contact">
