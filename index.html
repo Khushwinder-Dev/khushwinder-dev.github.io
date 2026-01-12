@@ -1,346 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Khushwinder | Full Stack Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khushwinder | Full Stack Developer</title>
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="bg-dark text-white">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="bg-dark text-white">
     <!-- Mobile Spacer to prevent content overlap with fixed header -->
-    <div class="d-md-none" style="height: 140px;"></div>
+    <div class="d-md-none" style="height: 140px"></div>
 
-    <div class="main container d-flex align-items-center justify-content-center min-vh-100">
-        <section class="section row w-100 justify-content-center">
-            
-            <!-- Menu Column -->
-            <div class="menu col-auto col-md-1 d-flex align-items-start order-md-first z-3">
-                
-                <!-- Desktop Sidebar (Sticky) -->
-                <nav class="d-none d-md-flex flex-column bg-black rounded-4 p-3 gap-4 align-items-center shadow-lg sticky-top mt-5" style="top: 2rem; width: 80px; border: 1px solid #333;">
-                    <!-- Top Controls -->
-                    <div class="d-flex flex-column align-items-center gap-3 w-100 border-bottom border-secondary pb-3">
-                        <button class="btn btn-link text-white p-0 fs-5 text-decoration-none"><i class="fas fa-bars"></i></button>
-                        <button class="btn btn-link text-white p-0 fs-5 text-decoration-none"><i class="fas fa-sun"></i></button>
-                    </div>
-                    
-                    <!-- Navigation Icons -->
-                    <div class="nav nav-pills flex-column align-items-center gap-4 w-100" role="tablist" aria-orientation="vertical">
-                        <a href="#about" data-bs-toggle="tab" class="nav-link active text-warning p-0 fs-5" role="tab" aria-controls="about" aria-selected="true"><i class="fas fa-user"></i></a>
-                        <a href="#services" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="services" aria-selected="false"><i class="fas fa-list-alt"></i></a>
-                        <a href="#pricing" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="pricing" aria-selected="false"><i class="fas fa-crown"></i></a>
-                        <a href="#clients" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="clients" aria-selected="false"><i class="fas fa-folder-open"></i></a>
-                        <a href="#testimonials" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="testimonials" aria-selected="false"><i class="fas fa-comment-dots"></i></a>
-                        <a href="#funfacts" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="funfacts" aria-selected="false"><i class="fas fa-star"></i></a>
-                    </div>
-                </nav>
-
-                <!-- Mobile Header (Fixed Top) -->
-                <nav class="d-md-none fixed-top bg-black w-100 p-3 border-bottom border-secondary shadow-sm" style="z-index: 1050;">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="lh-1">
-                            <h5 class="fw-bold text-white m-0">Khushwinder</h5>
-                            <small class="text-warning fw-bold" style="font-size: 0.8rem;">Cryptanalyst</small>
-                        </div>
-                        <div class="d-flex gap-3 align-items-center">
-                            <button class="btn btn-link text-white p-0 fs-5 text-decoration-none"><i class="fas fa-sun"></i></button>
-                            <button class="btn btn-link text-white p-0 fs-5 text-decoration-none"><i class="fas fa-bars"></i></button>
-                        </div>
-                    </div>
-                    <div class="nav nav-pills justify-content-between px-2" role="tablist">
-                        <a href="#about" data-bs-toggle="tab" class="nav-link active text-warning fs-4" role="tab" aria-controls="about" aria-selected="true"><i class="fas fa-user"></i></a>
-                        <a href="#services" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="services" aria-selected="false"><i class="fas fa-list-alt"></i></a>
-                        <a href="#pricing" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="pricing" aria-selected="false"><i class="fas fa-crown"></i></a>
-                        <a href="#clients" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="clients" aria-selected="false"><i class="fas fa-folder-open"></i></a>
-                        <a href="#testimonials" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="testimonials" aria-selected="false"><i class="fas fa-comment-dots"></i></a>
-                        <a href="#funfacts" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="funfacts" aria-selected="false"><i class="fas fa-star"></i></a>
-                    </div>
-                </nav>
+    <div
+      class="main container d-flex align-items-center justify-content-center min-vh-100"
+    >
+      <section class="section row w-100 justify-content-center">
+        <!-- Menu Column -->
+        <div
+          class="menu col-auto col-md-1 d-flex align-items-start order-md-first z-3"
+        >
+          <!-- Desktop Sidebar (Sticky) -->
+          <nav
+            class="d-none d-md-flex flex-column bg-black rounded-4 p-3 gap-4 align-items-center shadow-lg sticky-top mt-5"
+            style="top: 2rem; width: 80px; border: 1px solid #333"
+          >
+            <!-- Top Controls -->
+            <div
+              class="d-flex flex-column align-items-center gap-3 w-100 border-bottom border-secondary pb-3"
+            >
+              <button
+                class="btn btn-link text-white p-0 fs-5 text-decoration-none"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <button
+                class="btn btn-link text-white p-0 fs-5 text-decoration-none"
+              >
+                <i class="fas fa-sun"></i>
+              </button>
             </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="info-card card bg-dark text-white border-0 shadow-lg position-relative overflow-hidden">
-                    
-                    <!-- Profile Image -->
-                    <div class="image-container position-relative">
-                        <img src="http://test4.local/wp-content/uploads/2023/03/calm-happy-smiling-caucasian-man-s-portrait-gradient-studio-background-neon-light-beautiful-male-model-with-hipster-style-earphones-concept-human-emotions-facial-expression-ad-scaled-1.jpeg" class="card-img-top" alt="Khushwinder" style="height: 500px; object-fit: cover;">
-                        
-                        <!-- Gradient Overlay for Text Readability -->
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 70%, transparent 100%);">
-                            <h2 class="fw-bold text-center mb-1">Khushwinder</h2>
-                            
-                            <!-- Social Icons -->
-                            <div class="d-flex justify-content-center gap-3 my-3">
-                                <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-white fs-4"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="text-white fs-4"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="#" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Footer / Action Button -->
-                    <div class="card-footer bg-black border-top border-secondary p-0">
-                        <a href="#" class="btn w-100 py-3 text-uppercase fw-bold text-white d-flex justify-content-center align-items-center gap-2 rounded-0" style="background-color: black;">
-                            Download Resume <i class="fas fa-cloud-download-alt"></i>
-                        </a>
-                    </div>
+            <!-- Navigation Icons -->
+            <ul id="menu-main-menu" class="menu nav nav-pills w-100 flex-column gap-2" role="tablist" aria-orientation="vertical">
+              <li class="nav-item">
+                <a href="#about" data-bs-toggle="tab" class="nav-link active d-flex align-items-center gap-2" role="tab" aria-controls="about" aria-selected="true">
+                  <span class="icon far fa-user"></span><span class="name d-none">About</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#resume" data-bs-toggle="tab" class="nav-link d-flex align-items-center gap-2" role="tab" aria-controls="resume" aria-selected="false">
+                  <span class="icon far fa-list-alt"></span><span class="name d-none">Resume</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#cases" data-bs-toggle="tab" class="nav-link d-flex align-items-center gap-2" role="tab" aria-controls="cases" aria-selected="false">
+                  <span class="icon far fa-folder-open"></span><span class="name d-none">Projects</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog" data-bs-toggle="tab" class="nav-link d-flex align-items-center gap-2" role="tab" aria-controls="blog" aria-selected="false">
+                  <span class="icon far fa-newspaper"></span><span class="name d-none">Blog</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" data-bs-toggle="tab" class="nav-link d-flex align-items-center gap-2" role="tab" aria-controls="contact" aria-selected="false">
+                  <span class="icon far fa-paper-plane"></span><span class="name d-none">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Header (Fixed Top) -->
+          <nav
+            class="d-md-none fixed-top bg-black w-100 p-3 border-bottom border-secondary shadow-sm"
+            style="z-index: 1050"
+          >
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="lh-1">
+                <h5 class="fw-bold text-white m-0">Khushwinder</h5>
+                <small class="text-warning fw-bold" style="font-size: 0.8rem"
+                  >Cryptanalyst</small
+                >
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <button
+                  class="btn btn-link text-white p-0 fs-5 text-decoration-none"
+                >
+                  <i class="fas fa-sun"></i>
+                </button>
+                <button
+                  class="btn btn-link text-white p-0 fs-5 text-decoration-none"
+                >
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+            </div>
+            <ul id="menu-main-menu-mobile" class="menu nav nav-pills justify-content-between px-2" role="tablist">
+              <li class="nav-item"><a href="#about" data-bs-toggle="tab" class="nav-link active fs-4" role="tab" aria-controls="about" aria-selected="true"><span class="icon far fa-user"></span></a></li>
+              <li class="nav-item"><a href="#resume" data-bs-toggle="tab" class="nav-link fs-4" role="tab" aria-controls="resume" aria-selected="false"><span class="icon far fa-list-alt"></span></a></li>
+              <li class="nav-item"><a href="#cases" data-bs-toggle="tab" class="nav-link fs-4" role="tab" aria-controls="cases" aria-selected="false"><span class="icon far fa-folder-open"></span></a></li>
+              <li class="nav-item"><a href="#blog" data-bs-toggle="tab" class="nav-link fs-4" role="tab" aria-controls="blog" aria-selected="false"><span class="icon far fa-newspaper"></span></a></li>
+              <li class="nav-item"><a href="#contact" data-bs-toggle="tab" class="nav-link fs-4" role="tab" aria-controls="contact" aria-selected="false"><span class="icon far fa-paper-plane"></span></a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="info-card card bg-dark text-white border-0 shadow-lg position-relative overflow-hidden"
+          >
+            <!-- Profile Image -->
+            <div class="image-container position-relative">
+              <img
+                src="http://test4.local/wp-content/uploads/2023/03/calm-happy-smiling-caucasian-man-s-portrait-gradient-studio-background-neon-light-beautiful-male-model-with-hipster-style-earphones-concept-human-emotions-facial-expression-ad-scaled-1.jpeg"
+                class="card-img-top"
+                alt="Khushwinder"
+                style="height: 500px; object-fit: cover"
+              />
+
+              <!-- Gradient Overlay for Text Readability -->
+              <div
+                class="position-absolute bottom-0 start-0 w-100 p-4"
+                style="
+                  background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.9) 0%,
+                    rgba(0, 0, 0, 0.4) 70%,
+                    transparent 100%
+                  );
+                "
+              >
+                <h2 class="fw-bold text-center mb-1">Khushwinder</h2>
+
+                <!-- Social Icons -->
+                <div class="d-flex justify-content-center gap-3 my-3">
+                  <a href="#" class="text-white fs-4"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-white fs-4"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" class="text-white fs-4"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="#" class="text-white fs-4"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
                 </div>
+              </div>
             </div>
 
-            <div class="content col-12 col-lg-7">
-                <div class="tab-content">
-                <section class="tab-pane fade show active mb-5" id="about">
-                    <h3 class="text-white mb-1">About Me</h3>
-                    <div class="border-top border-warning mb-4" style="width: 120px;"></div>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="p-3 bg-black rounded-3 border border-secondary">
-                                <p class="mb-0"><strong>Hello! I’m Khushwinder.</strong> I have rich experience in protection valuable digital assets, defend against cyber threats, and ensure compliance with data protection regulations.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row g-3">
-                                <div class="col-6">
-                                    <div class="d-flex justify-content-between align-items-center p-2 rounded-3 bg-black border border-secondary">
-                                        <span class="badge bg-warning text-dark text-uppercase">Age</span>
-                                        <span class="text-white">24</span>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="d-flex justify-content-between align-items-center p-2 rounded-3 bg-black border border-secondary">
-                                        <span class="badge bg-warning text-dark text-uppercase">Residence</span>
-                                        <span class="text-white">USA</span>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="d-flex justify-content-between align-items-center p-2 rounded-3 bg-black border border-secondary">
-                                        <span class="badge bg-warning text-dark text-uppercase">Freelance</span>
-                                        <span class="text-white">Available</span>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="d-flex justify-content-between align-items-center p-2 rounded-3 bg-black border border-secondary">
-                                        <span class="badge bg-warning text-dark text-uppercase">Address</span>
-                                        <span class="text-white">California, USA</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <!-- Footer / Action Button -->
+            <div class="card-footer bg-black border-top border-secondary p-0">
+              <a
+                href="#"
+                class="btn w-100 py-3 text-uppercase fw-bold text-white d-flex justify-content-center align-items-center gap-2 rounded-0"
+                style="background-color: black"
+              >
+                Download Resume <i class="fas fa-cloud-download-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-                <section class="tab-pane fade mb-5" id="services">
-                    <h3 class="text-white mb-1">My Services</h3>
-                    <div class="border-top border-warning mb-4" style="width: 120px;"></div>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="p-4 bg-black rounded-4 border border-secondary h-100">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
-                                        <i class="fas fa-shield-alt text-dark"></i>
-                                    </div>
-                                    <h5 class="m-0 text-white">Application Security</h5>
-                                </div>
-                                <p class="text-muted mb-0">Troubleshoot security concerns, assess strategies, and protect organizational assets.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-4 bg-black rounded-4 border border-secondary h-100">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
-                                        <i class="far fa-credit-card text-dark"></i>
-                                    </div>
-                                    <h5 class="m-0 text-white">Payment Systems Security</h5>
-                                </div>
-                                <p class="text-muted mb-0">Secure information and payments for businesses to protect the organization.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-4 bg-black rounded-4 border border-secondary h-100">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
-                                        <i class="fas fa-clipboard-list text-dark"></i>
-                                    </div>
-                                    <h5 class="m-0 text-white">Strategy Consultation</h5>
-                                </div>
-                                <p class="text-muted mb-0">Corporate strategy, economic policy, and mergers with a security perspective.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-4 bg-black rounded-4 border border-secondary h-100">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
-                                        <i class="fas fa-microchip text-dark"></i>
-                                    </div>
-                                    <h5 class="m-0 text-white">IoT Security Assessment</h5>
-                                </div>
-                                <p class="text-muted mb-0">Assess and harden connected devices against evolving attack vectors.</p>
-                            </div>
-                        </div>
+        <div class="content col-12 col-lg-7">
+          <div class="tab-content">
+            <section class="tab-pane fade show active mb-5" id="about">
+              <section class="innerSection">
+                <h3 class="text-white mb-1">About Me</h3>
+                <div
+                  class="border-top border-warning mb-4"
+                  style="width: 120px"
+                ></div>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="p-3 bg-black rounded-3 border border-secondary">
+                      <p class="mb-0">
+                        <strong>Hello! I’m Khushwinder.</strong> I have rich
+                        experience in protection valuable digital assets, defend
+                        against cyber threats, and ensure compliance with data
+                        protection regulations.
+                      </p>
                     </div>
-                </section>
-
-                <section class="tab-pane fade mb-5" id="pricing">
-                    <h3 class="text-white mb-1">Pricing</h3>
-                    <div class="border-top border-warning mb-4" style="width: 120px;"></div>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="p-4 bg-black rounded-4 border border-secondary h-100">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
-                                        <i class="fas fa-crown text-dark"></i>
-                                    </div>
-                                    <h5 class="m-0 text-white">Popular</h5>
-                                </div>
-                                <div class="display-5 fw-bold text-warning mb-2">29<span class="fs-6 text-white">/hour</span></div>
-                                <ul class="list-unstyled text-muted mb-4">
-                                    <li class="mb-1">Penetration Testing</li>
-                                    <li class="mb-1">Application Security Assessment</li>
-                                    <li class="mb-1">ICS Security</li>
-                                    <li class="mb-1">IoT Security Assessment</li>
-                                    <li class="mb-1">Risk management</li>
-                                </ul>
-                                <a href="#" class="btn btn-warning text-dark fw-bold w-100">Order Now</a>
-                            </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row g-3">
+                      <div class="col-6">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-2 rounded-3 bg-black border border-secondary"
+                        >
+                          <span
+                            class="badge bg-warning text-dark text-uppercase"
+                            >Age</span
+                          >
+                          <span class="text-white">24</span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="p-4 bg-black rounded-4 border border-secondary h-100">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
-                                        <i class="fas fa-crown text-dark"></i>
-                                    </div>
-                                    <h5 class="m-0 text-white">Premium</h5>
-                                </div>
-                                <div class="display-5 fw-bold text-warning mb-2">59<span class="fs-6 text-white">/hour</span></div>
-                                <ul class="list-unstyled text-muted mb-4">
-                                    <li class="mb-1">Advanced Penetration Testing</li>
-                                    <li class="mb-1">Red Team Assessment</li>
-                                    <li class="mb-1">ICS Security</li>
-                                    <li class="mb-1">IoT Security Assessment</li>
-                                    <li class="mb-1">Risk management</li>
-                                </ul>
-                                <a href="#" class="btn btn-warning text-dark fw-bold w-100">Order Now</a>
-                            </div>
+                      </div>
+                      <div class="col-6">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-2 rounded-3 bg-black border border-secondary"
+                        >
+                          <span
+                            class="badge bg-warning text-dark text-uppercase"
+                            >Residence</span
+                          >
+                          <span class="text-white">USA</span>
                         </div>
+                      </div>
+                      <div class="col-6">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-2 rounded-3 bg-black border border-secondary"
+                        >
+                          <span
+                            class="badge bg-warning text-dark text-uppercase"
+                            >Freelance</span
+                          >
+                          <span class="text-white">Available</span>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-2 rounded-3 bg-black border border-secondary"
+                        >
+                          <span
+                            class="badge bg-warning text-dark text-uppercase"
+                            >Address</span
+                          >
+                          <span class="text-white">California, USA</span>
+                        </div>
+                      </div>
                     </div>
-                </section>
-
-                <section class="tab-pane fade mb-5" id="clients">
-                    <h3 class="text-white mb-1">Clients</h3>
-                    <div class="border-top border-warning mb-4" style="width: 120px;"></div>
-                    <div class="row row-cols-2 row-cols-md-4 g-4">
-                        <div class="col">
-                            <div class="p-4 bg-black rounded-4 border border-secondary text-center">
-                                <i class="fa-brands fa-google fs-2 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-4 bg-black rounded-4 border border-secondary text-center">
-                                <i class="fa-brands fa-upwork fs-2 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-4 bg-black rounded-4 border border-secondary text-center">
-                                <i class="fa-brands fa-slack fs-2 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-4 bg-black rounded-4 border border-secondary text-center">
-                                <i class="fa-brands fa-envira fs-2 text-white"></i>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="tab-pane fade mb-5" id="testimonials">
-                    <h3 class="text-white mb-1">Testimonials</h3>
-                    <div class="border-top border-warning mb-4" style="width: 120px;"></div>
-                    <div id="testimonialCarousel" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="p-4 bg-black rounded-4 border border-secondary">
-                                    <p class="text-muted mb-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:56px;height:56px;">
-                                            <i class="fas fa-user text-dark"></i>
-                                        </div>
-                                        <div>
-                                            <div class="fw-bold text-white">Robert Chase</div>
-                                            <div class="text-muted">CEO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="p-4 bg-black rounded-4 border border-secondary">
-                                    <p class="text-muted mb-4">“Outstanding security expertise and professional delivery across complex engagements.”</p>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:56px;height:56px;">
-                                            <i class="fas fa-user text-dark"></i>
-                                        </div>
-                                        <div>
-                                            <div class="fw-bold text-white">Alex Morgan</div>
-                                            <div class="text-muted">CTO</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-end gap-2 mt-3">
-                            <button class="btn btn-outline-warning btn-sm" data-bs-target="#testimonialCarousel" data-bs-slide="prev">Prev</button>
-                            <button class="btn btn-outline-warning btn-sm" data-bs-target="#testimonialCarousel" data-bs-slide="next">Next</button>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="tab-pane fade mb-5" id="funfacts">
-                    <h3 class="text-white mb-1">Fun Facts</h3>
-                    <div class="border-top border-warning mb-4" style="width: 120px;"></div>
-                    <div class="row row-cols-2 row-cols-md-4 g-4">
-                        <div class="col">
-                            <div class="p-4 bg-black rounded-4 border border-secondary text-center h-100">
-                                <i class="fas fa-compact-disc text-warning fs-2"></i>
-                                <div class="mt-2 text-white">80 Albums Listened</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-4 bg-black rounded-4 border border-secondary text-center h-100">
-                                <i class="fas fa-trophy text-warning fs-2"></i>
-                                <div class="mt-2 text-white">15 Awards Won</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-4 bg-black rounded-4 border border-secondary text-center h-100">
-                                <i class="fas fa-mug-hot text-warning fs-2"></i>
-                                <div class="mt-2 text-white">1000 Cups Of Coffee</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-4 bg-black rounded-4 border border-secondary text-center h-100">
-                                <i class="fas fa-plane text-warning fs-2"></i>
-                                <div class="mt-2 text-white">10 Countries Visited</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                  </div>
                 </div>
-            </div>
+              </section>
 
-        </section>
+              <section class="innerSection">
+                <h3 class="text-white mb-1">My Services</h3>
+                <div
+                  class="border-top border-warning mb-4"
+                  style="width: 120px"
+                ></div>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div
+                          class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 48px; height: 48px"
+                        >
+                          <i class="fas fa-shield-alt text-dark"></i>
+                        </div>
+                        <h5 class="m-0 text-white">Application Security</h5>
+                      </div>
+                      <p class="text-muted mb-0">
+                        Troubleshoot security concerns, assess strategies, and
+                        protect organizational assets.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div
+                          class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 48px; height: 48px"
+                        >
+                          <i class="far fa-credit-card text-dark"></i>
+                        </div>
+                        <h5 class="m-0 text-white">Payment Systems Security</h5>
+                      </div>
+                      <p class="text-muted mb-0">
+                        Secure information and payments for businesses to
+                        protect the organization.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div
+                          class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 48px; height: 48px"
+                        >
+                          <i class="fas fa-clipboard-list text-dark"></i>
+                        </div>
+                        <h5 class="m-0 text-white">Strategy Consultation</h5>
+                      </div>
+                      <p class="text-muted mb-0">
+                        Corporate strategy, economic policy, and mergers with a
+                        security perspective.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div
+                          class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 48px; height: 48px"
+                        >
+                          <i class="fas fa-microchip text-dark"></i>
+                        </div>
+                        <h5 class="m-0 text-white">IoT Security Assessment</h5>
+                      </div>
+                      <p class="text-muted mb-0">
+                        Assess and harden connected devices against evolving
+                        attack vectors.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="innerSection">
+                <h3 class="text-white mb-1">Pricing</h3>
+                <div
+                  class="border-top border-warning mb-4"
+                  style="width: 120px"
+                ></div>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div
+                          class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 48px; height: 48px"
+                        >
+                          <i class="fas fa-crown text-dark"></i>
+                        </div>
+                        <h5 class="m-0 text-white">Popular</h5>
+                      </div>
+                      <div class="display-5 fw-bold text-warning mb-2">
+                        29<span class="fs-6 text-white">/hour</span>
+                      </div>
+                      <ul class="list-unstyled text-muted mb-4">
+                        <li class="mb-1">Penetration Testing</li>
+                        <li class="mb-1">Application Security Assessment</li>
+                        <li class="mb-1">ICS Security</li>
+                        <li class="mb-1">IoT Security Assessment</li>
+                        <li class="mb-1">Risk management</li>
+                      </ul>
+                      <a
+                        href="#"
+                        class="btn btn-warning text-dark fw-bold w-100"
+                        >Order Now</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div
+                          class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 48px; height: 48px"
+                        >
+                          <i class="fas fa-crown text-dark"></i>
+                        </div>
+                        <h5 class="m-0 text-white">Premium</h5>
+                      </div>
+                      <div class="display-5 fw-bold text-warning mb-2">
+                        59<span class="fs-6 text-white">/hour</span>
+                      </div>
+                      <ul class="list-unstyled text-muted mb-4">
+                        <li class="mb-1">Advanced Penetration Testing</li>
+                        <li class="mb-1">Red Team Assessment</li>
+                        <li class="mb-1">ICS Security</li>
+                        <li class="mb-1">IoT Security Assessment</li>
+                        <li class="mb-1">Risk management</li>
+                      </ul>
+                      <a
+                        href="#"
+                        class="btn btn-warning text-dark fw-bold w-100"
+                        >Order Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="innerSection">
+                <h3 class="text-white mb-1">Clients</h3>
+                <div
+                  class="border-top border-warning mb-4"
+                  style="width: 120px"
+                ></div>
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                  <div class="col">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary text-center"
+                    >
+                      <i class="fa-brands fa-google fs-2 text-white"></i>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary text-center"
+                    >
+                      <i class="fa-brands fa-upwork fs-2 text-white"></i>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary text-center"
+                    >
+                      <i class="fa-brands fa-slack fs-2 text-white"></i>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary text-center"
+                    >
+                      <i class="fa-brands fa-envira fs-2 text-white"></i>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="innerSection">
+                <h3 class="text-white mb-1">Testimonials</h3>
+                <div
+                  class="border-top border-warning mb-4"
+                  style="width: 120px"
+                ></div>
+                <div id="testimonialCarousel" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div
+                        class="p-4 bg-black rounded-4 border border-secondary"
+                      >
+                        <p class="text-muted mb-4">
+                          “Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit.”
+                        </p>
+                        <div class="d-flex align-items-center gap-3">
+                          <div
+                            class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                            style="width: 56px; height: 56px"
+                          >
+                            <i class="fas fa-user text-dark"></i>
+                          </div>
+                          <div>
+                            <div class="fw-bold text-white">Robert Chase</div>
+                            <div class="text-muted">CEO</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div
+                        class="p-4 bg-black rounded-4 border border-secondary"
+                      >
+                        <p class="text-muted mb-4">
+                          “Outstanding security expertise and professional
+                          delivery across complex engagements.”
+                        </p>
+                        <div class="d-flex align-items-center gap-3">
+                          <div
+                            class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                            style="width: 56px; height: 56px"
+                          >
+                            <i class="fas fa-user text-dark"></i>
+                          </div>
+                          <div>
+                            <div class="fw-bold text-white">Alex Morgan</div>
+                            <div class="text-muted">CTO</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end gap-2 mt-3">
+                    <button
+                      class="btn btn-outline-warning btn-sm"
+                      data-bs-target="#testimonialCarousel"
+                      data-bs-slide="prev"
+                    >
+                      Prev
+                    </button>
+                    <button
+                      class="btn btn-outline-warning btn-sm"
+                      data-bs-target="#testimonialCarousel"
+                      data-bs-slide="next"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </section>
+
+              <section class="innerSection">
+                <h3 class="text-white mb-1">Fun Facts</h3>
+                <div
+                  class="border-top border-warning mb-4"
+                  style="width: 120px"
+                ></div>
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                  <div class="col">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary text-center h-100"
+                    >
+                      <i class="fas fa-compact-disc text-warning fs-2"></i>
+                      <div class="mt-2 text-white">80 Albums Listened</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary text-center h-100"
+                    >
+                      <i class="fas fa-trophy text-warning fs-2"></i>
+                      <div class="mt-2 text-white">15 Awards Won</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary text-center h-100"
+                    >
+                      <i class="fas fa-mug-hot text-warning fs-2"></i>
+                      <div class="mt-2 text-white">1000 Cups Of Coffee</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary text-center h-100"
+                    >
+                      <i class="fas fa-plane text-warning fs-2"></i>
+                      <div class="mt-2 text-white">10 Countries Visited</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+
+            <!-- Additional tab panes -->
+            <section class="tab-pane fade mb-5" id="resume">
+              <h3 class="text-white mb-1">Resume</h3>
+              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                    <h5 class="text-white">Experience</h5>
+                    <ul class="text-muted mb-0">
+                      <li>Security Engineer — 2022–Present</li>
+                      <li>Penetration Tester — 2020–2022</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                    <h5 class="text-white">Education</h5>
+                    <ul class="text-muted mb-0">
+                      <li>B.Sc. Computer Science</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="tab-pane fade mb-5" id="cases">
+              <h3 class="text-white mb-1">Projects</h3>
+              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                    <h5 class="text-white">Project Alpha</h5>
+                    <p class="text-muted mb-0">Security hardening for fintech platform.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                    <h5 class="text-white">Project Beta</h5>
+                    <p class="text-muted mb-0">IoT vulnerability assessment across devices.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="tab-pane fade mb-5" id="blog">
+              <h3 class="text-white mb-1">Blog</h3>
+              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <ul class="list-group">
+                <li class="list-group-item bg-black text-white border-secondary">Best Practices in Application Security</li>
+                <li class="list-group-item bg-black text-white border-secondary">Understanding ICS Threat Models</li>
+              </ul>
+            </section>
+
+            <section class="tab-pane fade mb-5" id="contact">
+              <h3 class="text-white mb-1">Contact</h3>
+              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <form class="bg-black p-4 rounded-4 border border-secondary">
+                <div class="mb-3">
+                  <label class="form-label text-white">Name</label>
+                  <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text-white">Email</label>
+                  <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="you@example.com">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text-white">Message</label>
+                  <textarea class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Write your message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning text-dark fw-bold">Send</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="custom-footer bg-black border-top border-secondary mt-4">
-        <div class="container py-4">
-            <p class="mb-0 text-center text-muted">© 2023 RyanCV by Bslthemes Team. All rights reserved.</p>
-        </div>
+      <div class="container py-4">
+        <p class="mb-0 text-center text-muted">
+          © 2023 RyanCV by Bslthemes Team. All rights reserved.
+        </p>
+      </div>
     </footer>
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/custom.js"></script>
-</body>
+  </body>
 </html>
