@@ -1,0 +1,54 @@
+/* === Poppins Regular === */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* === Poppins Medium === */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* === Poppins Bold === */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* === Syne Variable Font === */
+@font-face {
+  font-family: 'Syne';
+  src: url('../fonts/Syne-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* === Times New Roman Local === */
+@font-face {
+  font-family: 'Times New Roman Local';
+  src: url('../fonts/TimesNewRoman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Times New Roman Local', serif;
+}
