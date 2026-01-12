@@ -19,7 +19,7 @@
         <section class="section row w-100 justify-content-center">
             
             <!-- Menu Column -->
-            <div class="menu col-auto col-md-1 d-flex align-items-start order-md-last z-3">
+            <div class="menu col-auto col-md-1 d-flex align-items-start order-md-first z-3">
                 
                 <!-- Desktop Sidebar (Sticky) -->
                 <nav class="d-none d-md-flex flex-column bg-black rounded-4 p-3 gap-4 align-items-center shadow-lg sticky-top mt-5" style="top: 2rem; width: 80px; border: 1px solid #333;">
@@ -30,12 +30,13 @@
                     </div>
                     
                     <!-- Navigation Icons -->
-                    <div class="d-flex flex-column align-items-center gap-4 w-100">
-                        <a href="#" class="nav-link text-warning fs-5"><i class="fas fa-user"></i></a>
-                        <a href="#" class="nav-link text-white fs-5"><i class="fas fa-list-alt"></i></a>
-                        <a href="#" class="nav-link text-white fs-5"><i class="fas fa-folder-open"></i></a>
-                        <a href="#" class="nav-link text-white fs-5"><i class="fas fa-newspaper"></i></a>
-                        <a href="#" class="nav-link text-white fs-5"><i class="fas fa-paper-plane"></i></a>
+                    <div class="nav nav-pills flex-column align-items-center gap-4 w-100" role="tablist" aria-orientation="vertical">
+                        <a href="#about" data-bs-toggle="tab" class="nav-link active text-warning p-0 fs-5" role="tab" aria-controls="about" aria-selected="true"><i class="fas fa-user"></i></a>
+                        <a href="#services" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="services" aria-selected="false"><i class="fas fa-list-alt"></i></a>
+                        <a href="#pricing" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="pricing" aria-selected="false"><i class="fas fa-crown"></i></a>
+                        <a href="#clients" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="clients" aria-selected="false"><i class="fas fa-folder-open"></i></a>
+                        <a href="#testimonials" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="testimonials" aria-selected="false"><i class="fas fa-comment-dots"></i></a>
+                        <a href="#funfacts" data-bs-toggle="tab" class="nav-link text-white p-0 fs-5" role="tab" aria-controls="funfacts" aria-selected="false"><i class="fas fa-star"></i></a>
                     </div>
                 </nav>
 
@@ -51,12 +52,13 @@
                             <button class="btn btn-link text-white p-0 fs-5 text-decoration-none"><i class="fas fa-bars"></i></button>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between px-2">
-                        <a href="#" class="nav-link text-warning fs-4"><i class="fas fa-user"></i></a>
-                        <a href="#" class="nav-link text-white fs-4"><i class="fas fa-list-alt"></i></a>
-                        <a href="#" class="nav-link text-white fs-4"><i class="fas fa-folder-open"></i></a>
-                        <a href="#" class="nav-link text-white fs-4"><i class="fas fa-newspaper"></i></a>
-                        <a href="#" class="nav-link text-white fs-4"><i class="fas fa-paper-plane"></i></a>
+                    <div class="nav nav-pills justify-content-between px-2" role="tablist">
+                        <a href="#about" data-bs-toggle="tab" class="nav-link active text-warning fs-4" role="tab" aria-controls="about" aria-selected="true"><i class="fas fa-user"></i></a>
+                        <a href="#services" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="services" aria-selected="false"><i class="fas fa-list-alt"></i></a>
+                        <a href="#pricing" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="pricing" aria-selected="false"><i class="fas fa-crown"></i></a>
+                        <a href="#clients" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="clients" aria-selected="false"><i class="fas fa-folder-open"></i></a>
+                        <a href="#testimonials" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="testimonials" aria-selected="false"><i class="fas fa-comment-dots"></i></a>
+                        <a href="#funfacts" data-bs-toggle="tab" class="nav-link text-white fs-4" role="tab" aria-controls="funfacts" aria-selected="false"><i class="fas fa-star"></i></a>
                     </div>
                 </nav>
             </div>
@@ -91,8 +93,9 @@
                 </div>
             </div>
 
-            <div class="content col-12 col-lg-8">
-                <div class="mb-5">
+            <div class="content col-12 col-lg-7">
+                <div class="tab-content">
+                <section class="tab-pane fade show active mb-5" id="about">
                     <h3 class="text-white mb-1">About Me</h3>
                     <div class="border-top border-warning mb-4" style="width: 120px;"></div>
                     <div class="row g-4">
@@ -130,9 +133,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="mb-5">
+                <section class="tab-pane fade mb-5" id="services">
                     <h3 class="text-white mb-1">My Services</h3>
                     <div class="border-top border-warning mb-4" style="width: 120px;"></div>
                     <div class="row g-4">
@@ -181,9 +184,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="mb-5">
+                <section class="tab-pane fade mb-5" id="pricing">
                     <h3 class="text-white mb-1">Pricing</h3>
                     <div class="border-top border-warning mb-4" style="width: 120px;"></div>
                     <div class="row g-4">
@@ -226,9 +229,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="mb-5">
+                <section class="tab-pane fade mb-5" id="clients">
                     <h3 class="text-white mb-1">Clients</h3>
                     <div class="border-top border-warning mb-4" style="width: 120px;"></div>
                     <div class="row row-cols-2 row-cols-md-4 g-4">
@@ -253,9 +256,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="mb-5">
+                <section class="tab-pane fade mb-5" id="testimonials">
                     <h3 class="text-white mb-1">Testimonials</h3>
                     <div class="border-top border-warning mb-4" style="width: 120px;"></div>
                     <div id="testimonialCarousel" class="carousel slide">
@@ -294,9 +297,9 @@
                             <button class="btn btn-outline-warning btn-sm" data-bs-target="#testimonialCarousel" data-bs-slide="next">Next</button>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="mb-5">
+                <section class="tab-pane fade mb-5" id="funfacts">
                     <h3 class="text-white mb-1">Fun Facts</h3>
                     <div class="border-top border-warning mb-4" style="width: 120px;"></div>
                     <div class="row row-cols-2 row-cols-md-4 g-4">
@@ -325,12 +328,17 @@
                             </div>
                         </div>
                     </div>
+                </section>
                 </div>
             </div>
 
         </section>
     </div>
-    
+    <footer class="custom-footer bg-black border-top border-secondary mt-4">
+        <div class="container py-4">
+            <p class="mb-0 text-center text-muted">© 2023 RyanCV by Bslthemes Team. All rights reserved.</p>
+        </div>
+    </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/custom.js"></script>
