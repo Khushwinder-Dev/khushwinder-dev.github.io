@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khushwinder | Full Stack Developer</title>
+   <link rel="icon" type="image/jpeg" href="./assets/images/fav.jpeg">
     <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -20,11 +21,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="bg-dark text-white">
-
-    <div
-      class="main-frame container d-flex align-items-stretch pt-5 pt-md-0"
-    >
-      <section class="section row w-100 h-100 justify-content-center align-items-stretch">
+    <div class="main-frame container d-flex align-items-stretch pt-5 pt-md-0">
+      <section
+        class="section row w-100 h-100 justify-content-center align-items-stretch"
+      >
         <!-- Menu Column -->
         <div
           class="menu col-auto col-md-1 d-flex align-items-start order-md-first z-3"
@@ -51,30 +51,75 @@
             </div>
 
             <!-- Navigation Icons -->
-            <ul id="menu-main-menu" class="menu nav nav-pills w-100 flex-column gap-2" role="tablist" aria-orientation="vertical">
+            <ul
+              id="menu-main-menu"
+              class="menu nav nav-pills w-100 flex-column gap-2"
+              role="tablist"
+              aria-orientation="vertical"
+            >
               <li class="nav-item">
-                <a href="#about" data-bs-toggle="tab" class="nav-link active d-flex align-items-center gap-2" role="tab" aria-controls="about" aria-selected="true">
-                  <span class="icon far fa-user"></span><span class="name d-none">About</span>
+                <a
+                  href="#about"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light active d-flex align-items-center gap-2"
+                  role="tab"
+                  aria-controls="about"
+                  aria-selected="true"
+                >
+                  <span class="icon far fa-user"></span
+                  ><span class="name d-none">About</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#resume" data-bs-toggle="tab" class="nav-link d-flex align-items-center gap-2" role="tab" aria-controls="resume" aria-selected="false">
-                  <span class="icon far fa-list-alt"></span><span class="name d-none">Resume</span>
+                <a
+                  href="#resume"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light d-flex align-items-center gap-2"
+                  role="tab"
+                  aria-controls="resume"
+                  aria-selected="false"
+                >
+                  <span class="icon far fa-list-alt"></span
+                  ><span class="name d-none">Resume</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#cases" data-bs-toggle="tab" class="nav-link d-flex align-items-center gap-2" role="tab" aria-controls="cases" aria-selected="false">
-                  <span class="icon far fa-folder-open"></span><span class="name d-none">Projects</span>
+                <a
+                  href="#cases"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light d-flex align-items-center gap-2"
+                  role="tab"
+                  aria-controls="cases"
+                  aria-selected="false"
+                >
+                  <span class="icon far fa-folder-open"></span
+                  ><span class="name d-none">Projects</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#blog" data-bs-toggle="tab" class="nav-link d-flex align-items-center gap-2" role="tab" aria-controls="blog" aria-selected="false">
-                  <span class="icon far fa-newspaper"></span><span class="name d-none">Blog</span>
+                <a
+                  href="#blog"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light d-flex align-items-center gap-2"
+                  role="tab"
+                  aria-controls="blog"
+                  aria-selected="false"
+                >
+                  <span class="icon far fa-newspaper"></span
+                  ><span class="name d-none">Blog</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#contact" data-bs-toggle="tab" class="nav-link d-flex align-items-center gap-2" role="tab" aria-controls="contact" aria-selected="false">
-                  <span class="icon far fa-paper-plane"></span><span class="name d-none">Contact</span>
+                <a
+                  href="#contact"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light d-flex align-items-center gap-2"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  <span class="icon far fa-paper-plane"></span
+                  ><span class="name d-none">Contact</span>
                 </a>
               </li>
             </ul>
@@ -89,7 +134,7 @@
               <div class="lh-1">
                 <h5 class="fw-bold text-white m-0">Khushwinder</h5>
                 <small class="text-warning fw-bold" style="font-size: 0.8rem"
-                  >Cryptanalyst</small
+                  >Full Stack Developer</small
                 >
               </div>
               <div class="d-flex gap-3 align-items-center">
@@ -105,12 +150,66 @@
                 </button>
               </div>
             </div>
-            <ul id="menu-main-menu-mobile" class="menu nav nav-pills justify-content-between px-2" role="tablist">
-              <li class="nav-item"><a href="#about" data-bs-toggle="tab" class="nav-link active fs-4" role="tab" aria-controls="about" aria-selected="true"><span class="icon far fa-user"></span></a></li>
-              <li class="nav-item"><a href="#resume" data-bs-toggle="tab" class="nav-link fs-4" role="tab" aria-controls="resume" aria-selected="false"><span class="icon far fa-list-alt"></span></a></li>
-              <li class="nav-item"><a href="#cases" data-bs-toggle="tab" class="nav-link fs-4" role="tab" aria-controls="cases" aria-selected="false"><span class="icon far fa-folder-open"></span></a></li>
-              <li class="nav-item"><a href="#blog" data-bs-toggle="tab" class="nav-link fs-4" role="tab" aria-controls="blog" aria-selected="false"><span class="icon far fa-newspaper"></span></a></li>
-              <li class="nav-item"><a href="#contact" data-bs-toggle="tab" class="nav-link fs-4" role="tab" aria-controls="contact" aria-selected="false"><span class="icon far fa-paper-plane"></span></a></li>
+            <ul
+              id="menu-main-menu-mobile"
+              class="menu nav nav-pills justify-content-between px-2"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <a
+                  href="#about"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light active fs-4"
+                  role="tab"
+                  aria-controls="about"
+                  aria-selected="true"
+                  ><span class="icon far fa-user"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#resume"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light fs-4"
+                  role="tab"
+                  aria-controls="resume"
+                  aria-selected="false"
+                  ><span class="icon far fa-list-alt"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#cases"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light fs-4"
+                  role="tab"
+                  aria-controls="cases"
+                  aria-selected="false"
+                  ><span class="icon far fa-folder-open"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#blog"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light fs-4"
+                  role="tab"
+                  aria-controls="blog"
+                  aria-selected="false"
+                  ><span class="icon far fa-newspaper"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#contact"
+                  data-bs-toggle="tab"
+                  class="nav-link text-light fs-4"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  ><span class="icon far fa-paper-plane"></span
+                ></a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -121,8 +220,16 @@
           >
             <!-- Profile Image -->
             <div class="image-container position-relative">
-              <img
+              <!-- <img
                 src="http://test4.local/wp-content/uploads/2023/03/calm-happy-smiling-caucasian-man-s-portrait-gradient-studio-background-neon-light-beautiful-male-model-with-hipster-style-earphones-concept-human-emotions-facial-expression-ad-scaled-1.jpeg"
+                class="card-img-top"
+                alt="Khushwinder"
+                style="height: 500px; object-fit: cover"
+              /> -->
+              
+              
+              <img
+                src="/assets/images/Profile.jpg"
                 class="card-img-top"
                 alt="Khushwinder"
                 style="height: 500px; object-fit: cover"
@@ -141,6 +248,9 @@
                 "
               >
                 <h2 class="fw-bold text-center mb-1">Khushwinder</h2>
+                <div class="text-center text-white-50">
+                  Full Stack Developer
+                </div>
 
                 <!-- Social Icons -->
                 <div class="d-flex justify-content-center gap-3 my-3">
@@ -186,10 +296,11 @@
                   <div class="col-md-6">
                     <div class="p-3 bg-black rounded-3 border border-secondary">
                       <p class="mb-0">
-                        <strong>Hello! I’m Khushwinder.</strong> I have rich
-                        experience in protection valuable digital assets, defend
-                        against cyber threats, and ensure compliance with data
-                        protection regulations.
+                        <strong>Hello! I’m Khushwinder.</strong> I’m a Full
+                        Stack Developer with 4 years of experience building web
+                        applications across WordPress, Shopify, React, Laravel,
+                        and Java Spring Boot. I work with MySQL, PostgreSQL, and
+                        PHP, delivering robust frontends and scalable backends.
                       </p>
                     </div>
                   </div>
@@ -203,7 +314,7 @@
                             class="badge bg-warning text-dark text-uppercase"
                             >Age</span
                           >
-                          <span class="text-white">24</span>
+                          <span class="text-white">28</span>
                         </div>
                       </div>
                       <div class="col-6">
@@ -214,7 +325,7 @@
                             class="badge bg-warning text-dark text-uppercase"
                             >Residence</span
                           >
-                          <span class="text-white">USA</span>
+                          <span class="text-white">India</span>
                         </div>
                       </div>
                       <div class="col-6">
@@ -236,7 +347,7 @@
                             class="badge bg-warning text-dark text-uppercase"
                             >Address</span
                           >
-                          <span class="text-white">California, USA</span>
+                          <span class="text-white">Mohali, India</span>
                         </div>
                       </div>
                     </div>
@@ -260,13 +371,13 @@
                           class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
                           style="width: 48px; height: 48px"
                         >
-                          <i class="fas fa-shield-alt text-dark"></i>
+                          <i class="fab fa-wordpress text-dark"></i>
                         </div>
-                        <h5 class="m-0 text-white">Application Security</h5>
+                        <h5 class="m-0 text-white">WordPress & Shopify</h5>
                       </div>
                       <p class="text-muted mb-0">
-                        Troubleshoot security concerns, assess strategies, and
-                        protect organizational assets.
+                        Theme development, custom plugins/apps, headless
+                        storefronts, and performance optimization for eCommerce.
                       </p>
                     </div>
                   </div>
@@ -279,13 +390,13 @@
                           class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
                           style="width: 48px; height: 48px"
                         >
-                          <i class="far fa-credit-card text-dark"></i>
+                          <i class="fab fa-react text-dark"></i>
                         </div>
-                        <h5 class="m-0 text-white">Payment Systems Security</h5>
+                        <h5 class="m-0 text-white">React Frontend</h5>
                       </div>
                       <p class="text-muted mb-0">
-                        Secure information and payments for businesses to
-                        protect the organization.
+                        SPAs and dashboards with reusable components, state
+                        management, and responsive UI.
                       </p>
                     </div>
                   </div>
@@ -298,13 +409,13 @@
                           class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
                           style="width: 48px; height: 48px"
                         >
-                          <i class="fas fa-clipboard-list text-dark"></i>
+                          <i class="fab fa-laravel text-dark"></i>
                         </div>
-                        <h5 class="m-0 text-white">Strategy Consultation</h5>
+                        <h5 class="m-0 text-white">Laravel & PHP Backend</h5>
                       </div>
                       <p class="text-muted mb-0">
-                        Corporate strategy, economic policy, and mergers with a
-                        security perspective.
+                        REST APIs, authentication, billing, and integrations
+                        backed by MySQL/PostgreSQL.
                       </p>
                     </div>
                   </div>
@@ -317,13 +428,13 @@
                           class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
                           style="width: 48px; height: 48px"
                         >
-                          <i class="fas fa-microchip text-dark"></i>
+                          <i class="fab fa-java text-dark"></i>
                         </div>
-                        <h5 class="m-0 text-white">IoT Security Assessment</h5>
+                        <h5 class="m-0 text-white">Spring Boot Services</h5>
                       </div>
                       <p class="text-muted mb-0">
-                        Assess and harden connected devices against evolving
-                        attack vectors.
+                        Microservices, job processing, and secure APIs for
+                        scalable backends.
                       </p>
                     </div>
                   </div>
@@ -354,11 +465,11 @@
                         29<span class="fs-6 text-white">/hour</span>
                       </div>
                       <ul class="list-unstyled text-muted mb-4">
-                        <li class="mb-1">Penetration Testing</li>
-                        <li class="mb-1">Application Security Assessment</li>
-                        <li class="mb-1">ICS Security</li>
-                        <li class="mb-1">IoT Security Assessment</li>
-                        <li class="mb-1">Risk management</li>
+                        <li class="mb-1">WordPress/Shopify development</li>
+                        <li class="mb-1">React UI implementation</li>
+                        <li class="mb-1">Laravel REST APIs</li>
+                        <li class="mb-1">Database design (MySQL/PostgreSQL)</li>
+                        <li class="mb-1">Basic integrations</li>
                       </ul>
                       <a
                         href="#"
@@ -384,11 +495,11 @@
                         59<span class="fs-6 text-white">/hour</span>
                       </div>
                       <ul class="list-unstyled text-muted mb-4">
-                        <li class="mb-1">Advanced Penetration Testing</li>
-                        <li class="mb-1">Red Team Assessment</li>
-                        <li class="mb-1">ICS Security</li>
-                        <li class="mb-1">IoT Security Assessment</li>
-                        <li class="mb-1">Risk management</li>
+                        <li class="mb-1">Headless commerce builds</li>
+                        <li class="mb-1">Advanced React apps</li>
+                        <li class="mb-1">Spring Boot microservices</li>
+                        <li class="mb-1">Complex integrations</li>
+                        <li class="mb-1">Performance optimization</li>
                       </ul>
                       <a
                         href="#"
@@ -557,161 +668,225 @@
             <!-- Additional tab panes -->
             <section class="tab-pane fade mb-5" id="resume">
               <h3 class="text-white mb-1">Resume</h3>
-              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <div
+                class="border-top border-warning mb-4"
+                style="width: 120px"
+              ></div>
               <div class="row g-4">
                 <div class="col-md-6">
-                  <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                  <div
+                    class="p-4 bg-black rounded-4 border border-secondary h-100"
+                  >
                     <div class="d-flex align-items-center gap-3 mb-3">
-                      <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:36px;height:36px;">
+                      <div
+                        class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                        style="width: 36px; height: 36px"
+                      >
                         <i class="fas fa-briefcase text-dark"></i>
                       </div>
                       <h5 class="m-0 text-white">Experience</h5>
                     </div>
                     <div class="border-top border-secondary mb-3"></div>
                     <div class="mb-3">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-warning text-dark">2013 – Present</span>
-                        <i class="fa-brands fa-google text-white fs-5"></i>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="badge bg-warning text-dark"
+                          >2024 – Present</span
+                        >
+                        <i class="fas fa-building text-white fs-5"></i>
                       </div>
-                      <h6 class="text-white mt-2 mb-1">Cyber Security Engineer</h6>
-                      <div class="text-muted mb-2">Google Inc.</div>
-                      <p class="text-muted mb-0">Trusted advisor providing practical security guidance and solutions.</p>
-                    </div>
-                    <div class="border-top border-secondary my-3"></div>
-                    <div class="mb-3">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-secondary">2011 – 2013</span>
-                        <i class="fa-brands fa-upwork text-white fs-5"></i>
-                      </div>
-                      <h6 class="text-white mt-2 mb-1">Cryptanalyst</h6>
-                      <div class="text-muted mb-2">Upwork Inc.</div>
-                      <p class="text-muted mb-0">External consultant delivering expertise on temporary basis.</p>
+                      <h6 class="text-white mt-2 mb-1">Full Stack Developer</h6>
+                      <div class="text-muted mb-2">Vezire Technologies</div>
+                      <p class="text-muted mb-0">
+                        Deliver backend services with Laravel and Spring Boot,
+                        and frontend applications in React. Implement
+                        microservices, authentication, and integrations with
+                        MySQL/PostgreSQL.
+                      </p>
                     </div>
                     <div class="border-top border-secondary my-3"></div>
                     <div>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-secondary">2009 – 2011</span>
-                        <i class="fa-brands fa-envira text-white fs-5"></i>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="badge bg-secondary">2022 – 2024</span>
+                        <i class="fas fa-building text-white fs-5"></i>
                       </div>
-                      <h6 class="text-white mt-2 mb-1">Security Administrator</h6>
-                      <div class="text-muted mb-2">Envato Inc.</div>
-                      <p class="text-muted mb-0">Helped businesses manage technology use and security operations.</p>
+                      <h6 class="text-white mt-2 mb-1">Full Stack Developer</h6>
+                      <div class="text-muted mb-2">
+                        Protolabz Eservices — Mohali, India
+                      </div>
+                      <p class="text-muted mb-0">
+                        Built solutions across WordPress, Shopify, Laravel, and
+                        React. Led theme development, custom plugins, headless
+                        storefronts, and REST APIs.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                  <div
+                    class="p-4 bg-black rounded-4 border border-secondary h-100"
+                  >
                     <div class="d-flex align-items-center gap-3 mb-3">
-                      <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:36px;height:36px;">
+                      <div
+                        class="rounded-circle bg-warning d-flex align-items-center justify-content-center"
+                        style="width: 36px; height: 36px"
+                      >
                         <i class="fas fa-graduation-cap text-dark"></i>
                       </div>
                       <h5 class="m-0 text-white">Education</h5>
                     </div>
                     <div class="border-top border-secondary mb-3"></div>
                     <div class="mb-3">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-secondary">2006 – 2008</span>
-                        <span class="text-white fw-semibold">New York University</span>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="badge bg-secondary">2016 – 2020</span>
+                        <span class="text-white fw-semibold"
+                          >B.Tech in Electronics & Communication
+                          Engineering</span
+                        >
                       </div>
-                      <div class="text-muted">New York City</div>
-                      <p class="text-muted mb-2">Active member of student clubs and organizations.</p>
-                      <a href="#" class="btn btn-sm btn-outline-warning">Certificate</a>
-                    </div>
-                    <div class="border-top border-secondary my-3"></div>
-                    <div class="mb-3">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-secondary">2005 – 2006</span>
-                        <span class="text-white fw-semibold">Cyber Security Course</span>
+                      <div class="text-muted">
+                        GNA University, Phagwara, Punjab, India
                       </div>
-                      <div class="text-muted">Paris</div>
-                      <p class="text-muted mb-2">Online business courses from Harvard University.</p>
-                      <a href="#" class="btn btn-sm btn-outline-warning">Certificate</a>
-                    </div>
-                    <div class="border-top border-secondary my-3"></div>
-                    <div>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-secondary">2004 – 2006</span>
-                        <span class="text-white fw-semibold">Software Development Course</span>
-                      </div>
-                      <div class="text-muted">London</div>
-                      <p class="text-muted mb-2">Online training program for professionals.</p>
-                      <a href="#" class="btn btn-sm btn-outline-warning">Certificate</a>
+                      <p class="text-muted mb-2">
+                        Bachelor of Technology focused on electronics,
+                        communication systems, and applied engineering.
+                      </p>
+                      <a href="#" class="btn btn-sm btn-outline-warning"
+                        >Certificate</a
+                      >
                     </div>
                   </div>
                 </div>
               </div>
               <div class="mt-5">
                 <h3 class="text-white mb-1">Skills</h3>
-                <div class="border-top border-warning mb-4" style="width: 120px"></div>
+                <div
+                  class="border-top border-warning mb-4"
+                  style="width: 120px"
+                ></div>
                 <div class="row g-4">
                   <div class="col-md-6">
-                    <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
                       <div class="d-flex align-items-center gap-3 mb-3">
-                        <div class="rounded-3 bg-warning d-flex align-items-center justify-content-center" style="width:36px;height:36px;">
+                        <div
+                          class="rounded-3 bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 36px; height: 36px"
+                        >
                           <i class="fas fa-flag text-dark"></i>
                         </div>
                         <h5 class="m-0 text-white">Overall</h5>
                       </div>
                       <div class="mb-3">
-                        <div class="text-white mb-1">Information Security Consultation</div>
-                        <div class="progress" style="height:6px;">
-                          <div class="progress-bar bg-warning" style="width: 85%;"></div>
+                        <div class="text-white mb-1">
+                          Information Security Consultation
+                        </div>
+                        <div class="progress" style="height: 6px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 85%"
+                          ></div>
                         </div>
                       </div>
                       <div class="mb-3">
                         <div class="text-white mb-1">Cyber Security</div>
-                        <div class="progress" style="height:6px;">
-                          <div class="progress-bar bg-warning" style="width: 90%;"></div>
+                        <div class="progress" style="height: 6px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 90%"
+                          ></div>
                         </div>
                       </div>
                       <div class="mb-3">
                         <div class="text-white mb-1">Cyber Intelligence</div>
-                        <div class="progress" style="height:6px;">
-                          <div class="progress-bar bg-warning" style="width: 80%;"></div>
+                        <div class="progress" style="height: 6px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 80%"
+                          ></div>
                         </div>
                       </div>
                       <div>
-                        <div class="text-white mb-1">Security Software Development</div>
-                        <div class="progress" style="height:6px;">
-                          <div class="progress-bar bg-warning" style="width: 70%;"></div>
+                        <div class="text-white mb-1">
+                          Security Software Development
+                        </div>
+                        <div class="progress" style="height: 6px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 70%"
+                          ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
                       <div class="d-flex align-items-center gap-3 mb-3">
-                        <div class="rounded-3 bg-warning d-flex align-items-center justify-content-center" style="width:36px;height:36px;">
+                        <div
+                          class="rounded-3 bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 36px; height: 36px"
+                        >
                           <i class="fas fa-flag text-dark"></i>
                         </div>
                         <h5 class="m-0 text-white">Languages</h5>
                       </div>
-                      <div class="mb-2 d-flex align-items-center justify-content-between">
+                      <div
+                        class="mb-2 d-flex align-items-center justify-content-between"
+                      >
                         <span class="text-white">English</span>
                         <span>
-                          <span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span>
+                          <span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span>
                           <span class="badge bg-secondary">&nbsp;</span>
                         </span>
                       </div>
-                      <div class="mb-2 d-flex align-items-center justify-content-between">
+                      <div
+                        class="mb-2 d-flex align-items-center justify-content-between"
+                      >
                         <span class="text-white">German</span>
                         <span>
-                          <span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span>
-                          <span class="badge bg-secondary me-1">&nbsp;</span><span class="badge bg-secondary me-1">&nbsp;</span><span class="badge bg-secondary">&nbsp;</span>
+                          <span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span>
+                          <span class="badge bg-secondary me-1">&nbsp;</span
+                          ><span class="badge bg-secondary me-1">&nbsp;</span
+                          ><span class="badge bg-secondary">&nbsp;</span>
                         </span>
                       </div>
-                      <div class="mb-2 d-flex align-items-center justify-content-between">
+                      <div
+                        class="mb-2 d-flex align-items-center justify-content-between"
+                      >
                         <span class="text-white">Italian</span>
                         <span>
-                          <span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span>
-                          <span class="badge bg-secondary me-1">&nbsp;</span><span class="badge bg-secondary me-1">&nbsp;</span><span class="badge bg-secondary me-1">&nbsp;</span><span class="badge bg-secondary">&nbsp;</span>
+                          <span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span>
+                          <span class="badge bg-secondary me-1">&nbsp;</span
+                          ><span class="badge bg-secondary me-1">&nbsp;</span
+                          ><span class="badge bg-secondary me-1">&nbsp;</span
+                          ><span class="badge bg-secondary">&nbsp;</span>
                         </span>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span class="text-white">French</span>
                         <span>
-                          <span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span><span class="badge bg-warning me-1">&nbsp;</span>
-                          <span class="badge bg-secondary me-1">&nbsp;</span><span class="badge bg-secondary">&nbsp;</span>
+                          <span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span
+                          ><span class="badge bg-warning me-1">&nbsp;</span>
+                          <span class="badge bg-secondary me-1">&nbsp;</span
+                          ><span class="badge bg-secondary">&nbsp;</span>
                         </span>
                       </div>
                     </div>
@@ -719,47 +894,109 @@
                 </div>
                 <div class="row g-4 mt-1">
                   <div class="col-md-6">
-                    <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
                       <div class="d-flex align-items-center gap-3 mb-3">
-                        <div class="rounded-3 bg-warning d-flex align-items-center justify-content-center" style="width:36px;height:36px;">
+                        <div
+                          class="rounded-3 bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 36px; height: 36px"
+                        >
                           <i class="fas fa-clipboard-check text-dark"></i>
                         </div>
                         <h5 class="m-0 text-white">Checklist</h5>
                       </div>
                       <div class="mb-3">
-                        <div class="d-flex justify-content-between"><span class="text-white">Data analysis</span><span class="text-warning">90%</span></div>
-                        <div class="progress" style="height:6px;"><div class="progress-bar bg-warning" style="width:90%;"></div></div>
+                        <div class="d-flex justify-content-between">
+                          <span class="text-white">Data analysis</span
+                          ><span class="text-warning">90%</span>
+                        </div>
+                        <div class="progress" style="height: 6px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 90%"
+                          ></div>
+                        </div>
                       </div>
                       <div class="mb-3">
-                        <div class="d-flex justify-content-between"><span class="text-white">Collaboration</span><span class="text-warning">75%</span></div>
-                        <div class="progress" style="height:6px;"><div class="progress-bar bg-warning" style="width:75%;"></div></div>
+                        <div class="d-flex justify-content-between">
+                          <span class="text-white">Collaboration</span
+                          ><span class="text-warning">75%</span>
+                        </div>
+                        <div class="progress" style="height: 6px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 75%"
+                          ></div>
+                        </div>
                       </div>
                       <div class="mb-3">
-                        <div class="d-flex justify-content-between"><span class="text-white">Adaptability</span><span class="text-warning">85%</span></div>
-                        <div class="progress" style="height:6px;"><div class="progress-bar bg-warning" style="width:85%;"></div></div>
+                        <div class="d-flex justify-content-between">
+                          <span class="text-white">Adaptability</span
+                          ><span class="text-warning">85%</span>
+                        </div>
+                        <div class="progress" style="height: 6px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 85%"
+                          ></div>
+                        </div>
                       </div>
                       <div>
-                        <div class="d-flex justify-content-between"><span class="text-white">Critical thinking</span><span class="text-warning">95%</span></div>
-                        <div class="progress" style="height:6px;"><div class="progress-bar bg-warning" style="width:95%;"></div></div>
+                        <div class="d-flex justify-content-between">
+                          <span class="text-white">Critical thinking</span
+                          ><span class="text-warning">95%</span>
+                        </div>
+                        <div class="progress" style="height: 6px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 95%"
+                          ></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="p-4 bg-black rounded-4 border border-secondary h-100">
+                    <div
+                      class="p-4 bg-black rounded-4 border border-secondary h-100"
+                    >
                       <div class="d-flex align-items-center gap-3 mb-3">
-                        <div class="rounded-3 bg-warning d-flex align-items-center justify-content-center" style="width:36px;height:36px;">
+                        <div
+                          class="rounded-3 bg-warning d-flex align-items-center justify-content-center"
+                          style="width: 36px; height: 36px"
+                        >
                           <i class="fas fa-book text-dark"></i>
                         </div>
                         <h5 class="m-0 text-white">Knowledge</h5>
                       </div>
                       <ul class="list-unstyled text-muted mb-0">
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Creative thinking</li>
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Problem-solving</li>
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Practical thinking</li>
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Teamwork</li>
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Excellent decision-making</li>
-                        <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Communication</li>
-                        <li><i class="fas fa-check text-warning me-2"></i>Adaptability</li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-warning me-2"></i>Creative
+                          thinking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-warning me-2"></i
+                          >Problem-solving
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-warning me-2"></i
+                          >Practical thinking
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-warning me-2"></i>Teamwork
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-warning me-2"></i
+                          >Excellent decision-making
+                        </li>
+                        <li class="mb-2">
+                          <i class="fas fa-check text-warning me-2"></i
+                          >Communication
+                        </li>
+                        <li>
+                          <i class="fas fa-check text-warning me-2"></i
+                          >Adaptability
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -769,27 +1006,78 @@
 
             <section class="tab-pane fade mb-5" id="cases">
               <h3 class="text-white mb-1">Works</h3>
-              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <div
+                class="border-top border-warning mb-4"
+                style="width: 120px"
+              ></div>
 
               <!-- Filter pills -->
               <ul class="nav nav-pills mb-4 gap-2">
                 <li class="nav-item">
-                  <a class="nav-link active" data-bs-toggle="tab" href="#cases-all" role="tab" aria-controls="cases-all" aria-selected="true">All</a>
+                  <a
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    href="#cases-all"
+                    role="tab"
+                    aria-controls="cases-all"
+                    aria-selected="true"
+                    >All</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#cases-video" role="tab" aria-controls="cases-video" aria-selected="false">Video</a>
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#cases-video"
+                    role="tab"
+                    aria-controls="cases-video"
+                    aria-selected="false"
+                    >Video</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#cases-link" role="tab" aria-controls="cases-link" aria-selected="false">Link</a>
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#cases-link"
+                    role="tab"
+                    aria-controls="cases-link"
+                    aria-selected="false"
+                    >Link</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#cases-image" role="tab" aria-controls="cases-image" aria-selected="false">Image</a>
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#cases-image"
+                    role="tab"
+                    aria-controls="cases-image"
+                    aria-selected="false"
+                    >Image</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#cases-gallery" role="tab" aria-controls="cases-gallery" aria-selected="false">Gallery</a>
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#cases-gallery"
+                    role="tab"
+                    aria-controls="cases-gallery"
+                    aria-selected="false"
+                    >Gallery</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#cases-content" role="tab" aria-controls="cases-content" aria-selected="false">Content</a>
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#cases-content"
+                    role="tab"
+                    aria-controls="cases-content"
+                    aria-selected="false"
+                    >Content</a
+                  >
                 </li>
               </ul>
 
@@ -800,72 +1088,120 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/brand1/600/400" class="card-img-top" alt="Corporate Stationery Branding">
+                        <img
+                          src="https://picsum.photos/seed/brand1/600/400"
+                          class="card-img-top"
+                          alt="Corporate Stationery Branding"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Corporate Stationery Branding</h5>
+                          <h5 class="card-title text-white">
+                            Corporate Stationery Branding
+                          </h5>
                           <div class="text-muted">Gallery</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/brand2/600/400" class="card-img-top" alt="Corporate Stationery Branding">
+                        <img
+                          src="https://picsum.photos/seed/brand2/600/400"
+                          class="card-img-top"
+                          alt="Corporate Stationery Branding"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Corporate Stationery Branding</h5>
+                          <h5 class="card-title text-white">
+                            Corporate Stationery Branding
+                          </h5>
                           <div class="text-muted">Gallery</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/techlogo1/600/400" class="card-img-top" alt="Technology Logo Idea">
+                        <img
+                          src="https://picsum.photos/seed/techlogo1/600/400"
+                          class="card-img-top"
+                          alt="Technology Logo Idea"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Technology Logo Idea</h5>
+                          <h5 class="card-title text-white">
+                            Technology Logo Idea
+                          </h5>
                           <div class="text-muted">Image</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/techlogo2/600/400" class="card-img-top" alt="Technology Logo Idea">
+                        <img
+                          src="https://picsum.photos/seed/techlogo2/600/400"
+                          class="card-img-top"
+                          alt="Technology Logo Idea"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Technology Logo Idea</h5>
+                          <h5 class="card-title text-white">
+                            Technology Logo Idea
+                          </h5>
                           <div class="text-muted">Image</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/report1/600/400" class="card-img-top" alt="Business Annual Report">
+                        <img
+                          src="https://picsum.photos/seed/report1/600/400"
+                          class="card-img-top"
+                          alt="Business Annual Report"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Business Annual Report</h5>
+                          <h5 class="card-title text-white">
+                            Business Annual Report
+                          </h5>
                           <div class="text-muted">Link</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/report2/600/400" class="card-img-top" alt="Business Annual Report">
+                        <img
+                          src="https://picsum.photos/seed/report2/600/400"
+                          class="card-img-top"
+                          alt="Business Annual Report"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Business Annual Report</h5>
+                          <h5 class="card-title text-white">
+                            Business Annual Report
+                          </h5>
                           <div class="text-muted">Link</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/card1/600/400" class="card-img-top" alt="Business Card Idea">
+                        <img
+                          src="https://picsum.photos/seed/card1/600/400"
+                          class="card-img-top"
+                          alt="Business Card Idea"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Business Card Idea</h5>
+                          <h5 class="card-title text-white">
+                            Business Card Idea
+                          </h5>
                           <div class="text-muted">Video</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/card2/600/400" class="card-img-top" alt="Business Card Idea">
+                        <img
+                          src="https://picsum.photos/seed/card2/600/400"
+                          class="card-img-top"
+                          alt="Business Card Idea"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Business Card Idea</h5>
+                          <h5 class="card-title text-white">
+                            Business Card Idea
+                          </h5>
                           <div class="text-muted">Video</div>
                         </div>
                       </div>
@@ -878,18 +1214,30 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/card1/600/400" class="card-img-top" alt="Business Card Idea">
+                        <img
+                          src="https://picsum.photos/seed/card1/600/400"
+                          class="card-img-top"
+                          alt="Business Card Idea"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Business Card Idea</h5>
+                          <h5 class="card-title text-white">
+                            Business Card Idea
+                          </h5>
                           <div class="text-muted">Video</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/card2/600/400" class="card-img-top" alt="Business Card Idea">
+                        <img
+                          src="https://picsum.photos/seed/card2/600/400"
+                          class="card-img-top"
+                          alt="Business Card Idea"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Business Card Idea</h5>
+                          <h5 class="card-title text-white">
+                            Business Card Idea
+                          </h5>
                           <div class="text-muted">Video</div>
                         </div>
                       </div>
@@ -902,18 +1250,30 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/report1/600/400" class="card-img-top" alt="Business Annual Report">
+                        <img
+                          src="https://picsum.photos/seed/report1/600/400"
+                          class="card-img-top"
+                          alt="Business Annual Report"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Business Annual Report</h5>
+                          <h5 class="card-title text-white">
+                            Business Annual Report
+                          </h5>
                           <div class="text-muted">Link</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/report2/600/400" class="card-img-top" alt="Business Annual Report">
+                        <img
+                          src="https://picsum.photos/seed/report2/600/400"
+                          class="card-img-top"
+                          alt="Business Annual Report"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Business Annual Report</h5>
+                          <h5 class="card-title text-white">
+                            Business Annual Report
+                          </h5>
                           <div class="text-muted">Link</div>
                         </div>
                       </div>
@@ -926,18 +1286,30 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/techlogo1/600/400" class="card-img-top" alt="Technology Logo Idea">
+                        <img
+                          src="https://picsum.photos/seed/techlogo1/600/400"
+                          class="card-img-top"
+                          alt="Technology Logo Idea"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Technology Logo Idea</h5>
+                          <h5 class="card-title text-white">
+                            Technology Logo Idea
+                          </h5>
                           <div class="text-muted">Image</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/techlogo2/600/400" class="card-img-top" alt="Technology Logo Idea">
+                        <img
+                          src="https://picsum.photos/seed/techlogo2/600/400"
+                          class="card-img-top"
+                          alt="Technology Logo Idea"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Technology Logo Idea</h5>
+                          <h5 class="card-title text-white">
+                            Technology Logo Idea
+                          </h5>
                           <div class="text-muted">Image</div>
                         </div>
                       </div>
@@ -950,18 +1322,30 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/brand1/600/400" class="card-img-top" alt="Corporate Stationery Branding">
+                        <img
+                          src="https://picsum.photos/seed/brand1/600/400"
+                          class="card-img-top"
+                          alt="Corporate Stationery Branding"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Corporate Stationery Branding</h5>
+                          <h5 class="card-title text-white">
+                            Corporate Stationery Branding
+                          </h5>
                           <div class="text-muted">Gallery</div>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/brand2/600/400" class="card-img-top" alt="Corporate Stationery Branding">
+                        <img
+                          src="https://picsum.photos/seed/brand2/600/400"
+                          class="card-img-top"
+                          alt="Corporate Stationery Branding"
+                        />
                         <div class="card-body">
-                          <h5 class="card-title text-white">Corporate Stationery Branding</h5>
+                          <h5 class="card-title text-white">
+                            Corporate Stationery Branding
+                          </h5>
                           <div class="text-muted">Gallery</div>
                         </div>
                       </div>
@@ -974,7 +1358,11 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/content1/600/400" class="card-img-top" alt="Case Study">
+                        <img
+                          src="https://picsum.photos/seed/content1/600/400"
+                          class="card-img-top"
+                          alt="Case Study"
+                        />
                         <div class="card-body">
                           <h5 class="card-title text-white">Case Study</h5>
                           <div class="text-muted">Content</div>
@@ -983,7 +1371,11 @@
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/content2/600/400" class="card-img-top" alt="Case Study">
+                        <img
+                          src="https://picsum.photos/seed/content2/600/400"
+                          class="card-img-top"
+                          alt="Case Study"
+                        />
                         <div class="card-body">
                           <h5 class="card-title text-white">Case Study</h5>
                           <div class="text-muted">Content</div>
@@ -997,14 +1389,67 @@
 
             <section class="tab-pane fade mb-5" id="blog">
               <h3 class="text-white mb-1">Blog</h3>
-              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <div
+                class="border-top border-warning mb-4"
+                style="width: 120px"
+              ></div>
 
               <ul class="nav nav-pills mb-4 gap-2">
-                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#blog-all" role="tab" aria-controls="blog-all" aria-selected="true">All</a></li>
-                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#blog-uncategorized" role="tab" aria-controls="blog-uncategorized" aria-selected="false">Uncategorized</a></li>
-                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#blog-music" role="tab" aria-controls="blog-music" aria-selected="false">Music</a></li>
-                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#blog-design" role="tab" aria-controls="blog-design" aria-selected="false">Design</a></li>
-                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#blog-code" role="tab" aria-controls="blog-code" aria-selected="false">Code</a></li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    href="#blog-all"
+                    role="tab"
+                    aria-controls="blog-all"
+                    aria-selected="true"
+                    >All</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#blog-uncategorized"
+                    role="tab"
+                    aria-controls="blog-uncategorized"
+                    aria-selected="false"
+                    >Uncategorized</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#blog-music"
+                    role="tab"
+                    aria-controls="blog-music"
+                    aria-selected="false"
+                    >Music</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#blog-design"
+                    role="tab"
+                    aria-controls="blog-design"
+                    aria-selected="false"
+                    >Design</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    href="#blog-code"
+                    role="tab"
+                    aria-controls="blog-code"
+                    aria-selected="false"
+                    >Code</a
+                  >
+                </li>
               </ul>
 
               <div class="tab-content">
@@ -1012,41 +1457,83 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/blog1/600/400" class="card-img-top" alt="Post image">
+                        <img
+                          src="https://picsum.photos/seed/blog1/600/400"
+                          class="card-img-top"
+                          alt="Post image"
+                        />
                         <div class="card-body">
-                          <span class="badge bg-warning text-dark mb-2">November 28, 2025</span>
+                          <span class="badge bg-warning text-dark mb-2"
+                            >November 28, 2025</span
+                          >
                           <h5 class="card-title text-white">Hello world!</h5>
-                          <p class="card-text text-muted mb-0">Welcome to WordPress. Edit or delete it, then start writing!</p>
+                          <p class="card-text text-muted mb-0">
+                            Welcome to WordPress. Edit or delete it, then start
+                            writing!
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/blog2/600/400" class="card-img-top" alt="Post image">
+                        <img
+                          src="https://picsum.photos/seed/blog2/600/400"
+                          class="card-img-top"
+                          alt="Post image"
+                        />
                         <div class="card-body">
-                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
-                          <h5 class="card-title text-white">By spite about do of allow</h5>
-                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                          <span class="badge bg-warning text-dark mb-2"
+                            >April 28, 2020</span
+                          >
+                          <h5 class="card-title text-white">
+                            By spite about do of allow
+                          </h5>
+                          <p class="card-text text-muted mb-0">
+                            Ex audire suavitate has, ei quasi tacimates
+                            sapientem sed.
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/blog3/600/400" class="card-img-top" alt="Post image">
+                        <img
+                          src="https://picsum.photos/seed/blog3/600/400"
+                          class="card-img-top"
+                          alt="Post image"
+                        />
                         <div class="card-body">
-                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
-                          <h5 class="card-title text-white">A Song And Dance Act</h5>
-                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                          <span class="badge bg-warning text-dark mb-2"
+                            >April 28, 2020</span
+                          >
+                          <h5 class="card-title text-white">
+                            A Song And Dance Act
+                          </h5>
+                          <p class="card-text text-muted mb-0">
+                            Ex audire suavitate has, ei quasi tacimates
+                            sapientem sed.
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/blog4/600/400" class="card-img-top" alt="Post image">
+                        <img
+                          src="https://picsum.photos/seed/blog4/600/400"
+                          class="card-img-top"
+                          alt="Post image"
+                        />
                         <div class="card-body">
-                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
-                          <h5 class="card-title text-white">Music Player Design</h5>
-                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                          <span class="badge bg-warning text-dark mb-2"
+                            >April 28, 2020</span
+                          >
+                          <h5 class="card-title text-white">
+                            Music Player Design
+                          </h5>
+                          <p class="card-text text-muted mb-0">
+                            Ex audire suavitate has, ei quasi tacimates
+                            sapientem sed.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1057,11 +1544,20 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/blog1/600/400" class="card-img-top" alt="Post image">
+                        <img
+                          src="https://picsum.photos/seed/blog1/600/400"
+                          class="card-img-top"
+                          alt="Post image"
+                        />
                         <div class="card-body">
-                          <span class="badge bg-warning text-dark mb-2">November 28, 2025</span>
+                          <span class="badge bg-warning text-dark mb-2"
+                            >November 28, 2025</span
+                          >
                           <h5 class="card-title text-white">Hello world!</h5>
-                          <p class="card-text text-muted mb-0">Welcome to WordPress. Edit or delete it, then start writing!</p>
+                          <p class="card-text text-muted mb-0">
+                            Welcome to WordPress. Edit or delete it, then start
+                            writing!
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1072,11 +1568,22 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/blog4/600/400" class="card-img-top" alt="Post image">
+                        <img
+                          src="https://picsum.photos/seed/blog4/600/400"
+                          class="card-img-top"
+                          alt="Post image"
+                        />
                         <div class="card-body">
-                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
-                          <h5 class="card-title text-white">Music Player Design</h5>
-                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                          <span class="badge bg-warning text-dark mb-2"
+                            >April 28, 2020</span
+                          >
+                          <h5 class="card-title text-white">
+                            Music Player Design
+                          </h5>
+                          <p class="card-text text-muted mb-0">
+                            Ex audire suavitate has, ei quasi tacimates
+                            sapientem sed.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1087,11 +1594,22 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/blog2/600/400" class="card-img-top" alt="Post image">
+                        <img
+                          src="https://picsum.photos/seed/blog2/600/400"
+                          class="card-img-top"
+                          alt="Post image"
+                        />
                         <div class="card-body">
-                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
-                          <h5 class="card-title text-white">By spite about do of allow</h5>
-                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                          <span class="badge bg-warning text-dark mb-2"
+                            >April 28, 2020</span
+                          >
+                          <h5 class="card-title text-white">
+                            By spite about do of allow
+                          </h5>
+                          <p class="card-text text-muted mb-0">
+                            Ex audire suavitate has, ei quasi tacimates
+                            sapientem sed.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1102,11 +1620,22 @@
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                       <div class="card bg-black border border-secondary h-100">
-                        <img src="https://picsum.photos/seed/blog3/600/400" class="card-img-top" alt="Post image">
+                        <img
+                          src="https://picsum.photos/seed/blog3/600/400"
+                          class="card-img-top"
+                          alt="Post image"
+                        />
                         <div class="card-body">
-                          <span class="badge bg-warning text-dark mb-2">April 28, 2020</span>
-                          <h5 class="card-title text-white">A Song And Dance Act</h5>
-                          <p class="card-text text-muted mb-0">Ex audire suavitate has, ei quasi tacimates sapientem sed.</p>
+                          <span class="badge bg-warning text-dark mb-2"
+                            >April 28, 2020</span
+                          >
+                          <h5 class="card-title text-white">
+                            A Song And Dance Act
+                          </h5>
+                          <p class="card-text text-muted mb-0">
+                            Ex audire suavitate has, ei quasi tacimates
+                            sapientem sed.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1117,33 +1646,49 @@
 
             <section class="tab-pane fade mb-5" id="contact">
               <h3 class="text-white mb-1">Get in Touch</h3>
-              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <div
+                class="border-top border-warning mb-4"
+                style="width: 120px"
+              ></div>
 
               <div class="ratio ratio-16x9 mb-4">
-                <iframe src="https://www.google.com/maps?q=London+Eye&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                  src="https://www.google.com/maps?q=London+Eye&output=embed"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
 
               <div class="row g-3 mb-5">
                 <div class="col-md-6">
-                  <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary">
+                  <div
+                    class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary"
+                  >
                     <span class="badge bg-warning text-dark">Address:</span>
                     <span class="text-white">California, USA</span>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary">
+                  <div
+                    class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary"
+                  >
                     <span class="badge bg-warning text-dark">Email:</span>
                     <span class="text-white">adlard@example.com</span>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary">
+                  <div
+                    class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary"
+                  >
                     <span class="badge bg-warning text-dark">Phone:</span>
                     <span class="text-white">+123 654 78900</span>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary">
+                  <div
+                    class="d-flex justify-content-between align-items-center p-3 rounded-3 bg-black border border-secondary"
+                  >
                     <span class="badge bg-warning text-dark">Freelance:</span>
                     <span class="text-white">Available</span>
                   </div>
@@ -1151,21 +1696,41 @@
               </div>
 
               <h3 class="text-white mb-1">Contact Form</h3>
-              <div class="border-top border-warning mb-4" style="width: 120px"></div>
+              <div
+                class="border-top border-warning mb-4"
+                style="width: 120px"
+              ></div>
               <form class="bg-black p-4 rounded-4 border border-secondary">
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Full Name">
+                    <input
+                      type="text"
+                      class="form-control bg-dark text-white border-secondary"
+                      placeholder="Full Name"
+                    />
                   </div>
                   <div class="col-md-6">
-                    <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="Email Address">
+                    <input
+                      type="email"
+                      class="form-control bg-dark text-white border-secondary"
+                      placeholder="Email Address"
+                    />
                   </div>
                   <div class="col-12">
-                    <textarea class="form-control bg-dark text-white border-secondary" rows="6" placeholder="Your Message"></textarea>
+                    <textarea
+                      class="form-control bg-dark text-white border-secondary"
+                      rows="6"
+                      placeholder="Your Message"
+                    ></textarea>
                   </div>
                 </div>
                 <div class="mt-4">
-                  <button type="submit" class="btn btn-warning text-dark fw-bold">Send Message</button>
+                  <button
+                    type="submit"
+                    class="btn btn-warning text-dark fw-bold"
+                  >
+                    Send Message
+                  </button>
                 </div>
               </form>
             </section>
@@ -1173,7 +1738,9 @@
         </div>
       </section>
     </div>
-    <footer class="custom-footer bg-black border-top border-secondary fixed-bottom">
+    <footer
+      class="custom-footer bg-black border-top border-secondary fixed-bottom"
+    >
       <div class="container py-3">
         <p class="mb-0 text-center text-muted">
           © 2023 RyanCV by Bslthemes Team. All rights reserved.
