@@ -92,6 +92,10 @@ p {
   font-family: "Syne", sans-serif;
   font-weight: 400;
 }
+.syne-700 {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+}
 .nav-pills .nav-link.active {
   background: transparent !important;
   color: #ffffff !important;
