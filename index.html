@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khushwinder | Full Stack Developer</title>
-   <link rel="icon" type="image/jpeg" href="./assets/images/fav.jpeg">
+    <link rel="icon" type="image/jpeg" href="./assets/images/fav.jpeg" />
     <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -19,15 +19,16 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cyberGrid.css" />
   </head>
   <body class="bg-dark text-white">
-    <div class="main-frame container d-flex align-items-stretch pt-5 pt-md-0">
+    <div class="main-frame container-fluid d-flex align-items-stretch pt-5 pt-md-0">
       <section
-        class="section gap-5 gap-md-0 row w-100 h-100 justify-content-center align-items-stretch"
+        class="section gap-5 gap-md-0 row h-100 justify-content-center align-items-stretch"
       >
         <!-- Menu Column -->
         <div
-          class="menu col-auto col-md-1 d-flex align-items-start order-md-first z-3"
+          class="menu col-auto col-md-1 d-flex align-items-start order-md-first z-3 position-absolute start-0"
         >
           <!-- Desktop Sidebar (Sticky) -->
           <nav
@@ -214,7 +215,7 @@
           </nav>
         </div>
 
-        <div class="col-md-6 col-lg-4 mt-5">
+        <div class="col-md-6 col-lg-4 mt-5 z-1">
           <div
             class="info-card card bg-dark text-white border-0 shadow-lg position-relative overflow-hidden"
           >
@@ -226,8 +227,7 @@
                 alt="Khushwinder"
                 style="height: 500px; object-fit: cover"
               /> -->
-              
-              
+
               <img
                 src="/assets/images/profile.png"
                 class="card-img-top"
@@ -283,7 +283,7 @@
           </div>
         </div>
 
-        <div class="content content-pane col-12 col-lg-7">
+        <div class="content content-pane col-12 col-lg-7 z-1">
           <div class="tab-content">
             <section class="tab-pane fade show active mb-5" id="about">
               <section class="innerSection">
@@ -1739,14 +1739,47 @@
       </section>
     </div>
     <footer
-      class="custom-footer bg-black border-top border-secondary fixed-bottom"
+      class="custom-footer bg-black-1 position-fixed bottom-0 start-0 end-0 z-1"
     >
-      <div class="container py-3">
-        <p class="mb-0 text-center text-muted">
-          © 2023 RyanCV by Bslthemes Team. All rights reserved.
+      <div class="container py-2">
+        <p class="mb-0 text-center text-muted text-14 text-white-55 syne-400">
+          © 2026 Khushwinder. All rights reserved.
         </p>
       </div>
     </footer>
+    <div class="canvas cybergrid-background">
+      <div class="cybergrid-top"></div>
+      <div class="cybergrid-bottom">
+        <div class="cb-ground">
+          <div class="cb-wave vertical wv-left wave-0"></div>
+          <div class="cb-wave vertical wv-left wave-1"></div>
+          <div class="cb-wave vertical wv-left wave-2"></div>
+          <div class="cb-wave vertical wv-left wave-3"></div>
+          <div class="cb-wave vertical wv-left wave-4"></div>
+          <div class="cb-wave vertical wv-left wave-5"></div>
+          <div class="cb-wave vertical wv-left wave-6"></div>
+          <div class="cb-wave vertical wv-left wave-7"></div>
+          <div class="cb-wave vertical wv-right wave-1"></div>
+          <div class="cb-wave vertical wv-right wave-2"></div>
+          <div class="cb-wave vertical wv-right wave-3"></div>
+          <div class="cb-wave vertical wv-right wave-4"></div>
+          <div class="cb-wave vertical wv-right wave-5"></div>
+          <div class="cb-wave vertical wv-right wave-6"></div>
+          <div class="cb-wave vertical wv-right wave-7"></div>
+          <div class="cb-wave horizontal wave-9"></div>
+          <div class="cb-wave horizontal wave-10"></div>
+          <div class="cb-wave horizontal wave-11"></div>
+          <div class="cb-wave horizontal wave-12"></div>
+          <div class="cb-wave horizontal wave-13"></div>
+          <div class="cb-wave horizontal wave-14"></div>
+          <div class="cb-wave horizontal wave-15"></div>
+          <div class="cb-wave horizontal wave-16"></div>
+          <div class="cb-wave horizontal wave-17"></div>
+          <div class="cb-wave horizontal wave-18"></div>
+          <div class="cb-wave horizontal wave-19"></div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

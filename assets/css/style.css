@@ -63,4 +63,16 @@ p {
   .main-frame { height: auto; overflow: visible; }
   .content-pane { height: auto; overflow: visible; }
 }
-
+.text-14{
+  font-size: 14px !important;
+}
+.text-white-55 {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+.bg-black-1{
+  background-color: #0f0f0f !important;
+}
+.syne-400 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+}
