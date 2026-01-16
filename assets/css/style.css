@@ -57,6 +57,9 @@ p {
   body { overflow: hidden; }
   .main-frame { height: calc(100vh - 64px); overflow: hidden; }
   .content-pane { height: 100%; overflow: auto; }
+  .height-500{
+    height: 500px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -75,4 +78,10 @@ p {
 .syne-400 {
   font-family: 'Syne', sans-serif;
   font-weight: 400;
+}
+.active {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+
 }
