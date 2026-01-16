@@ -101,7 +101,16 @@ p {
   background: #08080840 !important;
   backdrop-filter: blur(7px) !important;
 }
-.nav-text-mobile-1 {
-    font-size: 14px !important;
-    padding: 5px 11px !important;
+.blur-bg-2 {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
+.nav-text-mobile-1 {
+  font-size: 14px !important;
+  padding: 5px 11px !important;
+}
+/* .cyber-glitch {
+  text-shadow:
+    0 0 5px rgba(0,255,255,0.6),
+    0 0 10px rgba(0,255,255,0.4);
+} */

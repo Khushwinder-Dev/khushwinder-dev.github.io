@@ -12,6 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js"></script>
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
@@ -22,7 +23,9 @@
     <link rel="stylesheet" href="assets/css/cyberGrid.css" />
   </head>
   <body class="bg-dark text-white">
-    <div class="main-frame container-fluid d-flex align-items-stretch pt-5 pt-md-0">
+    <div
+      class="main-frame container-fluid d-flex align-items-stretch pt-5 pt-md-0"
+    >
       <section
         class="section gap-5 gap-md-0 row h-100 justify-content-center align-items-stretch"
       >
@@ -237,7 +240,7 @@
 
               <!-- Gradient Overlay for Text Readability -->
               <div
-                class="position-absolute bottom-0 start-0 w-100 p-4"
+                class="position-absolute bottom-0 start-0 w-100 blur-bg-2"
                 style="
                   background: linear-gradient(
                     to top,
@@ -247,38 +250,41 @@
                   );
                 "
               >
-                <h2 class="fw-bold text-center mb-1">Khushwinder</h2>
-                <div class="text-center text-white-50">
-                  Full Stack Developer
-                </div>
+                <div class="p-4">
+                  <h2 class="fw-bold text-center mb-1">Khushwinder</h2>
+                  <div class="subtitle subtitle-typed text-center">
+                    <span
+                      id="typed-text"
+                      class="r-typed cyber-glitch syne-400"
+                    ></span>
+                  </div>
 
-                <!-- Social Icons -->
-                <div class="d-flex justify-content-center gap-3 my-3">
-                  <a href="#" class="text-white fs-4"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a href="#" class="text-white fs-4"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a href="#" class="text-white fs-4"
-                    ><i class="fa-brands fa-x-twitter"></i
-                  ></a>
-                  <a href="#" class="text-white fs-4"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
+                  <!-- Social Icons -->
+                  <div class="d-flex justify-content-center gap-3">
+                    <a href="#" class="text-white fs-4"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="#" class="text-white fs-4"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="#" class="text-white fs-4"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a href="#" class="text-white fs-4"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Footer / Action Button -->
+                <div class="card-footer p-0 border-top">
+                  <a
+                    href="#"
+                    class="btn w-100 py-3 text-uppercase fw-bold text-white d-flex justify-content-center align-items-center gap-2 rounded-0"
+                  >
+                    Download Resume <i class="fas fa-cloud-download-alt"></i>
+                  </a>
                 </div>
               </div>
-            </div>
-
-            <!-- Footer / Action Button -->
-            <div class="card-footer bg-black border-top border-secondary p-0">
-              <a
-                href="#"
-                class="btn w-100 py-3 text-uppercase fw-bold text-white d-flex justify-content-center align-items-center gap-2 rounded-0"
-                style="background-color: black"
-              >
-                Download Resume <i class="fas fa-cloud-download-alt"></i>
-              </a>
             </div>
           </div>
         </div>
