@@ -1,87 +1,107 @@
 /* === Poppins Regular === */
 @font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 /* === Poppins Medium === */
 @font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 /* === Poppins Bold === */
 @font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 /* === Syne Variable Font === */
 @font-face {
-  font-family: 'Syne';
-  src: url('../fonts/Syne-VariableFont_wght.ttf') format('truetype');
+  font-family: "Syne";
+  src: url("../fonts/Syne-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
 /* === Times New Roman Local === */
 @font-face {
-  font-family: 'Times New Roman Local';
-  src: url('../fonts/TimesNewRoman.ttf') format('truetype');
+  font-family: "Times New Roman Local";
+  src: url("../fonts/TimesNewRoman.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
 h1 {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-weight: 700;
 }
 
 p {
-  font-family: 'Times New Roman Local', serif;
+  font-family: "Times New Roman Local", serif;
 }
 
 @media (min-width: 768px) {
-  body { overflow: hidden; }
-  .main-frame { height: calc(100vh - 64px); overflow: hidden; }
-  .content-pane { height: 100%; overflow: auto; }
-  .height-500{
+  body {
+    overflow: hidden;
+  }
+  .main-frame {
+    height: calc(100vh - 64px);
+    overflow: hidden;
+  }
+  .content-pane {
+    height: 100%;
+    overflow: auto;
+  }
+  .height-500 {
     height: 500px !important;
   }
 }
 
 @media (max-width: 767.98px) {
-  .main-frame { height: auto; overflow: visible; }
-  .content-pane { height: auto; overflow: visible; }
+  .main-frame {
+    height: auto;
+    overflow: visible;
+  }
+  .content-pane {
+    height: auto;
+    overflow: visible;
+  }
 }
-.text-14{
+.text-14 {
   font-size: 14px !important;
 }
 .text-white-55 {
   color: rgba(255, 255, 255, 0.55) !important;
 }
-.bg-black-1{
+.bg-black-1 {
   background-color: #0f0f0f !important;
 }
 .syne-400 {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-weight: 400;
 }
-.active {
-    background: transparent !important;
-    color: #ffffff !important;
-    border: 1px solid #ffffff !important;
-
+.nav-pills .nav-link.active {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+}
+.blur-bg-1 {
+  background: #08080840 !important;
+  backdrop-filter: blur(7px) !important;
+}
+.nav-text-mobile-1 {
+    font-size: 14px !important;
+    padding: 5px 11px !important;
 }
