@@ -1,0 +1,83 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.7in, right=0.7in, top=0.7in, bottom=0.7in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{fontawesome}
+
+
+% Define section formatting
+\titleformat{\section}{\large\bfseries\color{black}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{KHUSHWINDER}}\\[2pt]
+    \small Web Developer at Vezire Technologies\\[2pt]    
+    \faEnvelope \hspace{1mm} \href{mailto:Khushwinder.dev@gmail.com}{Khushwinder.dev@gmail.com} \hspace{1mm} \textbar{} \hspace{1mm}
+    \faLinkedin \hspace{1mm} \href{https://www.linkedin.com/in/khushwinder-dev/}{khushwinder-dev} \hspace{1mm} \textbar{} \hspace{1mm} 
+    \faGithub \hspace{1mm} \href{https://github.com/Khushwinder-Dev}{Khushwinder-Dev} \hspace{1mm} \textbar{} \hspace{1mm}
+    \faPhone \hspace{1mm} \href{tel:+919780032334}{+91-97800-32334}
+\end{center}
+
+
+\section*{Professional Summary}
+Web Developer with expertise in React.js, Material-UI, JavaScript, and front-end development, focused on creating modern, responsive, and high-performance web applications. Experienced in building web applications from scratch as well as upgrading and optimizing existing admin dashboards, implementing scalable UI
+ components, and working with microservices architecture. Proficient in state management, real-time features, SEO, and cross-browser compatibility, ensuring seamless user experiences across devices.
+
+\section*{Skills}
+\textbf{Frontend:} HTML, CSS, JavaScript, React.js, TypeScript, Redux Toolkit, React Router, Material UI, Bootstrap, Tailwind, jQuery \\  
+\textbf{Backend:} PHP, Node.js, Laravel, MySQL, Microservices, RESTful APIs, WebSocket, Webhooks, JWT \& OAuth \\  
+\textbf{Cloud \& DevOps:} AWS, Google Cloud, AppWrite (Backend as a Service), Docker, Hosting \& Deployment \\  
+\textbf{Tools \& CMS:} Git, VS Code, Jira, Postman, Figma, Shopify, WordPress \\  
+\textbf{Other Skills:} SEO, Responsive Web Design, XD/Figma to HTML/CSS or Material UI Conversion  
+
+
+\section*{Experience}
+\subsection*{Web Developer | Vezire Technologies \hfill March 2024 -- Present}
+\textit{Punjab, India}
+\begin{itemize}[noitemsep, leftmargin=*]
+    \item Developed eCommerce website frontends and admin dashboards using React.js and Material UI.  
+    \item Converted PSD designs into pixel-perfect, fully responsive UI components. 
+    \item Upgraded legacy Bootstrap-based admin dashboards to Material UI, enhancing UI/UX and performance.  
+    \item Worked with MVC frameworks, ensuring structured and scalable backend development.  
+    \item Built and maintained eCommerce microservices, improving modularity and scalability.  
+    \item Gained experience in hosting, Docker, and CI/CD pipelines, automating deployments for efficiency. 
+    \item Ensured cross-browser compatibility and mobile responsiveness for a seamless user experience.  
+    \item Implemented SEO best practices to improve search engine rankings and online visibility.  
+    \item Monitored and optimized website performance, security, and scalability, ensuring high availability.  
+\end{itemize}
+
+
+\subsection*{Web Develope | Protolabz eServices \hfill Nov 2021 -- Feb 2024}
+\textit{Punjab, India}
+\begin{itemize}[noitemsep, leftmargin=*]
+    \item Developed and optimized eCommerce websites, admin panels, and informational sites using React.js and Laravel.  
+    \item Worked with MVC frameworks like Laravel to develop structured, maintainable backend logic.  
+    \item Converted Figma/XD designs into pixel-perfect, fully responsive UI components.  
+    \item Integrated third-party APIs and services, including payment gateways and shipping solutions.  
+    \item Optimized website performance, SEO, and cross-browser compatibility for enhanced user experience.  
+    \item Implemented Git for version control and participated in code reviews to ensure quality.  
+    \item Gained experience in hosting, Docker, and CI/CD pipelines, automating deployments for efficiency.  
+    \item Monitored and improved website security, scalability, and performance, reducing load times.  
+    \item Built and customized Shopify and WordPress websites, implementing scalable and high-performance solutions.  
+\end{itemize}
+
+
+
+\section*{Projects}
+\textbf{Web Development Projects} (React, Laravel, Bootstrap, MUI,)\\
+Developed eCommerce websites, admin dashboards, and multi-vendor marketplaces with 
+seamless API integrations and modern UI frameworks. Migrated Bootstrap-based 
+dashboards to Material UI, optimized SEO, and integrated payment gateways for 
+high-performance, responsive user experiences.  
+
+\section*{Education}
+\textbf{GNA University, Phagwara}\\
+B.Tech in Electronics and Communication Engineering. \hfill Aug 2017 -- May 2021
+
+\end{document}
