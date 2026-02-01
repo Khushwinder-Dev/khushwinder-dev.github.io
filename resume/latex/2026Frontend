@@ -1,0 +1,72 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.7in, right=0.7in, top=0.7in, bottom=0.7in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{fontawesome}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{KHUSHWINDER}}\\[2pt]
+    \small \textbf{Frontend Developer | Admin Dashboards \& eCommerce Frontends (React • TypeScript)}\\[2pt]
+    \faEnvelope \hspace{1mm} \href{mailto:Khushwinder.dev@gmail.com}{Khushwinder.dev@gmail.com} \hspace{1mm} | \hspace{1mm}
+    \faLinkedin \hspace{1mm} \href{https://www.linkedin.com/in/khushwinder-dev/}{khushwinder-dev} \hspace{1mm} | \hspace{1mm}
+    \faGithub \hspace{1mm} \href{https://github.com/Khushwinder-Dev}{Khushwinder-Dev} \hspace{1mm} | \hspace{1mm}
+    \faPhone \hspace{1mm} +91-97800-32334
+\end{center}
+
+\section*{Professional Summary}
+Frontend Developer with 4+ years of experience building scalable, high-performance web applications and admin dashboards using \textbf{React.js, TypeScript, and modern UI architecture}. Strong expertise in component-driven development, state management, API integration, and performance optimization. Experienced in translating complex business requirements into responsive, user-friendly interfaces. Backend knowledge in Spring Boot and Laravel enables seamless collaboration across full-stack teams.
+
+\section*{Technical Skills}
+\textbf{Frontend:} React.js, TypeScript, JavaScript (ES6+), Redux Toolkit, Context API, Material UI, Tailwind CSS, HTML5, CSS3, Responsive Design \\  
+\textbf{UI Engineering:} Component Architecture, Reusable UI Systems, Form Handling, Client-side Validation, Performance Optimization \\  
+\textbf{API Integration:} REST APIs, Axios/Fetch, JWT Auth Flows, Webhooks \\  
+\textbf{Backend (Supporting):} Java Spring Boot, Laravel \\  
+\textbf{Databases:} MySQL, PostgreSQL \\  
+\textbf{DevOps \& Tools:} Git, Docker, CI/CD, Postman, Figma, Jira \\  
+\textbf{Platforms:} Shopify, WordPress  
+
+\section*{Experience}
+
+\textbf{Frontend Developer | Vezire Technologies} \hfill Mar 2024 -- Present \\
+\textit{Punjab, India}
+\begin{itemize}[noitemsep, leftmargin=*]
+    \item Developed scalable enterprise frontends using \textbf{React.js, TypeScript, and Material UI}.
+    \item Designed reusable component libraries and UI systems for admin dashboards.
+    \item Integrated complex REST APIs and microservices into responsive React applications.
+    \item Implemented authentication flows, protected routes, and role-based UI rendering.
+    \item Optimized rendering performance, state management, and API data handling.
+    \item Migrated legacy UI systems to modern component-driven React architecture.
+    \item Collaborated with backend teams to define API contracts and improve UX consistency.
+\end{itemize}
+
+\textbf{Frontend Developer | Protolabz eServices} \hfill Nov 2021 -- Feb 2024 \\
+\textit{Punjab, India}
+\begin{itemize}[noitemsep, leftmargin=*]
+    \item Built responsive web applications using \textbf{React.js, JavaScript, and modern CSS frameworks}.
+    \item Converted Figma/XD designs into pixel-perfect, mobile-friendly user interfaces.
+    \item Developed reusable components and modular UI structures.
+    \item Integrated payment gateways, shipping APIs, and third-party services into frontend flows.
+    \item Improved page performance, SEO structure, and user experience.
+    \item Worked closely with backend APIs built in Laravel and MySQL.
+\end{itemize}
+
+\section*{Project Experience}
+
+\textbf{Enterprise Admin Dashboard System} (React, TypeScript, Material UI) \\
+Designed a modular dashboard UI connected to multiple microservices. Built reusable data tables, dynamic forms, filters, and analytics views with optimized state management.
+
+\textbf{Multi-Vendor eCommerce Platform} (React, REST APIs) \\
+Developed product management interfaces, vendor dashboards, and order workflows with reusable UI components, validation systems, and API-driven architecture.
+
+\section*{Education}
+\textbf{GNA University, Phagwara} \\
+B.Tech in Electronics and Communication Engineering \hfill 2017 -- 2021
+
+\end{document}

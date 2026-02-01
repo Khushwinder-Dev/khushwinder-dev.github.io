@@ -1,0 +1,75 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.7in, right=0.7in, top=0.7in, bottom=0.7in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{fontawesome}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{\href{https://khushwinder-dev.github.io}{KHUSHWINDER}}}\\[2pt]
+    \small \textbf{Full Stack Developer | Admin Systems \& Customer-Facing Frontends (React • Spring Boot • Laravel)}\\[2pt]
+    \faEnvelope \hspace{1mm} \href{mailto:Khushwinder.dev@gmail.com}{Khushwinder.dev@gmail.com} \hspace{1mm} | \hspace{1mm}
+    \faLinkedin \hspace{1mm} \href{https://www.linkedin.com/in/khushwinder-dev/}{khushwinder-dev} \hspace{1mm} | \hspace{1mm}
+    \faGithub \hspace{1mm} \href{https://github.com/Khushwinder-Dev}{Khushwinder-Dev} \hspace{1mm} | \hspace{1mm}
+    \faPhone \hspace{1mm} +91-97800-32334
+\end{center}
+
+\section*{Professional Summary}
+Full Stack Developer with 4+ years of experience building both \textbf{customer-facing web applications and internal admin dashboard systems} for eCommerce and business platforms. Skilled in developing complex frontend interfaces using React.js and TypeScript, along with scalable backend services in Spring Boot and Laravel. Strong expertise in product management systems, order workflows, authentication, API integrations, and performance optimization across full-stack environments.
+
+\section*{Technical Skills}
+\textbf{Frontend:} React.js, TypeScript, JavaScript, Redux Toolkit, Material UI, Tailwind CSS, HTML, CSS \\  
+\textbf{Backend:} Java Spring Boot, Laravel \\  
+\textbf{Databases:} MySQL, PostgreSQL \\  
+\textbf{Architecture \& APIs:} REST APIs, JWT Authentication, Webhooks, Microservices, MVC \\  
+\textbf{Systems Built:} Admin Dashboards, Business Tools, Product Management Systems, Order Workflows, Vendor Panels \\  
+\textbf{eCommerce Expertise:} Payment Gateway Integration, Shipping APIs, Cart \& Checkout Flows \\  
+\textbf{DevOps \& Cloud:} Docker, CI/CD, AWS Hosting \\  
+\textbf{Tools:} Git, Postman, Figma, Jira \\  
+\textbf{CMS \& Platforms:} Shopify, WordPress  
+
+\section*{Experience}
+
+\textbf{Web Developer | Vezire Technologies} \hfill Mar 2024 -- Present \\
+\textit{Punjab, India}
+\begin{itemize}[noitemsep, leftmargin=*]
+    \item Developed enterprise applications using \textbf{Spring Boot, PostgreSQL, and React.js}.
+    \item Built complex admin dashboard systems for managing business data, users, and operations.
+    \item Designed reusable UI component systems using Material UI for scalable frontend architecture.
+    \item Integrated RESTful microservices into responsive React applications.
+    \item Implemented JWT-based authentication, API security, and role-based access control.
+    \item Migrated legacy dashboards to modern React architecture, improving maintainability.
+    \item Contributed to Dockerized deployments and CI/CD pipelines for automated releases.
+    \item Optimized application performance, database queries, and system scalability.
+\end{itemize}
+
+\textbf{Web Developer | Protolabz eServices} \hfill Nov 2021 -- Feb 2024 \\
+\textit{Punjab, India}
+\begin{itemize}[noitemsep, leftmargin=*]
+    \item Built customer-facing \textbf{eCommerce web applications} using Laravel, MySQL, and React.js.
+    \item Developed product management interfaces, order processing systems, and vendor dashboards.
+    \item Integrated payment gateways, shipping services, and third-party commerce APIs.
+    \item Customized Shopify and WordPress stores for business clients.
+    \item Converted Figma/XD designs into responsive React interfaces.
+    \item Optimized application performance, SEO, and database efficiency.
+\end{itemize}
+
+\section*{Project Experience}
+
+\textbf{Multi-Vendor eCommerce Platform} (React, Laravel, REST APIs) \\
+Developed vendor dashboards, product management modules, cart and order workflows. Integrated payment gateways and shipping services while building reusable UI components and validation systems.
+
+\textbf{Enterprise Admin Dashboard System} (React, Spring Boot, PostgreSQL) \\
+Built admin panels connected to microservices for order, user, and analytics management. Implemented authentication, API integrations, and modular frontend component design.
+
+\section*{Education}
+\textbf{GNA University, Phagwara} \\
+B.Tech in Electronics and Communication Engineering \hfill 2017 -- 2021
+
+\end{document}
