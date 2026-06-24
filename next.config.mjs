@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/shopify-developer-portfolio',
-  assetPrefix: '/shopify-developer-portfolio/',
   typescript: {
     ignoreBuildErrors: true,
   },
