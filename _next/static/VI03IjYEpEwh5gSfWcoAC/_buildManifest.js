@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/khushwinder-dev.github.io//_next/:path+",
+        "destination": "/khushwinder-dev.github.io/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
