@@ -13,6 +13,7 @@ import { WhatsAppButton } from '@/components/portfolio/whatsapp-button'
 import { AnimatedSection } from '@/components/ui/animated-section'
 import { Particles } from '@/components/ui/particles'
 import { ThreeScene } from '@/components/ui/three-scene'
+import { ContactButtons } from '@/components/portfolio/contact-buttons'
 
 export default function Page() {
   return (
@@ -55,7 +56,7 @@ export default function Page() {
         </AnimatedSection>
       </main>
       <Footer />
-      <WhatsAppButton />
+      <ContactButtons />
     </div>
   )
 }
