@@ -55,7 +55,7 @@ export function Hero() {
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </Button>
             <Button
-              render={<a href="#contact" />}
+              render={<a target='_blank' href="/resume/webDeveloper/Khushwinder.pdf" />}
               nativeButton={false}
               size="lg"
               variant="outline"

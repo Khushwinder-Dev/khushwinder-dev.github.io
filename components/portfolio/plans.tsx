@@ -24,7 +24,7 @@ export function Plans() {
           return (
             <AnimatedItem key={plan.name} delay={i * 0.15}>
               <div
-                className="relative flex flex-col rounded-3xl border border-border bg-card/50 p-7 transition-all duration-300 hover:border-primary/60 hover:bg-card hover:shadow-[0_0_50px] hover:shadow-primary/10"
+                className="relative flex flex-col h-full rounded-3xl border border-border bg-card/50 p-7 transition-all duration-300 hover:border-primary/60 hover:bg-card hover:shadow-[0_0_50px] hover:shadow-primary/10"
               >
                 {isPopular && (
                   <span className="absolute right-0 top-6 rounded-l-full bg-primary px-4 py-1 text-xs font-bold uppercase tracking-wide text-primary-foreground">
@@ -50,7 +50,7 @@ export function Plans() {
                   {plan.price}
                 </p>
 
-                <ul className="mt-6 space-y-3">
+                <ul className="mt-6 space-y-3 flex-grow">
                   {plan.features.map((feature) => (
                     <li
                       key={feature}
