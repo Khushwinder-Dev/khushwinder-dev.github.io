@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Copy, Mail } from 'lucide-react'
 
-const GMAIL_ID = 'your-email@gmail.com' // Replace with your actual Gmail ID
+const GMAIL_ID = 'Khushwinder.dev@gmail.com'
 
 export function ContactButtons() {
   const [showGmailMenu, setShowGmailMenu] = useState(false)
@@ -47,19 +47,19 @@ export function ContactButtons() {
           <Mail className="size-7 text-white" />
         </button>
         {showGmailMenu && (
-          <div className="absolute bottom-16 right-0 flex flex-col gap-2 rounded-xl border border-border bg-card p-2 shadow-lg">
+          <div className="absolute bottom-16 right-0 flex flex-col gap-2 rounded-xl border border-border bg-card p-2 shadow-lg min-w-[140px]">
             <button
               onClick={copyEmail}
-              className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+              className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary whitespace-nowrap"
             >
-              <Copy className="size-4" />
+              <Copy className="size-4 shrink-0" />
               {copied ? 'Copied!' : 'Copy Email ID'}
             </button>
             <button
               onClick={openGmail}
-              className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+              className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary whitespace-nowrap"
             >
-              <Mail className="size-4" />
+              <Mail className="size-4 shrink-0" />
               Open Gmail
             </button>
           </div>
