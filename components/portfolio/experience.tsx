@@ -14,8 +14,8 @@ export function Experience() {
 
       <ol className="mt-6 space-y-7">
         {experience.map((job, i) => (
-          <AnimatedItem key={job.role} delay={i * 0.1}>
-            <li key={job.role} className="relative pl-7">
+          <AnimatedItem key={`${job.company}-${job.role}-${i}`} delay={i * 0.1}>
+            <li className="relative pl-7">
               <span className="absolute left-0 top-1.5 size-3 rounded-full bg-primary shadow-[0_0_10px] shadow-primary/60" />
               {i < experience.length - 1 && (
                 <span className="absolute left-[5px] top-5 h-[calc(100%+0.75rem)] w-px bg-border" />
