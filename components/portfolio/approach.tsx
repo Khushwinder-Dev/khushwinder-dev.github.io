@@ -1,3 +1,4 @@
+'use client'
 import {
   ArrowRight,
   Briefcase,
@@ -11,6 +12,7 @@ import {
 } from 'lucide-react'
 import { SectionLabel } from './section-label'
 import { stats } from './data'
+import { AnimatedItem } from '@/components/ui/animated-section'
 
 const steps = [
   {
@@ -48,24 +50,26 @@ export function Approach() {
         <SectionLabel>My Approach</SectionLabel>
         <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           {steps.map((step, i) => (
-            <div key={step.title} className="flex items-start gap-4 sm:flex-col">
-              <div className="flex items-center gap-3 sm:flex-col sm:gap-4">
-                <span className="flex size-12 items-center justify-center rounded-xl bg-primary/15 text-primary">
-                  <step.icon className="size-6" />
-                </span>
-                {i < steps.length - 1 && (
-                  <ArrowRight className="hidden size-4 text-muted-foreground sm:absolute sm:hidden" />
-                )}
+            <AnimatedItem key={step.title} delay={i * 0.1}>
+              <div key={step.title} className="flex items-start gap-4 sm:flex-col">
+                <div className="flex items-center gap-3 sm:flex-col sm:gap-4">
+                  <span className="flex size-12 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                    <step.icon className="size-6" />
+                  </span>
+                  {i < steps.length - 1 && (
+                    <ArrowRight className="hidden size-4 text-muted-foreground sm:absolute sm:hidden" />
+                  )}
+                </div>
+                <div className="sm:mt-3">
+                  <h3 className="text-sm font-semibold text-foreground">
+                    {step.title}
+                  </h3>
+                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                    {step.desc}
+                  </p>
+                </div>
               </div>
-              <div className="sm:mt-3">
-                <h3 className="text-sm font-semibold text-foreground">
-                  {step.title}
-                </h3>
-                <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                  {step.desc}
-                </p>
-              </div>
-            </div>
+            </AnimatedItem>
           ))}
         </div>
       </div>
@@ -77,20 +81,22 @@ export function Approach() {
           {stats.map((stat, i) => {
             const Icon = statIcons[i]
             return (
-              <div
-                key={stat.label}
-                className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-secondary/30 p-5 text-center"
-              >
-                <span className="flex size-11 items-center justify-center rounded-xl bg-primary/15 text-primary">
-                  <Icon className="size-5" />
-                </span>
-                <span className="text-2xl font-bold text-foreground">
-                  {stat.value}
-                </span>
-                <span className="text-xs leading-tight text-muted-foreground">
-                  {stat.label}
-                </span>
-              </div>
+              <AnimatedItem key={stat.label} delay={i * 0.1}>
+                <div
+                  key={stat.label}
+                  className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-secondary/30 p-5 text-center"
+                >
+                  <span className="flex size-11 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                    <Icon className="size-5" />
+                  </span>
+                  <span className="text-2xl font-bold text-foreground">
+                    {stat.value}
+                  </span>
+                  <span className="text-xs leading-tight text-muted-foreground">
+                    {stat.label}
+                  </span>
+                </div>
+              </AnimatedItem>
             )
           })}
         </div>

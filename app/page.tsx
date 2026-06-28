@@ -10,30 +10,45 @@ import { Contact } from '@/components/portfolio/contact'
 import { FindMe } from '@/components/portfolio/find-me'
 import { Footer } from '@/components/portfolio/footer'
 import { WhatsAppButton } from '@/components/portfolio/whatsapp-button'
+import { AnimatedSection } from '@/components/ui/animated-section'
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <main>
-        <Hero />
+        <AnimatedSection>
+          <Hero />
+        </AnimatedSection>
 
         {/* Skills + Experience */}
-        <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-2">
-          <Skills />
-          <Experience />
-        </section>
+        <AnimatedSection delay={0.1}>
+          <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-2">
+            <Skills />
+            <Experience />
+          </section>
+        </AnimatedSection>
 
-        <Projects />
-        <Plans />
-        <Approach />
+        <AnimatedSection delay={0.2}>
+          <Projects />
+        </AnimatedSection>
+
+        <AnimatedSection delay={0.3}>
+          <Plans />
+        </AnimatedSection>
+
+        <AnimatedSection delay={0.4}>
+          <Approach />
+        </AnimatedSection>
 
         {/* Testimonials + Contact + Find Me */}
-        <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-3">
-          <Testimonials />
-          <Contact />
-          <FindMe />
-        </section>
+        <AnimatedSection delay={0.5}>
+          <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-3">
+            <Testimonials />
+            <Contact />
+            <FindMe />
+          </section>
+        </AnimatedSection>
       </main>
       <Footer />
       <WhatsAppButton />

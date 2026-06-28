@@ -1,14 +1,16 @@
+'use client'
 import Image from 'next/image'
 import { ArrowRight, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { motion } from 'framer-motion'
 
 const floatingIcons = [
-  { logo: '/logos/shopify.svg', name: 'Shopify', className: 'left-0 top-8' },
-  { logo: '/logos/react.svg', name: 'React', className: 'left-2 top-1/2 -translate-y-1/2' },
-  { logo: '/logos/javascript.svg', name: 'JavaScript', className: 'left-6 bottom-10' },
-  { logo: '/logos/html5.svg', name: 'HTML5', className: 'right-0 top-8' },
-  { logo: '/logos/css3.svg', name: 'CSS3', className: 'right-2 top-1/2 -translate-y-1/2' },
-  { logo: '/logos/tailwindcss.svg', name: 'Tailwind', className: 'right-6 bottom-10' },
+  { logo: '/logos/shopify.svg', name: 'Shopify', className: 'left-0 top-8', delay: 0 },
+  { logo: '/logos/react.svg', name: 'React', className: 'left-2 top-1/2 -translate-y-1/2', delay: 0.1 },
+  { logo: '/logos/javascript.svg', name: 'JavaScript', className: 'left-6 bottom-10', delay: 0.2 },
+  { logo: '/logos/html5.svg', name: 'HTML5', className: 'right-0 top-8', delay: 0.3 },
+  { logo: '/logos/css3.svg', name: 'CSS3', className: 'right-2 top-1/2 -translate-y-1/2', delay: 0.4 },
+  { logo: '/logos/tailwindcss.svg', name: 'Tailwind', className: 'right-6 bottom-10', delay: 0.5 },
 ]
 
 export function Hero() {
@@ -25,12 +27,16 @@ export function Hero() {
       />
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
         {/* Left copy */}
-        <div>
-          <p className="font-medium text-primary">Hello, I&apos;m</p>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
+          <p className="font-medium text-primary">Hello, I'm</p>
           <h1 className="mt-2 text-balance text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
             Khushwinder
             <span className="mt-2 block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Shopify Developer &amp; Frontend Developer
+              Shopify Developer & Frontend Developer
             </span>
           </h1>
           <p className="mt-6 max-w-md text-pretty leading-relaxed text-muted-foreground">
@@ -71,10 +77,15 @@ export function Hero() {
               <span className="size-2 rounded-full bg-emerald-400 shadow-[0_0_8px] shadow-emerald-400/70" />
             </span>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right portrait with floating icons */}
-        <div className="relative mx-auto w-full max-w-md">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+          className="relative mx-auto w-full max-w-md"
+        >
           <div className="relative aspect-square">
             {/* glowing ring */}
             <div
@@ -95,8 +106,15 @@ export function Hero() {
             />
 
             {floatingIcons.map((icon) => (
-              <div
+              <motion.div
                 key={icon.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: 'easeOut',
+                  delay: 0.4 + icon.delay,
+                }}
                 className={`absolute flex size-14 items-center justify-center rounded-2xl border border-border bg-card/80 p-3 shadow-lg backdrop-blur-md ${icon.className}`}
               >
                 <Image
@@ -106,10 +124,10 @@ export function Hero() {
                   height={32}
                   className="size-full object-contain"
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

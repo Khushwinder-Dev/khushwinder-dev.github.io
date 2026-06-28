@@ -1,6 +1,8 @@
+'use client'
 import { ArrowRight } from 'lucide-react'
 import { SectionLabel } from './section-label'
 import { experience } from './data'
+import { AnimatedItem } from '@/components/ui/animated-section'
 
 export function Experience() {
   return (
@@ -12,22 +14,24 @@ export function Experience() {
 
       <ol className="mt-6 space-y-7">
         {experience.map((job, i) => (
-          <li key={job.role} className="relative pl-7">
-            <span className="absolute left-0 top-1.5 size-3 rounded-full bg-primary shadow-[0_0_10px] shadow-primary/60" />
-            {i < experience.length - 1 && (
-              <span className="absolute left-[5px] top-5 h-[calc(100%+0.75rem)] w-px bg-border" />
-            )}
-            <div className="flex flex-wrap items-start justify-between gap-2">
-              <h3 className="font-semibold text-foreground">{job.role}</h3>
-              <span className="text-xs text-muted-foreground">
-                {job.period}
-              </span>
-            </div>
-            <p className="text-sm font-medium text-primary">{job.company}</p>
-            <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-              {job.description}
-            </p>
-          </li>
+          <AnimatedItem key={job.role} delay={i * 0.1}>
+            <li key={job.role} className="relative pl-7">
+              <span className="absolute left-0 top-1.5 size-3 rounded-full bg-primary shadow-[0_0_10px] shadow-primary/60" />
+              {i < experience.length - 1 && (
+                <span className="absolute left-[5px] top-5 h-[calc(100%+0.75rem)] w-px bg-border" />
+              )}
+              <div className="flex flex-wrap items-start justify-between gap-2">
+                <h3 className="font-semibold text-foreground">{job.role}</h3>
+                <span className="text-xs text-muted-foreground">
+                  {job.period}
+                </span>
+              </div>
+              <p className="text-sm font-medium text-primary">{job.company}</p>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                {job.description}
+              </p>
+            </li>
+          </AnimatedItem>
         ))}
       </ol>
 
