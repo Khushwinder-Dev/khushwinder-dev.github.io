@@ -1,12 +1,40 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Send } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 import { Button } from '@/components/ui/button'
 import { SectionLabel } from './section-label'
 
 export function Contact() {
+  const formRef = useRef<HTMLFormElement>(null)
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const sendEmail = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!formRef.current) return
+
+    setLoading(true)
+    setError(null)
+
+    try {
+      await emailjs.sendForm(
+        'service_a0xx08d',
+        'template_kvs2rnk',
+        formRef.current,
+        '1gCpsI8lSnCEiOO3S'
+      )
+      setSent(true)
+      formRef.current.reset()
+    } catch (err) {
+      console.error('Failed to send email:', err)
+      setError('Something went wrong. Please try again later.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <div
@@ -19,16 +47,15 @@ export function Contact() {
       </p>
 
       <form
+        ref={formRef}
         className="mt-5 flex flex-1 flex-col gap-3"
-        onSubmit={(e) => {
-          e.preventDefault()
-          setSent(true)
-        }}
+        onSubmit={sendEmail}
       >
         <div className="grid gap-3 sm:grid-cols-2">
           <input
             required
             type="text"
+            name="name"
             placeholder="Your Name"
             aria-label="Your Name"
             className="rounded-lg border border-border bg-secondary/40 px-3 py-2.5 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary"
@@ -36,6 +63,7 @@ export function Contact() {
           <input
             required
             type="email"
+            name="email"
             placeholder="Your Email"
             aria-label="Your Email"
             className="rounded-lg border border-border bg-secondary/40 px-3 py-2.5 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary"
@@ -43,6 +71,7 @@ export function Contact() {
         </div>
         <textarea
           required
+          name="message"
           rows={4}
           placeholder="Your Message"
           aria-label="Your Message"
@@ -50,11 +79,15 @@ export function Contact() {
         />
         <Button
           type="submit"
-          className="rounded-lg bg-primary font-medium text-primary-foreground hover:bg-primary/90"
+          disabled={loading}
+          className="rounded-lg bg-primary font-medium text-primary-foreground hover:bg-primary/90 disabled:opacity-70"
         >
           <Send className="size-4" />
-          {sent ? 'Message Sent!' : 'Send Message'}
+          {loading ? 'Sending...' : sent ? 'Message Sent!' : 'Send Message'}
         </Button>
+        {error && (
+          <p className="text-sm text-red-400 mt-2">{error}</p>
+        )}
       </form>
     </div>
   )
