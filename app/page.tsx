@@ -12,6 +12,7 @@ import { Footer } from '@/components/portfolio/footer'
 import { WhatsAppButton } from '@/components/portfolio/whatsapp-button'
 import { AnimatedSection } from '@/components/ui/animated-section'
 import { Particles } from '@/components/ui/particles'
+import { ThreeScene } from '@/components/ui/three-scene'
 
 export default function Page() {
   return (
