@@ -36,7 +36,7 @@ export function Skills() {
         ))}
       </div>
 
-      <div className="mt-6 flex justify-center">
+      {/* <div className="mt-6 flex justify-center">
         <a
           href="#projects"
           className="group inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent"
@@ -44,7 +44,7 @@ export function Skills() {
           View All Skills
           <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }
