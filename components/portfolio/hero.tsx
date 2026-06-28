@@ -41,6 +41,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Button
               render={<a href="#projects" />}
+              nativeButton={false}
               size="lg"
               className="group rounded-full bg-primary px-6 font-medium text-primary-foreground hover:bg-primary/90"
             >
@@ -49,6 +50,7 @@ export function Hero() {
             </Button>
             <Button
               render={<a href="#contact" />}
+              nativeButton={false}
               size="lg"
               variant="outline"
               className="rounded-full border-border bg-secondary/40 px-6 font-medium hover:bg-secondary"

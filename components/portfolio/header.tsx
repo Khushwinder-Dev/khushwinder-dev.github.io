@@ -43,6 +43,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Button
             render={<a href="#contact" />}
+            nativeButton={false}
             className="hidden rounded-full bg-primary px-5 font-medium text-primary-foreground hover:bg-primary/90 sm:inline-flex"
           >
             Let&apos;s Work Together
@@ -73,6 +74,7 @@ export function Header() {
             ))}
             <Button
               render={<a href="#contact" onClick={() => setOpen(false)} />}
+              nativeButton={false}
               className="mt-2 rounded-full bg-primary font-medium text-primary-foreground"
             >
               Let&apos;s Work Together
