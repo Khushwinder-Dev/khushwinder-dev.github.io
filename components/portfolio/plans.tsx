@@ -70,6 +70,7 @@ export function Plans() {
 
               <Button
                 render={<a href="#contact" />}
+                nativeButton={false}
                 className={`mt-8 w-full rounded-xl font-medium ${
                   isGold
                     ? 'bg-gold text-background hover:bg-gold/90'

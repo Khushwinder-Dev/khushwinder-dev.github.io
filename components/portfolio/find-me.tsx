@@ -5,7 +5,7 @@ const socials = [
   { platform: 'LinkedIn', handle: '/khushwinder-dev',link:"https://www.linkedin.com/in/khushwinder-dev", logo: '/logos/linkedin.svg' },
   { platform: 'GitHub', handle: '/khushwinder-dev',link:"https://github.com/Khushwinder-Dev", logo: '/logos/github.svg' },
   { platform: 'Upwork', handle: '/khushwinder',link:"https://www.upwork.com/freelancers/~01067ea901a45a6c1f?mp_source=share", logo: '/logos/upwork.svg' },
-  { platform: 'Fiverr', handle: '/khushwinder',link:"fiverr.com/khushwinder_", logo: '/logos/fiverr.svg' },
+  { platform: 'Fiverr', handle: '/khushwinder',link:"https://www.fiverr.com/khushwinder_", logo: '/logos/fiverr.svg' },
   { platform: 'Twitter', handle: '/khushwinder',link:"https://x.com/Er_Khushwinder", logo: '/logos/x.svg' },
   { platform: 'Instagram', handle: '/khushwinder',link:"https://www.instagram.com/khushwinder.dev", logo: '/logos/instagram.svg' },
 ]
