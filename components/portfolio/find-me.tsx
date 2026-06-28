@@ -20,6 +20,7 @@ export function FindMe() {
           <li key={social.platform}>
             <a
               href={social.link}
+              target="_blank"
               className="group flex items-center gap-3 rounded-xl border border-border bg-secondary/30 px-4 py-3 transition-colors hover:border-primary/50 hover:bg-secondary/60"
             >
               <span className="flex size-9 items-center justify-center rounded-lg bg-white">
