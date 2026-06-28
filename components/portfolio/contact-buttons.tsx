@@ -56,7 +56,7 @@ export function ContactButtons() {
       {/* Call Button */}
       <a
         href={`tel:${PHONE_NUMBER}`}
-        className="flex size-14 items-center justify-center rounded-full bg-blue-500 shadow-[0_8px_24px] shadow-blue-500/40 transition-transform hover:scale-105"
+        className="flex size-14 items-center justify-center rounded-full bg-card border border-border shadow-lg shadow-card/20 transition-transform hover:scale-105"
         aria-label="Call now"
       >
         <Phone className="size-7 text-white" />
@@ -66,7 +66,7 @@ export function ContactButtons() {
       <div className="relative" ref={menuRef}>
         <button
           onClick={() => setShowGmailMenu(!showGmailMenu)}
-          className="flex size-14 items-center justify-center rounded-full bg-white shadow-[0_8px_24px] shadow-gray-300/40 transition-transform hover:scale-105"
+          className="flex size-14 items-center justify-center rounded-full bg-card border border-border shadow-lg shadow-card/20 transition-transform hover:scale-105"
           aria-label="Contact via Gmail"
         >
           <GmailIcon />
@@ -96,7 +96,7 @@ export function ContactButtons() {
         href="https://wa.me/+919780032334"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex size-14 items-center justify-center rounded-full bg-[#25d366] shadow-[0_8px_24px] shadow-[#25d366]/40 transition-transform hover:scale-105"
+        className="flex size-14 items-center justify-center rounded-full bg-card border border-border shadow-lg shadow-card/20 transition-transform hover:scale-105"
         aria-label="Chat on WhatsApp"
       >
         <svg
