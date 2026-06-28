@@ -1,8 +1,23 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
-import { Copy, Mail } from 'lucide-react'
+import { Copy } from 'lucide-react'
 
 const GMAIL_ID = 'Khushwinder.dev@gmail.com'
+
+const GmailIcon = ({ className = "size-7" }: { className?: string }) => (
+  <svg 
+    className={className} 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="52 42 88 66"
+    fill="none"
+  >
+    <path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/> 
+    <path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/> 
+    <path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/> 
+    <path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92"/> 
+    <path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/> 
+  </svg>
+)
 
 export function ContactButtons() {
   const [showGmailMenu, setShowGmailMenu] = useState(false)
@@ -41,10 +56,10 @@ export function ContactButtons() {
       <div className="relative" ref={menuRef}>
         <button
           onClick={() => setShowGmailMenu(!showGmailMenu)}
-          className="flex size-14 items-center justify-center rounded-full bg-red-500 shadow-[0_8px_24px] shadow-red-500/40 transition-transform hover:scale-105"
+          className="flex size-14 items-center justify-center rounded-full bg-white shadow-[0_8px_24px] shadow-gray-300/40 transition-transform hover:scale-105"
           aria-label="Contact via Gmail"
         >
-          <Mail className="size-7 text-white" />
+          <GmailIcon />
         </button>
         {showGmailMenu && (
           <div className="absolute bottom-16 right-0 flex flex-col gap-2 rounded-xl border border-border bg-card p-2 shadow-lg min-w-[140px]">
@@ -59,7 +74,7 @@ export function ContactButtons() {
               onClick={openGmail}
               className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary whitespace-nowrap"
             >
-              <Mail className="size-4 shrink-0" />
+              <GmailIcon className="size-4" />
               Open Gmail
             </button>
           </div>
