@@ -11,10 +11,12 @@ import { FindMe } from '@/components/portfolio/find-me'
 import { Footer } from '@/components/portfolio/footer'
 import { WhatsAppButton } from '@/components/portfolio/whatsapp-button'
 import { AnimatedSection } from '@/components/ui/animated-section'
+import { Particles } from '@/components/ui/particles'
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground relative">
+      <Particles />
       <Header />
       <main>
         <AnimatedSection>
