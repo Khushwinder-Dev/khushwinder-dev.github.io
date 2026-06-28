@@ -2,8 +2,8 @@
 import { motion, useMotionValue, useSpring, useTransform, useAnimationFrame } from 'framer-motion'
 import { useMemo, useState, useEffect, useRef } from 'react'
 
-const PARTICLE_COUNT = 150
-const GLOW_PARTICLE_COUNT = 50
+const PARTICLE_COUNT = 250
+const GLOW_PARTICLE_COUNT = 80
 
 // Simple deterministic pseudo-random number generator
 const seededRandom = (seed: number) => {
@@ -44,7 +44,7 @@ const generateParticles = (): ParticleData[] => {
     id: i,
     initialX: rand() * 100,
     initialY: rand() * 100,
-    size: rand() * 10 + 3,
+    size: rand() * 6 + 2,
     duration: rand() * 25 + 15,
     delay: rand() * 8,
     color: i % 4 === 0 ? 'bg-primary' : i % 4 === 1 ? 'bg-accent' : i % 4 === 2 ? 'bg-emerald-400' : 'bg-cyan-400',
@@ -60,7 +60,7 @@ const generateGlowParticles = (): GlowParticleData[] => {
     id: i,
     initialX: rand() * 100,
     initialY: rand() * 100,
-    size: rand() * 40 + 20,
+    size: rand() * 6 + 2,
     color: i % 3 === 0 ? 'bg-purple-500' : i % 3 === 1 ? 'bg-pink-500' : 'bg-blue-500',
     attraction: 0.005 + rand() * 0.02,
     speed: rand() * 0.08 + 0.02,

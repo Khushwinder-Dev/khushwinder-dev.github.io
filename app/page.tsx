@@ -17,6 +17,7 @@ import { ThreeScene } from '@/components/ui/three-scene'
 export default function Page() {
   return (
     <div className="min-h-screen bg-background text-foreground relative">
+      <ThreeScene />
       <Particles />
       <Header />
       <main>
