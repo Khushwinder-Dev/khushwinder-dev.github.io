@@ -5,11 +5,11 @@ import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
 
 const floatingIcons = [
-  { logo: '/logos/shopify.svg', name: 'Shopify', className: 'left-0 top-8', delay: 0 },
-  { logo: '/logos/react.svg', name: 'React', className: 'left-2 top-1/2 -translate-y-1/2', delay: 0.1 },
-  { logo: '/logos/javascript.svg', name: 'JavaScript', className: 'left-6 bottom-10', delay: 0.2 },
-  { logo: '/logos/html5.svg', name: 'HTML5', className: 'right-0 top-8', delay: 0.3 },
-  { logo: '/logos/css3.svg', name: 'CSS3', className: 'right-2 top-1/2 -translate-y-1/2', delay: 0.4 },
+  { logo: '/logos/wordpress.svg', name: 'WordPress', className: 'left-0 top-8', delay: 0 },
+  { logo: '/logos/shopify.svg', name: 'Shopify', className: 'left-2 top-1/2 -translate-y-1/2', delay: 0.1 },
+  { logo: '/logos/react.svg', name: 'React', className: 'left-6 bottom-10', delay: 0.2 },
+  { logo: '/logos/laravel.svg', name: 'Laravel', className: 'right-0 top-8', delay: 0.3 },
+  { logo: '/logos/javascript.svg', name: 'JavaScript', className: 'right-2 top-1/2 -translate-y-1/2', delay: 0.4 },
   { logo: '/logos/tailwindcss.svg', name: 'Tailwind', className: 'right-6 bottom-10', delay: 0.5 },
 ]
 
@@ -36,12 +36,11 @@ export function Hero() {
           <h1 className="mt-2 text-balance text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
             Khushwinder
             <span className="mt-2 block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Shopify Developer & Frontend Developer
+              Web Developer & Digital Marketer
             </span>
           </h1>
           <p className="mt-6 max-w-md text-pretty leading-relaxed text-muted-foreground">
-            I build fast, responsive and high-converting Shopify stores with
-            modern animations and clean code.
+            I build professional websites, e-commerce stores (WordPress/Shopify), custom web apps (React/Laravel), and help brands grow with digital marketing.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -98,7 +97,7 @@ export function Hero() {
             />
             <Image
               src="/images/hero-portrait.png"
-              alt="Portrait of Khushwinder, Shopify and frontend developer"
+              alt="Portrait of Khushwinder, Web Developer and Digital Marketer"
               fill
               priority
               sizes="(max-width: 1024px) 80vw, 40vw"

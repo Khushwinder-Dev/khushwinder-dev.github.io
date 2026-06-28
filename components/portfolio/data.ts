@@ -1,8 +1,10 @@
 export type Tech = { name: string; logo: string }
 
 export const techStack: Tech[] = [
+  { name: 'WordPress', logo: '/logos/wordpress.svg' },
   { name: 'Shopify Liquid', logo: '/logos/shopify.svg' },
   { name: 'React.js', logo: '/logos/react.svg' },
+  { name: 'Laravel', logo: '/logos/laravel.svg' },
   { name: 'JavaScript', logo: '/logos/javascript.svg' },
   { name: 'HTML5', logo: '/logos/html5.svg' },
   { name: 'CSS3', logo: '/logos/css3.svg' },
@@ -17,21 +19,21 @@ export const experience = [
     company: 'Cybertronix Technologies',
     period: '2025 - Present',
     description:
-      'Built responsive interfaces, improved UI/UX and performance using React, JavaScript and modern tools.',
+      'Built responsive websites, e-commerce stores, and custom web applications using React, Laravel, WordPress, and Shopify.',
   },
   {
     role: 'Web Developer',
     company: 'Vezire Technologies',
     period: '2024 - 2025',
     description:
-      'Built responsive interfaces, improved UI/UX and performance using React, JavaScript and modern tools.',
+      'Developed custom websites and e-commerce solutions, improved UI/UX, and optimized performance for better conversions.',
   },
   {
     role: 'Web Developer',
     company: 'Protolabz Eservices',
     period: '2021 - 2024',
     description:
-      'Developed Shopify themes, custom features and optimized store speed and conversions.',
+      'Developed Shopify themes, custom features, WordPress websites, and optimized store speed and conversions.',
   },
 ]
 
@@ -61,10 +63,10 @@ export const projects = [
 export const plans = [
   {
     name: 'Basic',
-    blurb: 'Perfect for small tasks and basic store setup',
+    blurb: 'Perfect for small businesses and basic website/store setup',
     price: '₹ 3,000',
     features: [
-      'Store Setup',
+      'Website/Store Setup',
       'Theme Customization',
       'Basic Page Design',
       '7 Days Support',
@@ -77,22 +79,24 @@ export const plans = [
     price: '₹ 15,000',
     features: [
       'Everything in Basic',
-      'Custom Sections',
-      'App Integrations',
+      'Custom Sections/Features',
+      'App/Plugin Integrations',
       'Performance Optimization',
+      'Basic Digital Marketing Setup',
       '15 Days Support',
     ],
     popular: false,
   },
   {
     name: 'Gold',
-    blurb: 'Complete solution for scaling stores and advanced needs',
+    blurb: 'Complete solution for scaling businesses',
     price: '₹ 40,000',
     features: [
       'Everything in Silver',
       'Advanced Features',
       'Custom Functionality',
       'Speed Optimization',
+      'Full Digital Marketing Strategy',
       'Priority Support (30 Days)',
     ],
     popular: true,
