@@ -7,7 +7,7 @@ export function WhatsAppButton() {
       className="group fixed bottom-5 right-5 z-50 flex items-center gap-3"
       aria-label="Chat on WhatsApp"
     >
-      <span className="hidden rounded-lg border border-border bg-card px-3 py-2 text-xs font-medium text-foreground shadow-lg sm:block">
+      <span className="opacity-0 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg border border-border bg-card px-3 py-2 text-xs font-medium text-foreground shadow-lg sm:block">
         Chat on WhatsApp
       </span>
       <span className="flex size-14 items-center justify-center rounded-full bg-[#25d366] shadow-[0_8px_24px] shadow-[#25d366]/40 transition-transform group-hover:scale-105">

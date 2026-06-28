@@ -13,23 +13,23 @@ export const techStack: Tech[] = [
 
 export const experience = [
   {
-    role: 'Shopify Developer',
-    company: 'Qbands',
-    period: '2022 - Present',
-    description:
-      'Developing and maintaining high-performance Shopify stores, custom sections, app integrations, and performance optimization.',
-  },
-  {
-    role: 'Frontend Developer',
-    company: 'G1 Paintball',
-    period: '2021 - 2022',
+    role: 'Web Developer',
+    company: 'Cybertronix Technologies',
+    period: '2025 - Present',
     description:
       'Built responsive interfaces, improved UI/UX and performance using React, JavaScript and modern tools.',
   },
   {
     role: 'Web Developer',
-    company: 'Nazareth Store',
-    period: '2020 - 2021',
+    company: 'Vezire Technologies',
+    period: '2024 - 2025',
+    description:
+      'Built responsive interfaces, improved UI/UX and performance using React, JavaScript and modern tools.',
+  },
+  {
+    role: 'Web Developer',
+    company: 'Protolabz Eservices',
+    period: '2021 - 2024',
     description:
       'Developed Shopify themes, custom features and optimized store speed and conversions.',
   },
