@@ -40,13 +40,13 @@ export function Testimonials() {
     >
       <div className="flex items-center justify-between">
         <SectionLabel>Testimonials</SectionLabel>
-        <a
+        {/* <a
           href="#"
           className="group inline-flex items-center gap-2 text-xs font-medium text-primary hover:text-accent"
         >
           View All Reviews
           <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-        </a>
+        </a> */}
       </div>
 
       <div className="mt-6 flex flex-1 flex-col">

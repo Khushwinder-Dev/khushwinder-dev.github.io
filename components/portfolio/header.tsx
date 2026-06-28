@@ -42,11 +42,11 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <Button
-            render={<a href="#contact" />}
+            render={<a target='_blank' href="https://wa.me/919780032334?text=Hi%20Khushwinder,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." />}
             nativeButton={false}
             className="hidden rounded-full bg-primary px-5 font-medium text-primary-foreground hover:bg-primary/90 sm:inline-flex"
           >
-            Let&apos;s Work Together
+            Discuss Your Project
           </Button>
           <button
             type="button"
