@@ -1,8 +1,9 @@
 'use client'
 import { useState, useRef, useEffect } from 'react'
-import { Copy } from 'lucide-react'
+import { Copy, Phone } from 'lucide-react'
 
 const GMAIL_ID = 'Khushwinder.dev@gmail.com'
+const PHONE_NUMBER = '+919780032334'
 
 const GmailIcon = ({ className = "size-7" }: { className?: string }) => (
   <svg 
@@ -52,6 +53,15 @@ export function ContactButtons() {
 
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+      {/* Call Button */}
+      <a
+        href={`tel:${PHONE_NUMBER}`}
+        className="flex size-14 items-center justify-center rounded-full bg-blue-500 shadow-[0_8px_24px] shadow-blue-500/40 transition-transform hover:scale-105"
+        aria-label="Call now"
+      >
+        <Phone className="size-7 text-white" />
+      </a>
+
       {/* Gmail Button */}
       <div className="relative" ref={menuRef}>
         <button
