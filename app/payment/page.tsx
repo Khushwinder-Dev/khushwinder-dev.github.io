@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Check, Copy, Download, ArrowLeft } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const paymentMethods = {
@@ -113,12 +114,14 @@ export default function PaymentPage() {
               QR Code
             </h2>
             <div className="flex flex-col items-center gap-4">
-              <div className="aspect-square w-full max-w-xs rounded-2xl border border-border bg-white p-4 flex items-center justify-center">
-                {/* Placeholder for QR code - user needs to add /images/payment-qr.png */}
-                <div className="text-center text-muted-foreground">
-                  <p className="text-sm">Add your QR code to</p>
-                  <p className="text-sm font-medium">/images/payment-qr.png</p>
-                </div>
+              <div className="aspect-ractangle w-full max-w-xs rounded-2xl border border-border bg-white p-4 flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/payment-qr.png"
+                  alt="Payment QR Code"
+                  width={400}
+                  height={800}
+                  className="object-contain"
+                />
               </div>
               <button
                 onClick={downloadQRCode}
