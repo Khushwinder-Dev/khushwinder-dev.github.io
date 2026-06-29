@@ -64,7 +64,7 @@ export const plans = [
   {
     name: 'Basic',
     blurb: 'Perfect for small businesses and basic website/store setup',
-    price: '₹ 3,000',
+    price: '₹ 5,000',
     features: [
       'Website/Store Setup',
       'Theme Customization',
