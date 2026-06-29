@@ -16,47 +16,84 @@ import { ThreeScene } from '@/components/ui/three-scene'
 import { ContactButtons } from '@/components/portfolio/contact-buttons'
 
 export default function Page() {
+  // Schema.org structured data
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Khushwinder",
+    "description": "Web Developer & Digital Marketer specializing in WordPress, Shopify, React, Laravel, and digital marketing strategies to grow businesses online.",
+    "url": "https://khushwinder.dev", // Replace with your actual domain!
+    "image": "https://khushwinder.dev/images/hero-portrait.png", // Replace with your portrait URL!
+    "jobTitle": "Web Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Khushwinder Freelance Services"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/khushwinder", // Add your real social links!
+      "https://github.com/khushwinder",
+      "https://twitter.com/khushwinder"
+    ],
+    "knowsAbout": [
+      "Web Development",
+      "WordPress",
+      "Shopify",
+      "React",
+      "Laravel",
+      "Digital Marketing",
+      "E-commerce"
+    ]
+  }
+
   return (
-    <div className="min-h-screen bg-background text-foreground relative">
-      <ThreeScene />
-      <Particles />
-      <Header />
-      <main>
-        <AnimatedSection>
-          <Hero />
-        </AnimatedSection>
+    <>
+      {/* Add structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      
+      <div className="min-h-screen bg-background text-foreground relative">
+        <ThreeScene />
+        <Particles />
+        <Header />
+        <main>
+          <AnimatedSection>
+            <Hero />
+          </AnimatedSection>
 
-        {/* Skills + Experience */}
-        <AnimatedSection delay={0.1}>
-          <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-2">
-            <Skills />
-            <Experience />
-          </section>
-        </AnimatedSection>
+          {/* Skills + Experience */}
+          <AnimatedSection delay={0.1}>
+            <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-2">
+              <Skills />
+              <Experience />
+            </section>
+          </AnimatedSection>
 
-        <AnimatedSection delay={0.2}>
-          <Projects />
-        </AnimatedSection>
+          <AnimatedSection delay={0.2}>
+            <Projects />
+          </AnimatedSection>
 
-        <AnimatedSection delay={0.3}>
-          <Plans />
-        </AnimatedSection>
+          <AnimatedSection delay={0.3}>
+            <Plans />
+          </AnimatedSection>
 
-        <AnimatedSection delay={0.4}>
-          <Approach />
-        </AnimatedSection>
+          <AnimatedSection delay={0.4}>
+            <Approach />
+          </AnimatedSection>
 
-        {/* Testimonials + Contact + Find Me */}
-        <AnimatedSection delay={0.5}>
-          <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-3">
-            <Testimonials />
-            <Contact />
-            <FindMe />
-          </section>
-        </AnimatedSection>
-      </main>
-      <Footer />
-      <ContactButtons />
-    </div>
+          {/* Testimonials + Contact + Find Me */}
+          <AnimatedSection delay={0.5}>
+            <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-3">
+              <Testimonials />
+              <Contact />
+              <FindMe />
+            </section>
+          </AnimatedSection>
+        </main>
+        <Footer />
+        <ContactButtons />
+      </div>
+    </>
   )
 }

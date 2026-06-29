@@ -11,10 +11,52 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Khushwinder — Web Developer & Digital Marketer',
+  metadataBase: new URL('https://khushwinder.dev'), // Replace with your actual domain!
+  title: {
+    default: 'Khushwinder — Web Developer & Digital Marketer',
+    template: '%s | Khushwinder',
+  },
   description:
-    'I build professional websites, e-commerce stores (WordPress/Shopify), custom web apps (React/Laravel), and help brands grow with digital marketing.',
-  generator: 'v0.app',
+    'Khushwinder is a web developer & digital marketer specializing in WordPress, Shopify, React, Laravel, and digital marketing strategies to grow your business online.',
+  keywords: [
+    'web developer',
+    'digital marketer',
+    'shopify developer',
+    'wordpress developer',
+    'react developer',
+    'laravel developer',
+    'e-commerce developer',
+    'portfolio website',
+    'khushwinder',
+  ],
+  openGraph: {
+    title: 'Khushwinder — Web Developer & Digital Marketer',
+    description:
+      'I build professional websites, e-commerce stores (WordPress/Shopify), custom web apps (React/Laravel), and help brands grow with digital marketing.',
+    url: 'https://khushwinder.dev', // Replace with your actual domain!
+    siteName: 'Khushwinder Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Khushwinder — Web Developer & Digital Marketer',
+    description:
+      'I build professional websites, e-commerce stores (WordPress/Shopify), custom web apps (React/Laravel), and help brands grow with digital marketing.',
+    creator: '@khushwinder', // Replace with your Twitter handle if you have one!
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  generator: 'Next.js',
   icons: {
     icon: [
       {
