@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
@@ -10,9 +11,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Khushwinder — Shopify & Frontend Developer',
+  title: 'Khushwinder — Web Developer & Digital Marketer',
   description:
-    'I build fast, responsive and high-converting Shopify stores with modern animations and clean code.',
+    'I build professional websites, e-commerce stores (WordPress/Shopify), custom web apps (React/Laravel), and help brands grow with digital marketing.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -51,6 +52,20 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-C7YG4038YC"
+          strategy="afterInteractive"
+        />
+        
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C7YG4038YC');
+          `}
+        </Script>
       </body>
     </html>
   )
