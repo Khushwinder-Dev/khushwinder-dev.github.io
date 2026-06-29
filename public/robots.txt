@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Replace with your actual domain!
+Sitemap: https://khushwinder.dev/sitemap.xml
