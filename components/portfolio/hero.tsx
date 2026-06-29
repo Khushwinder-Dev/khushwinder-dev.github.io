@@ -45,15 +45,15 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Button
-              render={<a href="#projects" />}
+              render={<a href="/payment" />}
               nativeButton={false}
               size="lg"
               className="group rounded-full bg-primary px-6 font-medium text-primary-foreground hover:bg-primary/90"
             >
-              View My Work
+              Make Payment
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </Button>
-            <Button
+            {/* <Button
               render={<a target='_blank' href="/resume/webDeveloper/Khushwinder.pdf" />}
               nativeButton={false}
               size="lg"
@@ -62,7 +62,7 @@ export function Hero() {
             >
               Download CV
               <Download className="size-4" />
-            </Button>
+            </Button> */}
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-6 text-sm">
