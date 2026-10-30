@@ -13,6 +13,7 @@ import {
   ChevronDown,
   Sparkles,
   ExternalLink,
+  Lock,
 } from 'lucide-react'
 import { SectionLabel } from './section-label'
 import { projects, Project, ProjectCategory } from './data'
@@ -38,65 +39,141 @@ function cleanDomain(url: string): string {
 }
 
 function ProjectThumbnail({ project }: { project: Project }) {
-  const [hasError, setHasError] = useState(false)
+  const [sourceIndex, setSourceIndex] = useState(0)
   const [isLoaded, setIsLoaded] = useState(false)
+  const domain = cleanDomain(project.url)
 
-  // Use local image if available, otherwise fetch automated live website thumbnail
-  const thumbUrl =
-    project.image ||
-    `https://image.thum.io/get/width/600/crop/400/${project.url}`
+  // Multi-tier thumbnail sources:
+  // 1. Local custom screenshot (if provided)
+  // 2. High-speed 11ty CDN screenshot (CloudFront / Vercel backed)
+  // 3. Microlink high-definition screenshot
+  const sources = useMemo(() => {
+    const list: string[] = []
+    if (project.image) {
+      list.push(project.image)
+    }
+    // High-performance 11ty CDN screenshot
+    list.push(
+      `https://v1.screenshot.11ty.dev/${encodeURIComponent(
+        project.url
+      )}/medium/`
+    )
+    // Microlink screenshot
+    list.push(
+      `https://api.microlink.io?url=${encodeURIComponent(
+        project.url
+      )}&screenshot=true&meta=false&embed=screenshot.url`
+    )
+    return list
+  }, [project.image, project.url])
+
+  const currentSrc = sources[sourceIndex]
+  const isExhausted = sourceIndex >= sources.length
+
+  const handleImgError = () => {
+    if (sourceIndex < sources.length - 1) {
+      setSourceIndex((prev) => prev + 1)
+      setIsLoaded(false)
+    } else {
+      setSourceIndex(sources.length) // All sources exhausted, display branded UI mockup
+    }
+  }
+
+  const faviconUrl = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(
+    project.url
+  )}&size=128`
 
   const getGradient = (category: ProjectCategory) => {
     switch (category) {
       case 'shopify':
-        return 'from-emerald-500/15 via-card to-background'
+        return 'from-emerald-950/60 via-card to-emerald-900/20'
       case 'wordpress':
-        return 'from-sky-500/15 via-card to-background'
+        return 'from-sky-950/60 via-card to-sky-900/20'
       case 'laravel':
-        return 'from-rose-500/15 via-card to-background'
+        return 'from-rose-950/60 via-card to-rose-900/20'
     }
   }
 
-  if (hasError) {
-    return (
-      <div
-        className={`flex size-full flex-col items-center justify-center bg-gradient-to-br ${getGradient(
-          project.category
-        )} pt-6 p-4 text-center`}
-      >
-        <div className="flex size-10 items-center justify-center rounded-xl bg-card border border-border/60 shadow-sm">
-          <Globe className="size-5 text-primary" />
-        </div>
-        <p className="mt-2 text-xs font-semibold text-foreground truncate max-w-full">
-          {project.title}
-        </p>
-        <p className="text-[10px] text-muted-foreground truncate">{project.tag}</p>
-      </div>
-    )
+  const getAccentColor = (category: ProjectCategory) => {
+    switch (category) {
+      case 'shopify':
+        return 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30'
+      case 'wordpress':
+        return 'bg-sky-500/20 text-sky-400 border-sky-500/30'
+      case 'laravel':
+        return 'bg-rose-500/20 text-rose-400 border-rose-500/30'
+    }
   }
 
   return (
-    <div className="relative size-full pt-6 bg-muted/20">
-      {!isLoaded && (
-        <div
-          className={`absolute inset-0 flex items-center justify-center bg-gradient-to-br ${getGradient(
-            project.category
-          )} pt-6`}
-        >
-          <div className="size-4 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+    <div className="relative size-full overflow-hidden bg-card">
+      {/* ----------------- BASE LAYER: WEBSITE UI MOCKUP ----------------- */}
+      <div
+        className={`absolute inset-0 flex flex-col justify-between p-3.5 bg-gradient-to-br ${getGradient(
+          project.category
+        )}`}
+      >
+        {/* Mockup header */}
+        <div className="flex items-center justify-between gap-2 border-b border-border/40 pb-2">
+          <div className="flex items-center gap-2">
+            <div className="size-6 overflow-hidden rounded-full border border-border/60 bg-white/90 p-0.5 shadow-sm shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={faviconUrl}
+                alt=""
+                className="size-full object-contain"
+                onError={(e) => {
+                  ;(e.target as HTMLElement).style.display = 'none'
+                }}
+              />
+            </div>
+            <span className="text-[11px] font-semibold text-foreground truncate max-w-[130px]">
+              {project.title}
+            </span>
+          </div>
+
+          <span
+            className={`rounded-full border px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wider ${getAccentColor(
+              project.category
+            )}`}
+          >
+            {project.category}
+          </span>
         </div>
+
+        {/* Mockup visual body */}
+        <div className="flex-1 flex flex-col justify-center py-2 space-y-1.5 opacity-80">
+          <div className="h-2 w-3/4 rounded-full bg-foreground/20" />
+          <div className="h-1.5 w-1/2 rounded-full bg-muted-foreground/30" />
+          <div className="pt-2 flex items-center gap-2">
+            <div className="h-5 w-16 rounded-md bg-primary/30 border border-primary/40" />
+            <div className="h-5 w-12 rounded-md bg-secondary/50 border border-border/40" />
+          </div>
+        </div>
+
+        {/* Mockup footer tag */}
+        <div className="flex items-center justify-between text-[10px] text-muted-foreground pt-1 border-t border-border/30">
+          <span className="truncate max-w-[180px]">{project.tag}</span>
+          <span className="font-mono text-primary text-[9px]">live</span>
+        </div>
+      </div>
+
+      {/* ----------------- TOP LAYER: LIVE SCREENSHOT IMAGE ----------------- */}
+      {!isExhausted && (
+        <>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={currentSrc}
+            alt={`${project.title} live preview`}
+            loading="lazy"
+            onLoad={() => setIsLoaded(true)}
+            onError={handleImgError}
+            className={`absolute inset-0 size-full object-cover object-top transition-all duration-500 group-hover:scale-105 z-10 ${
+              isLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+        </>
       )}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={thumbUrl}
-        alt={`${project.title} live website preview`}
-        loading="lazy"
-        onLoad={() => setIsLoaded(true)}
-        onError={() => setHasError(true)}
-        className={`size-full object-cover object-top transition-all duration-500 group-hover:scale-105 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
-        }`}
-      />
     </div>
   )
 }
@@ -425,12 +502,15 @@ export function Projects() {
         </div>
       )}
 
-      {/* Projects Grid with Live Website Thumbnails */}
+      {/* Projects Grid with Live Website Mockup & Screenshot Thumbnails */}
       {displayedProjects.length > 0 && (
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {displayedProjects.map((project, i) => {
             const badge = getCategoryBadge(project.category)
             const domain = cleanDomain(project.url)
+            const faviconUrl = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(
+              project.url
+            )}&size=128`
 
             return (
               <AnimatedItem key={`${project.category}-${project.title}-${i}`} delay={Math.min(i * 0.03, 0.3)}>
@@ -440,26 +520,29 @@ export function Projects() {
                   rel="noopener noreferrer"
                   className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border/70 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/50 hover:bg-card/90 hover:shadow-xl hover:shadow-primary/5"
                 >
-                  {/* Browser Mockup Header & Thumbnail */}
+                  {/* Browser Mockup Header & Thumbnail Container */}
                   <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-border/40">
-                    {/* Browser Address Bar */}
-                    <div className="absolute inset-x-0 top-0 z-10 flex items-center justify-between border-b border-border/40 bg-background/85 px-3 py-1.5 backdrop-blur-md">
+                    {/* Browser Address Bar with Favicon & Domain */}
+                    <div className="absolute inset-x-0 top-0 z-20 flex h-7 items-center justify-between border-b border-border/40 bg-background/90 px-3 py-1 backdrop-blur-md">
                       <div className="flex items-center gap-1.5">
                         <span className="size-2 rounded-full bg-rose-500/80" />
                         <span className="size-2 rounded-full bg-amber-500/80" />
                         <span className="size-2 rounded-full bg-emerald-500/80" />
                       </div>
-                      <span className="truncate max-w-[130px] font-mono text-[10px] text-muted-foreground/90">
-                        {domain}
-                      </span>
+                      <div className="flex items-center gap-1.5 truncate max-w-[150px] font-mono text-[10px] text-muted-foreground/90">
+                        <Lock className="size-2.5 text-muted-foreground/60 shrink-0" />
+                        <span className="truncate">{domain}</span>
+                      </div>
                       <ArrowUpRight className="size-3 text-muted-foreground group-hover:text-primary transition-colors" />
                     </div>
 
-                    {/* Screenshot Preview */}
-                    <ProjectThumbnail project={project} />
+                    {/* Screenshot / Mockup Preview */}
+                    <div className="absolute inset-x-0 top-7 bottom-0 overflow-hidden bg-card">
+                      <ProjectThumbnail project={project} />
+                    </div>
 
                     {/* Hover Visit Pill */}
-                    <div className="absolute inset-0 z-10 flex items-end p-3 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <div className="absolute inset-0 z-20 flex items-end p-3 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
                       <span className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1 text-[11px] font-semibold text-primary-foreground shadow-md transition-transform group-hover:scale-105">
                         <span>Visit Live Website</span>
                         <ArrowUpRight className="size-3.5" />
@@ -470,7 +553,7 @@ export function Projects() {
                   {/* Card Content */}
                   <div className="flex flex-1 flex-col justify-between p-4">
                     <div>
-                      {/* Top row: Category badge */}
+                      {/* Top row: Category badge & Favicon */}
                       <div className="flex items-center justify-between gap-2">
                         <span
                           className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[11px] font-semibold transition-colors ${badge.badgeClass}`}
