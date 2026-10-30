@@ -3,6 +3,11 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+const stats = [
+  { label: 'Completed', value: '115+ Projects' },
+  { label: 'Experience', value: '4+ Years' },
+  { label: 'Rating', value: '100% Satisfaction' },
+]
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Globe,
@@ -32,11 +37,6 @@ const techStack = [
 ]
 
 // Stats
-const stats = [
-  { label: 'Completed', value: '115+ Projects' },
-  { label: 'Experience', value: '4+ Years' },
-  { label: 'Rating', value: '100% Satisfaction' },
-]
 
 // Social icons at top
 const topSocials = [
