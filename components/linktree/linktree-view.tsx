@@ -342,7 +342,7 @@ export function LinktreeView() {
                     Explore Full Portfolio
                   </h2>
                   <p className="text-xs text-muted-foreground line-clamp-1 sm:line-clamp-none">
-                    117+ Client Projects, 3D interactive showcase &amp; plans
+                    117+ Client Projects &amp; 3D interactive showcase
                   </p>
                 </div>
 

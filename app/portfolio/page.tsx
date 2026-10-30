@@ -4,7 +4,6 @@ import { Hero } from '@/components/portfolio/hero'
 import { Skills } from '@/components/portfolio/skills'
 import { Experience } from '@/components/portfolio/experience'
 import { Projects } from '@/components/portfolio/projects'
-import { Plans } from '@/components/portfolio/plans'
 import { Approach } from '@/components/portfolio/approach'
 import { Testimonials } from '@/components/portfolio/testimonials'
 import { Contact } from '@/components/portfolio/contact'
@@ -82,15 +81,11 @@ export default function PortfolioPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.3}>
-            <Plans />
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.4}>
             <Approach />
           </AnimatedSection>
 
           {/* Testimonials + Contact + Find Me */}
-          <AnimatedSection delay={0.5}>
+          <AnimatedSection delay={0.4}>
             <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 lg:grid-cols-3">
               <Testimonials />
               <Contact />
@@ -104,4 +99,3 @@ export default function PortfolioPage() {
     </>
   )
 }
-

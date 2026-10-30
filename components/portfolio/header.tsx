@@ -10,7 +10,6 @@ const navItems = [
   'Skills',
   'Experience',
   'Projects',
-  'Plans',
   'Approach',
   'Testimonials',
   'Contact',
