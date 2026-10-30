@@ -57,7 +57,7 @@ export const projects: Project[] = [
     url: 'https://www.en-place.co',
     category: 'shopify',
     tag: 'Furniture & Interior Design',
-    image: '/images/project-furniture.png',
+    image: '/images/projects/en-place.webp',
     featured: true,
   },
   {
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     url: 'https://www.qbands.co',
     category: 'shopify',
     tag: 'Fitness Equipment & Bands',
-    image: '/images/project-fitness.png',
+    image: '/images/projects/qbands.webp',
     featured: true,
   },
   {
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     url: 'https://g1paintball.com',
     category: 'shopify',
     tag: 'Tactical Paintball Equipment',
-    image: '/images/project-paintball.png',
+    image: '/images/projects/g1paintball.webp',
     featured: true,
   },
   {
@@ -81,7 +81,7 @@ export const projects: Project[] = [
     url: 'https://nazarethstore.com',
     category: 'shopify',
     tag: 'Jewelry & Holy Land Keepsakes',
-    image: '/images/project-jewelry.png',
+    image: '/images/projects/nazarethstore.webp',
     featured: true,
   },
   {
@@ -89,12 +89,14 @@ export const projects: Project[] = [
     url: 'https://danielleidd.com',
     category: 'shopify',
     tag: 'Fashion & Apparel',
+    image: '/images/projects/danielleidd.webp',
   },
   {
     title: 'Shop Aleena',
     url: 'https://shopaleena.com',
     category: 'shopify',
     tag: 'Designer Boutique',
+    image: '/images/projects/shopaleena.webp',
   },
   {
     title: 'One Athletic',
@@ -107,12 +109,14 @@ export const projects: Project[] = [
     url: 'https://www.teemateas.com',
     category: 'shopify',
     tag: 'Organic Herbal Teas',
+    image: '/images/projects/teemateas.webp',
   },
   {
     title: 'South India Jewels',
     url: 'https://southindiajewels.com',
     category: 'shopify',
     tag: 'Traditional Indian Jewelry',
+    image: '/images/projects/southindiajewels.webp',
   },
   {
     title: 'Crafsto',
@@ -131,6 +135,7 @@ export const projects: Project[] = [
     url: 'https://evergreenselect.com',
     category: 'shopify',
     tag: 'Curated Home & Living',
+    image: '/images/projects/evergreenselect.webp',
   },
   {
     title: 'Perne Skin',
@@ -163,6 +168,7 @@ export const projects: Project[] = [
     url: 'https://www.altswim.com',
     category: 'shopify',
     tag: 'Luxury Swimwear',
+    image: '/images/projects/altswim.webp',
     featured: true,
   },
   {
@@ -182,6 +188,7 @@ export const projects: Project[] = [
     url: 'https://ollu-shop.com',
     category: 'shopify',
     tag: 'Apparel & Modern Style',
+    image: '/images/projects/ollu-shop.webp',
   },
   {
     title: 'Healthy Holic',
@@ -194,6 +201,7 @@ export const projects: Project[] = [
     url: 'https://buioch.ie',
     category: 'shopify',
     tag: 'Irish Gourmet Confectionery',
+    image: '/images/projects/buioch.webp',
   },
   {
     title: 'Blue Jay Avenue',
@@ -206,6 +214,7 @@ export const projects: Project[] = [
     url: 'https://hillennursery.com',
     category: 'shopify',
     tag: 'Wholesale Plants & Garden',
+    image: '/images/projects/hillennursery.webp',
   },
   {
     title: 'FEHH',
@@ -248,6 +257,7 @@ export const projects: Project[] = [
     url: 'https://www.shayapets.com',
     category: 'shopify',
     tag: 'Luxury Italian Leather Pet Accessories',
+    image: '/images/projects/shayapets.webp',
     featured: true,
   },
   {
@@ -261,6 +271,7 @@ export const projects: Project[] = [
     url: 'https://www.bag-all.com',
     category: 'shopify',
     tag: 'Reusable Organization & Travel Bags',
+    image: '/images/projects/bag-all.webp',
     featured: true,
   },
   {
@@ -346,6 +357,7 @@ export const projects: Project[] = [
     url: 'https://www.albanypark.com',
     category: 'shopify',
     tag: 'Modern Designer Sofas & Sectionals',
+    image: '/images/projects/albanypark.webp',
     featured: true,
   },
   {
@@ -353,6 +365,7 @@ export const projects: Project[] = [
     url: 'https://larroude.com',
     category: 'shopify',
     tag: 'Designer Footwear & Handbags',
+    image: '/images/projects/larroude.webp',
     featured: true,
   },
   {
@@ -372,6 +385,7 @@ export const projects: Project[] = [
     url: 'https://www.primofightwear.com',
     category: 'shopify',
     tag: 'Muay Thai & Combat Sports Equipment',
+    image: '/images/projects/primofightwear.webp',
     featured: true,
   },
   {
@@ -427,6 +441,7 @@ export const projects: Project[] = [
     url: 'https://www.artisankraft.com',
     category: 'wordpress',
     tag: 'Architectural Fireplaces & Stone Mantels',
+    image: '/images/projects/artisankraft.webp',
     featured: true,
   },
   {
@@ -441,6 +456,7 @@ export const projects: Project[] = [
     url: 'https://runnersconnect.net',
     category: 'wordpress',
     tag: 'Running Community & Coaching Plans',
+    image: '/images/projects/runnersconnect.webp',
     featured: true,
   },
   {
@@ -719,6 +735,7 @@ export const projects: Project[] = [
     url: 'https://ruhlisticdecor.com',
     category: 'laravel',
     tag: 'Home Decor & E-Commerce',
+    image: '/images/projects/ruhlisticdecor.webp',
     featured: true,
   },
   {
@@ -726,6 +743,7 @@ export const projects: Project[] = [
     url: 'https://byop.net',
     category: 'laravel',
     tag: 'Custom Pool Estimator Platform',
+    image: '/images/projects/byop.webp',
     featured: true,
   },
   {
@@ -763,6 +781,7 @@ export const projects: Project[] = [
     url: 'https://protechavsolutions.com',
     category: 'laravel',
     tag: 'Commercial AV Systems',
+    image: '/images/projects/protechavsolutions.webp',
     featured: true,
   },
   {
@@ -788,6 +807,7 @@ export const projects: Project[] = [
     url: 'https://www.gcrecital.com',
     category: 'laravel',
     tag: 'Music Academy & Event Management',
+    image: '/images/projects/gcrecital.webp',
     featured: true,
   },
 ]

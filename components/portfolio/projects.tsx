@@ -39,45 +39,8 @@ function cleanDomain(url: string): string {
 }
 
 function ProjectThumbnail({ project }: { project: Project }) {
-  const [sourceIndex, setSourceIndex] = useState(0)
+  const [imgError, setImgError] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
-  const domain = cleanDomain(project.url)
-
-  // Multi-tier thumbnail sources:
-  // 1. Local custom screenshot (if provided)
-  // 2. High-speed 11ty CDN screenshot (CloudFront / Vercel backed)
-  // 3. Microlink high-definition screenshot
-  const sources = useMemo(() => {
-    const list: string[] = []
-    if (project.image) {
-      list.push(project.image)
-    }
-    // High-performance 11ty CDN screenshot
-    list.push(
-      `https://v1.screenshot.11ty.dev/${encodeURIComponent(
-        project.url
-      )}/medium/`
-    )
-    // Microlink screenshot
-    list.push(
-      `https://api.microlink.io?url=${encodeURIComponent(
-        project.url
-      )}&screenshot=true&meta=false&embed=screenshot.url`
-    )
-    return list
-  }, [project.image, project.url])
-
-  const currentSrc = sources[sourceIndex]
-  const isExhausted = sourceIndex >= sources.length
-
-  const handleImgError = () => {
-    if (sourceIndex < sources.length - 1) {
-      setSourceIndex((prev) => prev + 1)
-      setIsLoaded(false)
-    } else {
-      setSourceIndex(sources.length) // All sources exhausted, display branded UI mockup
-    }
-  }
 
   const faviconUrl = `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(
     project.url
@@ -104,6 +67,8 @@ function ProjectThumbnail({ project }: { project: Project }) {
         return 'bg-rose-500/20 text-rose-400 border-rose-500/30'
     }
   }
+
+  const hasImage = Boolean(project.image) && !imgError
 
   return (
     <div className="relative size-full overflow-hidden bg-card">
@@ -154,20 +119,24 @@ function ProjectThumbnail({ project }: { project: Project }) {
         {/* Mockup footer tag */}
         <div className="flex items-center justify-between text-[10px] text-muted-foreground pt-1 border-t border-border/30">
           <span className="truncate max-w-[180px]">{project.tag}</span>
-          <span className="font-mono text-primary text-[9px]">live</span>
+          <span className="font-mono text-primary text-[9px] flex items-center gap-1">
+            <span className="size-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            live
+          </span>
         </div>
       </div>
 
-      {/* ----------------- TOP LAYER: LIVE SCREENSHOT IMAGE ----------------- */}
-      {!isExhausted && (
+      {/* ----------------- TOP LAYER: LOCAL HIGH-SPEED SCREENSHOT IMAGE ----------------- */}
+      {hasImage && project.image && (
         <>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={currentSrc}
+            src={project.image}
             alt={`${project.title} live preview`}
             loading="lazy"
+            decoding="async"
             onLoad={() => setIsLoaded(true)}
-            onError={handleImgError}
+            onError={() => setImgError(true)}
             className={`absolute inset-0 size-full object-cover object-top transition-all duration-500 group-hover:scale-105 z-10 ${
               isLoaded ? 'opacity-100' : 'opacity-0'
             }`}
