@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
+import { Menu, X, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const navItems = [
@@ -41,6 +42,13 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Link
+            href="/"
+            className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary/50 px-3.5 py-1.5 text-xs font-medium text-foreground transition-all hover:bg-secondary hover:border-primary/50"
+          >
+            <Sparkles className="size-3.5 text-primary" />
+            Links
+          </Link>
           <Button
             render={<a target='_blank' href="https://wa.me/919780032334?text=Hi%20Khushwinder,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." />}
             nativeButton={false}
@@ -62,6 +70,14 @@ export function Header() {
       {open && (
         <nav className="border-t border-border/60 bg-background px-4 py-4 lg:hidden">
           <div className="flex flex-col gap-1">
+            <Link
+              href="/"
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
+            >
+              <Sparkles className="size-4" />
+              All Links &amp; Profiles
+            </Link>
             {navItems.map((item) => (
               <a
                 key={item}

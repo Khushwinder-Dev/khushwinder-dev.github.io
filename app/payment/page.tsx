@@ -36,9 +36,9 @@ export default function PaymentPage() {
   return (
     <main className="min-h-screen bg-background text-foreground px-4 py-12 sm:px-6">
       <div className="mx-auto max-w-3xl">
-        <Link href="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8">
+        <Link href="/portfolio" className="flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8">
           <ArrowLeft className="size-4" />
-          Back to Home
+          Back to Portfolio
         </Link>
 
         <div className="text-center mb-10">

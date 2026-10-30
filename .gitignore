@@ -9,8 +9,15 @@ __v0_jsx-dev-runtime.ts
 # Environment variables
 .env*.local
 
-# Common ignores
-node_modules
+# Dependencies
+node_modules/
+
+# Next.js build and cache
 .next/
+/.next/
+*.tsbuildinfo
+next-env.d.ts
+
+# OS files
 .DS_Store
-.vercel
+Thumbs.db

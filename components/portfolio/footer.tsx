@@ -11,9 +11,12 @@ export function Footer() {
           <span className="text-sm font-bold tracking-wide">KHUSHWINDER</span>
         </Link>
         <p className="text-xs text-muted-foreground">
-          © 2024 Khushwinder. All rights reserved.
+          © {new Date().getFullYear()} Khushwinder. All rights reserved.
         </p>
         <div className="flex items-center gap-5 text-xs text-muted-foreground">
+          <Link href="/" className="transition-colors hover:text-foreground">
+            Links
+          </Link>
           <Link href="/privacy" className="transition-colors hover:text-foreground">
             Privacy Policy
           </Link>
