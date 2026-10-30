@@ -3,11 +3,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-const stats = [
-  { label: 'Completed', value: '115+ Projects' },
-  { label: 'Experience', value: '4+ Years' },
-  { label: 'Rating', value: '100% Satisfaction' },
-]
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Globe,
@@ -37,6 +32,11 @@ const techStack = [
 ]
 
 // Stats
+const stats = [
+  { label: 'Completed', value: '115+ Projects' },
+  { label: 'Experience', value: '4+ Years' },
+  { label: 'Rating', value: '100% Satisfaction' },
+]
 
 // Social icons at top
 const topSocials = [
@@ -226,37 +226,30 @@ export function LinktreeView() {
           transition={{ duration: 0.5 }}
           className="w-full flex flex-col items-center text-center"
         >
-          {/* Avatar with glowing ring & high-res headshot */}
-          <div className="relative mb-5 group">
-            {/* Ambient aura glow */}
+          {/* Avatar with glowing ring */}
+          <div className="relative mb-4 group">
             <div
               aria-hidden="true"
-              className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary via-cyan-400 to-purple-500 opacity-60 blur-xl group-hover:opacity-90 group-hover:blur-2xl transition-all duration-500 animate-pulse"
+              className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-accent to-primary opacity-75 blur-md group-hover:opacity-100 transition-opacity"
             />
-            {/* Outer spinning dashed ring */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -inset-1.5 rounded-full border border-primary/30 border-dashed animate-[spin_40s_linear_infinite]"
-            />
-            {/* Gradient border container */}
-            <div className="relative size-28 sm:size-32 rounded-full p-[3px] bg-gradient-to-br from-primary via-cyan-400 to-purple-500 shadow-2xl ring-4 ring-background/80">
-              <div className="relative size-full overflow-hidden rounded-full bg-card shadow-inner">
+            <div className="relative size-24 sm:size-28 rounded-full p-[3px] bg-gradient-to-br from-primary via-accent to-purple-400">
+              <div className="relative size-full overflow-hidden rounded-full bg-card">
                 <Image
-                  src="/images/khushwinder-dp.jpg"
-                  alt="Khushwinder - Web Developer"
-                  width={128}
-                  height={128}
+                  src="/images/hero-portrait.png"
+                  alt="Khushwinder"
+                  width={112}
+                  height={112}
                   priority
-                  className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  className="size-full object-cover object-center"
                 />
               </div>
             </div>
             {/* Verified icon badge */}
             <div
-              className="absolute bottom-0 right-0 rounded-full bg-background p-1 shadow-xl ring-2 ring-emerald-500/30"
-              title="Verified Web Developer"
+              className="absolute bottom-0 right-0 rounded-full bg-background p-0.5 shadow-md"
+              title="Verified Developer"
             >
-              <CheckCircle2 className="size-5 sm:size-6 text-emerald-400 fill-emerald-500/20" />
+              <CheckCircle2 className="size-6 text-primary fill-primary/20" />
             </div>
           </div>
 
