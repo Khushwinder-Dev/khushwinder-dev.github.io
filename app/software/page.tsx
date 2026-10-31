@@ -43,3 +43,4 @@ export default function SoftwarePage() {
     </div>
   )
 }
+

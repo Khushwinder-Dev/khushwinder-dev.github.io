@@ -401,3 +401,4 @@ export function AppsView() {
     </div>
   )
 }
+

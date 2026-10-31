@@ -134,3 +134,4 @@ export const softwareProjects: SoftwareItem[] = [
     featured: false,
   },
 ]
+

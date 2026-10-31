@@ -319,44 +319,51 @@ export function LinktreeView() {
           >
             <Link
               href="/portfolio"
-              className="group relative block w-full overflow-hidden rounded-2xl border-2 border-primary/60 bg-gradient-to-r from-primary/15 via-card to-accent/15 p-4 sm:p-5 shadow-lg shadow-primary/10 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:border-primary hover:shadow-2xl hover:shadow-primary/25 active:scale-[0.99]"
+              className="group relative block w-full overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-card/90 via-card/65 to-primary/10 p-4 sm:p-5 shadow-lg shadow-black/20 backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/70 hover:shadow-2xl hover:shadow-primary/25 active:translate-y-0 active:scale-[0.99]"
             >
-              {/* Shimmer / ambient ray */}
+              {/* Ambient backlight glow on hover */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -inset-full top-0 block -rotate-45 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100"
+                className="pointer-events-none absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-primary/25 via-accent/20 to-primary/25 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100 -z-10"
               />
 
-              <div className="flex items-center gap-3.5 sm:gap-4">
-                {/* Glowing icon badge */}
-                <div className="relative flex size-12 sm:size-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent shadow-md shadow-primary/30">
-                  <Globe className="size-6 text-primary-foreground" />
-                  <span className="absolute -top-1 -right-1 flex size-3">
-                    <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
-                    <span className="relative inline-flex size-3 rounded-full bg-accent" />
-                  </span>
+              {/* Top hairline reflection */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"
+              />
+
+              <div className="relative flex items-center gap-3.5 sm:gap-4">
+                {/* Refined Glass Icon Container */}
+                <div className="relative flex size-12 sm:size-13 shrink-0 items-center justify-center rounded-2xl border border-primary/30 bg-primary/10 text-primary shadow-inner shadow-primary/20 transition-all duration-300 group-hover:scale-105 group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:shadow-lg group-hover:shadow-primary/30">
+                  <Globe className="size-6 transition-transform duration-300 group-hover:rotate-12" />
                 </div>
 
                 {/* Text Content */}
                 <div className="flex-1 min-w-0 text-left">
                   <div className="flex items-center gap-2">
-                    <span className="inline-flex items-center gap-1 rounded-md bg-primary/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">
-                      <Sparkles className="size-3" />
-                      Featured
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/15 px-2.5 py-0.5 text-[10px] font-semibold text-primary backdrop-blur-md">
+                      <span className="relative flex size-1.5">
+                        <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                        <span className="relative inline-flex size-1.5 rounded-full bg-emerald-400" />
+                      </span>
+                      Featured Showcase
                     </span>
-                    <span className="text-xs text-muted-foreground font-mono">/portfolio</span>
+                    <span className="text-[11px] font-mono text-muted-foreground/70 transition-colors group-hover:text-muted-foreground">
+                      /portfolio
+                    </span>
                   </div>
-                  <h2 className="mt-1 text-base sm:text-lg font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-1.5">
+                  <h2 className="mt-1 text-base sm:text-lg font-bold text-foreground transition-colors group-hover:text-primary flex items-center gap-1.5">
                     Explore Full Portfolio
                   </h2>
-                  <p className="text-xs text-muted-foreground line-clamp-1 sm:line-clamp-none">
-                    117+ Client Projects &amp; 3D interactive showcase
+                  <p className="mt-0.5 text-xs text-muted-foreground transition-colors group-hover:text-foreground/80 line-clamp-1 sm:line-clamp-none">
+                    117+ Client Projects &amp; 3D Interactive Showcase
                   </p>
                 </div>
 
-                {/* Arrow */}
-                <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary transition-all group-hover:bg-primary group-hover:text-primary-foreground group-hover:translate-x-1">
-                  <ArrowRight className="size-4" />
+                {/* Smooth Action Arrow Button */}
+                <div className="flex size-9 sm:size-10 shrink-0 items-center justify-center rounded-xl border border-border/80 bg-secondary/50 text-muted-foreground transition-all duration-300 group-hover:border-primary/50 group-hover:bg-primary group-hover:text-primary-foreground group-hover:translate-x-1 group-hover:shadow-md group-hover:shadow-primary/25">
+                  <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                 </div>
               </div>
             </Link>
