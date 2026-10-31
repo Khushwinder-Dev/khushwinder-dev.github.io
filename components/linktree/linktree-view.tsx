@@ -287,18 +287,22 @@ export function LinktreeView() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="group flex size-9 items-center justify-center rounded-xl border border-border/80 bg-card/60 p-2 backdrop-blur-md transition-all hover:scale-110 hover:border-primary/50 hover:bg-secondary hover:shadow-md"
+                className={`group flex size-9 items-center justify-center rounded-xl border border-border/80 bg-card/60 backdrop-blur-md transition-all hover:scale-110 hover:border-primary/50 hover:bg-secondary hover:shadow-md ${
+                  social.name === 'Fiverr' ? 'p-1' : 'p-2'
+                }`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={social.logo}
                   alt={social.name}
-                  width={20}
-                  height={20}
-                  className={`size-4 object-contain transition-all ${
+                  width={social.name === 'Fiverr' ? 28 : 20}
+                  height={social.name === 'Fiverr' ? 14 : 20}
+                  className={`object-contain transition-all ${
                     social.name === 'GitHub' || social.name === 'X'
-                      ? 'brightness-0 invert opacity-90 group-hover:opacity-100'
-                      : 'brightness-90 group-hover:brightness-100'
+                      ? 'size-4 brightness-0 invert opacity-90 group-hover:opacity-100'
+                      : social.name === 'Fiverr'
+                      ? 'w-[27px] h-auto shrink-0 brightness-95 group-hover:brightness-110'
+                      : 'size-4 brightness-90 group-hover:brightness-100'
                   }`}
                 />
               </a>
