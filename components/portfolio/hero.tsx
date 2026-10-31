@@ -1,10 +1,15 @@
 'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 import { ArrowRight, Download, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
+import { QuoteModal } from './quote-modal'
 
 export function Hero() {
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false)
+
   return (
     <section
       id="home"
@@ -53,18 +58,23 @@ export function Hero() {
             Specializing in Shopify Liquid, custom WordPress theme/plugin development, and modern full-stack web applications using React.js and Laravel.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Button
-              render={<a target='_blank' href="https://wa.me/919780032334?text=Hi%20Khushwinder,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." />}
-              nativeButton={false}
-              size="lg"
-              className="group rounded-full bg-primary px-6 font-medium text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20"
+          <div className="mt-8 flex flex-wrap items-center gap-3.5">
+            {/* High-contrast Pill Button matching user reference image */}
+            <button
+              type="button"
+              onClick={() => setIsQuoteOpen(true)}
+              className="group relative inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-bold text-gray-950 shadow-xl shadow-primary/20 transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-primary/30 active:scale-[0.98]"
             >
-              Discuss Your Project
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-            </Button>
+              <span className="tracking-wide uppercase font-extrabold text-xs sm:text-sm text-gray-900">
+                Get a quote
+              </span>
+              <span className="flex size-7 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm transition-transform duration-300 group-hover:translate-x-0.5 group-hover:bg-primary/90">
+                <ArrowRight className="size-4" />
+              </span>
+            </button>
+
             <Button
-              render={<a target='_blank' href="/resume/webDeveloper/Khushwinder.pdf" />}
+              render={<a target="_blank" href="/resume/webDeveloper/Khushwinder.pdf" />}
               nativeButton={false}
               size="lg"
               variant="outline"
@@ -239,6 +249,9 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
+
+      {/* Quote Modal Dialog */}
+      <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
     </section>
   )
 }
