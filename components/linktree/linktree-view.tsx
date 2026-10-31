@@ -422,8 +422,53 @@ export function LinktreeView() {
           </motion.a>
         </div>
 
-        {/* ----------------- FREELANCE PLATFORMS ----------------- */}
+        {/* ----------------- SOCIAL & CODE PROFILES ----------------- */}
         <div className="w-full mt-7">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              Social &amp; Developer Profiles
+            </span>
+            <div className="h-px flex-1 bg-border/60" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {socialLinks.map((item, idx) => (
+              <motion.a
+                key={item.title}
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 + idx * 0.05 }}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 rounded-2xl border border-border/80 bg-card/60 p-3 backdrop-blur-xl transition-all duration-200 hover:scale-[1.02] hover:border-primary/50 hover:bg-card/90 active:scale-[0.99]"
+              >
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white p-2">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={item.logo}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="size-5 object-contain"
+                  />
+                </div>
+                <div className="flex-1 min-w-0 text-left">
+                  <span className="block text-xs font-semibold text-foreground group-hover:text-primary transition-colors truncate">
+                    {item.title}
+                  </span>
+                  <span className="block text-[11px] text-muted-foreground truncate">
+                    {item.handle}
+                  </span>
+                </div>
+                <ArrowRight className="size-3.5 text-muted-foreground group-hover:text-primary transition-transform group-hover:translate-x-0.5" />
+              </motion.a>
+            ))}
+          </div>
+        </div>
+
+        {/* ----------------- FREELANCE PLATFORMS ----------------- */}
+        <div className="w-full mt-6">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               Freelance &amp; Hire
@@ -437,7 +482,7 @@ export function LinktreeView() {
                 key={item.title}
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 + idx * 0.05 }}
+                transition={{ duration: 0.4, delay: 0.2 + idx * 0.05 }}
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -467,51 +512,6 @@ export function LinktreeView() {
                   <p className="text-xs text-muted-foreground truncate">{item.subtitle}</p>
                 </div>
                 <ExternalLink className="size-4 text-muted-foreground group-hover:text-primary transition-transform group-hover:translate-x-0.5" />
-              </motion.a>
-            ))}
-          </div>
-        </div>
-
-        {/* ----------------- SOCIAL & CODE PROFILES ----------------- */}
-        <div className="w-full mt-6">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              Social &amp; Developer Profiles
-            </span>
-            <div className="h-px flex-1 bg-border/60" />
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-            {socialLinks.map((item, idx) => (
-              <motion.a
-                key={item.title}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.2 + idx * 0.05 }}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-3 rounded-2xl border border-border/80 bg-card/60 p-3 backdrop-blur-xl transition-all duration-200 hover:scale-[1.02] hover:border-primary/50 hover:bg-card/90 active:scale-[0.99]"
-              >
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white p-2">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={item.logo}
-                    alt=""
-                    width={20}
-                    height={20}
-                    className="size-5 object-contain"
-                  />
-                </div>
-                <div className="flex-1 min-w-0 text-left">
-                  <span className="block text-xs font-semibold text-foreground group-hover:text-primary transition-colors truncate">
-                    {item.title}
-                  </span>
-                  <span className="block text-[11px] text-muted-foreground truncate">
-                    {item.handle}
-                  </span>
-                </div>
-                <ArrowRight className="size-3.5 text-muted-foreground group-hover:text-primary transition-transform group-hover:translate-x-0.5" />
               </motion.a>
             ))}
           </div>
