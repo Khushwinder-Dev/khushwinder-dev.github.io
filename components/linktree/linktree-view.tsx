@@ -43,7 +43,7 @@ const topSocials = [
   {
     name: 'GitHub',
     url: 'https://github.com/Khushwinder-Dev',
-    logo: '/logos/github.svg',
+    logo: '/logos/github-white.svg',
   },
   {
     name: 'LinkedIn',
@@ -63,7 +63,7 @@ const topSocials = [
   {
     name: 'X',
     url: 'https://x.com/Er_Khushwinder',
-    logo: '/logos/x.svg',
+    logo: '/logos/x-white.svg',
   },
   {
     name: 'Instagram',
@@ -287,7 +287,7 @@ export function LinktreeView() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="flex size-9 items-center justify-center rounded-xl border border-border/80 bg-card/60 p-2 backdrop-blur-md transition-all hover:scale-110 hover:border-primary/50 hover:bg-secondary hover:shadow-md"
+                className="group flex size-9 items-center justify-center rounded-xl border border-border/80 bg-card/60 p-2 backdrop-blur-md transition-all hover:scale-110 hover:border-primary/50 hover:bg-secondary hover:shadow-md"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -295,7 +295,11 @@ export function LinktreeView() {
                   alt={social.name}
                   width={20}
                   height={20}
-                  className="size-4 object-contain brightness-90 group-hover:brightness-100"
+                  className={`size-4 object-contain transition-all ${
+                    social.name === 'GitHub' || social.name === 'X'
+                      ? 'brightness-0 invert opacity-90 group-hover:opacity-100'
+                      : 'brightness-90 group-hover:brightness-100'
+                  }`}
                 />
               </a>
             ))}
