@@ -14,6 +14,26 @@ export interface SoftwareItem {
 
 export const softwareProjects: SoftwareItem[] = [
   {
+    id: 'servelocally',
+    title: 'ServeLocally — Local Web Server & Reverse Proxy',
+    subtitle: 'Zero-Config Local Development Server Software',
+    category: 'Automation & Integration',
+    summary:
+      'Fast, lightweight local development server and reverse proxy tool engineered for developers to instantly serve static sites, test web apps, and handle local routing with zero configuration.',
+    features: [
+      'Instant zero-configuration static file and directory serving',
+      'Built-in reverse proxy routing for local API development',
+      'High-speed local asset streaming with instant file updates',
+      'Ultra-lightweight memory footprint with cross-platform CLI support',
+      'Direct one-click access and developer-friendly documentation',
+    ],
+    techStack: ['Node.js', 'TypeScript', 'CLI', 'HTTP/2', 'WebSockets', 'Reverse Proxy'],
+    metrics: 'Zero-config instant local server',
+    clientName: 'ServeLocally Open Source Project',
+    liveUrl: 'https://servelocally.github.io/',
+    featured: true,
+  },
+  {
     id: 'b2b-wholesale-portal',
     title: 'OmniChannel B2B Wholesale & Distribution Portal',
     subtitle: 'High-Volume B2B E-Commerce & Dealer Portal',

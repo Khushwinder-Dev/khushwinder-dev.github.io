@@ -72,7 +72,9 @@ export function AppsView() {
               Portfolio
             </Link>
             <span>/</span>
-            <span className="text-muted-foreground">Products</span>
+            <Link href="/products" className="hover:text-foreground transition-colors">
+              Products
+            </Link>
             <span>/</span>
             <span className="text-emerald-400 font-semibold">Apps</span>
           </div>

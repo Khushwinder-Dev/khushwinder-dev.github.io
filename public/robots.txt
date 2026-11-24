@@ -2,5 +2,10 @@ User-agent: *
 Allow: /
 Disallow: /private/
 
-# Replace with your actual domain!
-Sitemap: https://khushwinder.dev/sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://khushwinder-dev.github.io/sitemap.xml

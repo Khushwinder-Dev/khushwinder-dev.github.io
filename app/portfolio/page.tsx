@@ -13,46 +13,70 @@ import { AnimatedSection } from '@/components/ui/animated-section'
 import { Particles } from '@/components/ui/particles'
 import { ThreeScene } from '@/components/ui/three-scene'
 import { ContactButtons } from '@/components/portfolio/contact-buttons'
+import { BreadcrumbsStructuredData } from '@/components/seo/structured-data'
+import { SEO_CONFIG, SITE_URL } from '@/lib/seo-config'
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Khushwinder — Web Developer & Digital Marketer',
+  title: 'Khushwinder Portfolio — Full Stack Web Developer & Software Engineer',
   description:
-    'Explore the portfolio of Khushwinder, featuring custom web development, Shopify stores, WordPress solutions, React & Laravel applications.',
+    'Explore the portfolio of Khushwinder. Showcasing custom web applications, bespoke Shopify stores, WordPress solutions, React, Next.js, and Laravel software projects.',
+  keywords: SEO_CONFIG.keywords,
+  alternates: {
+    canonical: '/portfolio',
+  },
+  openGraph: {
+    title: 'Khushwinder Portfolio — Full Stack Web Developer & Software Engineer',
+    description:
+      'Explore the verified client projects, Shopify stores, web apps, and custom software created by Khushwinder.',
+    url: `${SITE_URL}/portfolio`,
+    siteName: SEO_CONFIG.brandName,
+    images: [
+      {
+        url: '/images/hero-portrait.png',
+        width: 1200,
+        height: 630,
+        alt: 'Khushwinder Portfolio',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Khushwinder Portfolio — Web Developer & Software Engineer',
+    description:
+      'Explore verified web development projects, custom e-commerce stores, and software solutions built by Khushwinder.',
+    creator: '@Er_Khushwinder',
+    images: ['/images/hero-portrait.png'],
+  },
 }
 
 export default function PortfolioPage() {
   // Schema.org structured data
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Khushwinder",
-    "description": "Web Developer & Digital Marketer specializing in WordPress, Shopify, React, Laravel, and digital marketing strategies to grow businesses online.",
-    "url": "https://khushwinder.dev/portfolio",
-    "image": "https://khushwinder.dev/images/hero-portrait.png",
-    "jobTitle": "Web Developer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Khushwinder Freelance Services"
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Khushwinder Web Development Portfolio',
+    description:
+      'Comprehensive showcase of web applications, e-commerce stores, custom SaaS tools, and technical skills.',
+    url: `${SITE_URL}/portfolio`,
+    author: {
+      '@type': 'Person',
+      name: SEO_CONFIG.author,
+      alternateName: SEO_CONFIG.alternateNames,
+      url: SITE_URL,
+      sameAs: SEO_CONFIG.socialProfiles,
+      jobTitle: SEO_CONFIG.jobTitles,
+      knowsAbout: SEO_CONFIG.skills,
     },
-    "sameAs": [
-      "https://www.linkedin.com/in/khushwinder-dev",
-      "https://github.com/Khushwinder-Dev",
-      "https://x.com/Er_Khushwinder",
-      "https://www.instagram.com/khushwinder.dev"
-    ],
-    "knowsAbout": [
-      "Web Development",
-      "WordPress",
-      "Shopify",
-      "React",
-      "Laravel",
-      "Digital Marketing",
-      "E-commerce"
-    ]
   }
 
   return (
     <>
+      <BreadcrumbsStructuredData
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Portfolio', url: '/portfolio' },
+        ]}
+      />
       {/* Add structured data */}
       <script
         type="application/ld+json"
