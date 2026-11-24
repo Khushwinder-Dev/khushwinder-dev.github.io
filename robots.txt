@@ -1,6 +1,12 @@
-User-agent: *
+User-Agent: *
 Allow: /
 Disallow: /private/
 
-# Replace with your actual domain!
-Sitemap: https://khushwinder.dev/sitemap.xml
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+Host: https://khushwinder-dev.github.io
+Sitemap: https://khushwinder-dev.github.io/sitemap.xml
