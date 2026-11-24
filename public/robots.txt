@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /private/
+Disallow: /payment
 
 User-agent: Googlebot
 Allow: /

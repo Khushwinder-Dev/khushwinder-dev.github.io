@@ -1,7 +1,5 @@
 'use client'
 import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
 import heroProfileImage from '@/public/images/hero-portrait.png'
 
@@ -34,18 +32,6 @@ export function Hero() {
           <p className="mt-6 max-w-md text-pretty leading-relaxed text-muted-foreground">
             I build professional websites, e-commerce stores (WordPress/Shopify), custom web apps (React/Laravel), and help brands grow with digital marketing.
           </p>
-
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Button
-              render={<a href="/payment" />}
-              nativeButton={false}
-              size="lg"
-              className="group rounded-full bg-primary px-6 font-medium text-primary-foreground hover:bg-primary/90"
-            >
-              Make Payment
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-            </Button>
-          </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-6 text-sm">
             <span className="text-muted-foreground">Available for:</span>
