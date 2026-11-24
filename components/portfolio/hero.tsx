@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
-import heroProfileImage from '@/public/images/neon-developer-profile.png'
+import heroProfileImage from '@/public/images/hero-portrait.png'
 
 export function Hero() {
   return (
@@ -60,47 +60,32 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Right portrait: Neon Full Stack Developer HUD Showcase */}
+        {/* Right portrait: Compact Authentic Studio Portrait */}
         <motion.div
           initial={{ opacity: 0, scale: 0.94, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-          className="relative mx-auto w-full max-w-[380px] sm:max-w-[440px] lg:max-w-[480px] xl:max-w-[500px]"
+          className="relative mx-auto flex items-center justify-center w-full"
+          style={{ maxWidth: '280px' }}
         >
-          {/* Ambient Cyber Neon Glow Blooms matching the image's cyan & purple lighting */}
+          {/* Soft ambient glow behind the portrait */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -top-12 -left-12 size-72 sm:size-96 rounded-full bg-cyan-500/25 blur-3xl -z-10"
-          />
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -bottom-12 -right-12 size-72 sm:size-96 rounded-full bg-purple-600/25 blur-3xl -z-10"
+            className="pointer-events-none absolute -inset-3 rounded-full bg-gradient-to-tr from-primary/30 via-accent/20 to-primary/20 blur-2xl -z-10"
           />
 
-          {/* Floating Cyber Particle Dots */}
-          <div aria-hidden="true" className="pointer-events-none absolute -top-4 right-16 size-2 rounded-full bg-cyan-400 shadow-[0_0_10px_#22d3ee] animate-pulse z-20" />
-          <div aria-hidden="true" className="pointer-events-none absolute top-14 -right-6 size-2 rounded-full bg-purple-400 shadow-[0_0_10px_#c084fc] animate-ping z-20" />
-          <div aria-hidden="true" className="pointer-events-none absolute -top-6 -right-2 size-1.5 rounded-full bg-indigo-300 shadow-[0_0_8px_#a5b4fc] z-20" />
-          <div aria-hidden="true" className="pointer-events-none absolute top-28 -right-4 size-1 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399] z-20" />
-
-          {/* High-Tech Glass Container for the Neon Profile Image */}
+          {/* Clean Glassmorphic Frame for the Studio Portrait */}
           <div
-            style={{ aspectRatio: '1106 / 1422' }}
-            className="group relative w-full overflow-hidden rounded-[28px] sm:rounded-[36px] border border-cyan-400/30 bg-slate-950/80 shadow-[0_20px_60px_rgba(0,0,0,0.85),0_0_40px_rgba(6,182,212,0.18)] backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/50 hover:shadow-[0_25px_70px_rgba(0,0,0,0.9),0_0_60px_rgba(6,182,212,0.28)]"
+            className="group relative w-full aspect-square overflow-hidden rounded-2xl sm:rounded-3xl border border-border/80 bg-card/40 shadow-xl backdrop-blur-xl transition-all duration-500 hover:border-primary/50 hover:shadow-primary/20"
+            style={{ width: '100%', maxWidth: '280px', maxHeight: '280px' }}
           >
             <Image
               src={heroProfileImage}
-              alt="Khushwinder - Full Stack Developer & Digital Marketer"
+              alt="Khushwinder — Web Developer & Digital Marketer"
               priority
               placeholder="blur"
-              className="w-full h-auto object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
             />
-
-            {/* Inset Hairline Corner Reticles */}
-            <span className="pointer-events-none absolute top-2.5 left-2.5 size-2 border-t border-l border-cyan-400/70" />
-            <span className="pointer-events-none absolute top-2.5 right-2.5 size-2 border-t border-r border-cyan-400/70" />
-            <span className="pointer-events-none absolute bottom-2.5 left-2.5 size-2 border-b border-l border-purple-400/70" />
-            <span className="pointer-events-none absolute bottom-2.5 right-2.5 size-2 border-b border-r border-purple-400/70" />
           </div>
         </motion.div>
       </div>
