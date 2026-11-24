@@ -2,13 +2,14 @@ import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
-import { siteConfig } from '@/lib/site-config'
+import { siteConfig, SHOW_PRODUCTS_MENU } from '@/lib/site-config'
 import { SEO_CONFIG, SITE_URL } from '@/lib/seo-config'
 import { WebSiteStructuredData, PersonStructuredData } from '@/components/seo/structured-data'
 import './globals.css'
 
 // Re-export site configuration & feature flags for global access
-export { siteConfig }
+// Toggle 'showProductsMenu' in '@/lib/site-config' (currently: false)
+export { siteConfig, SHOW_PRODUCTS_MENU }
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 const geistMono = Geist_Mono({

@@ -87,9 +87,9 @@ export function ProductsView() {
 
         {/* Bottom Bar: Domain + Badge */}
         <div className="mt-3 pt-2 border-t border-border/40 flex items-center justify-between gap-1 text-[10px] font-mono text-muted-foreground/80">
-          <span className="truncate max-w-[110px]">{domain}</span>
+          <span className="truncate flex-1 min-w-0">{domain}</span>
           <span
-            className={`rounded px-1.5 py-0.2 text-[9px] font-semibold tracking-wider font-sans shrink-0 ${item.badgeColor}`}
+            className={`rounded px-1.5 py-0.5 text-[9px] font-semibold tracking-wider font-sans shrink-0 ${item.badgeColor}`}
           >
             {item.badge.replace(' Software', '').replace(' App', '').replace(' Platform', '')}
           </span>
@@ -134,7 +134,7 @@ export function ProductsView() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-3 sm:gap-3.5 xl:gap-4">
             {softwareList.map(renderProductCard)}
           </div>
         </section>
@@ -158,7 +158,7 @@ export function ProductsView() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-3 sm:gap-3.5 xl:gap-4">
             {appsList.map(renderProductCard)}
           </div>
         </section>

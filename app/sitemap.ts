@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/seo-config'
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date().toISOString().split('T')[0]
 
