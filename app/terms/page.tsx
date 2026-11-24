@@ -1,5 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Terms of Service | Khushwinder',
+  description: 'Terms of Service for the official portfolio website of Khushwinder.',
+  alternates: {
+    canonical: '/terms',
+  },
+}
 
 export default function TermsOfService() {
   return (

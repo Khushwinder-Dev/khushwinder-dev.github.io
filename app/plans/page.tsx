@@ -20,12 +20,15 @@ import { Particles } from '@/components/ui/particles'
 import { ContactButtons } from '@/components/portfolio/contact-buttons'
 
 export const metadata: Metadata = {
-  title: 'Freelance Plans & Pricing | Khushwinder',
+  title: 'Freelance Web Development Plans & Pricing | Khushwinder',
   description:
     'Transparent freelance web development pricing for Shopify stores, WordPress websites, React and Laravel solutions by Khushwinder.',
+  alternates: {
+    canonical: '/plans',
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 }
 

@@ -1,5 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Khushwinder',
+  description: 'Privacy Policy for the official portfolio website of Khushwinder.',
+  alternates: {
+    canonical: '/privacy',
+  },
+}
 
 export default function PrivacyPolicy() {
   return (
