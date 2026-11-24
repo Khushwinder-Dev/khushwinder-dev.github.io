@@ -81,32 +81,12 @@ export function Header({ showProducts }: HeaderProps = {}) {
           })}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <Link
-            href="/"
-            className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary/50 px-3.5 py-1.5 text-xs font-medium text-foreground transition-all hover:bg-secondary hover:border-primary/50"
-          >
-            <Sparkles className="size-3.5 text-primary" />
-            Links
-          </Link>
-          <Button
-            render={
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://wa.me/919780032334?text=Hi%20Khushwinder,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
-              />
-            }
-            nativeButton={false}
-            className="hidden rounded-full bg-primary px-5 font-medium text-primary-foreground hover:bg-primary/90 sm:inline-flex"
-          >
-            Discuss Your Project
-          </Button>
+        <div className="flex items-center gap-2 lg:hidden">
           <button
             type="button"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="flex size-9 items-center justify-center rounded-lg border border-border text-foreground lg:hidden"
+            className="flex size-9 items-center justify-center rounded-lg border border-border text-foreground"
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
